@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![intellihack-web-cloud-run](https://github.com/Tharindu209-playground/intellihack-final-frontend/actions/workflows/cloud-run.yml/badge.svg?branch=main)](https://github.com/Tharindu209-playground/intellihack-final-frontend/actions/workflows/cloud-run.yml)
 
 
@@ -134,3 +135,6 @@ Feel free to customize the file according to your project's specifics and your p
    ```bash
    https://github.com/Tharindu209/viewMO-extension.git
    ```
+=======
+# mental-health-chatbot-frontend
+>>>>>>> 09b3bfe986305935a5d384a07b84f91320d56684
