@@ -1,0 +1,212 @@
+/* full input container */
+.vai-input-container {
+    margin:20px 0 20px 0;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    max-width: 430px;
+    top: 190px;
+    height: 65%;
+    position:fixed;
+    justify-content: space-between;
+}
+/* position for right allignment */
+@media only screen and (min-width: 768px) {
+  .vai-input-container {
+      right: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .vai-input-container {
+      right: 15px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .vai-input-container {
+      right: 5px;
+  }
+}
+    /* buttons */
+  .responseive-m1{
+      overflow: hidden;
+    }
+  .api-buttons {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap:10px;
+  }
+
+  
+  .btn-choose {
+    padding: 10px 20px;
+    border-color: #805AF5;
+    border-radius: 20px;
+    color: var(--color-light);
+    font-weight: 500;
+    font-size: 16px;
+    background-color: var(--color-dark);
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .btn-choose.selected {
+    background: linear-gradient(90deg, #805AF5 0%, #CE99FF 100%);
+  }
+
+  .btn-clear {
+    margin: 0 10px;
+    padding: 5px 8px;
+    border:1px solid #805AF5;
+    border-radius: 20px;
+    color: #805AF5;
+    font-size: 12px;
+    background-color: var(--color-dark-alt);
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 960px) {
+    .btn-choose {
+      font-size: 12px;
+      padding: 5px 8px;
+    }
+    .btn-clear {
+      margin: 0 5px;
+      padding: 5px 8px;
+      font-size: 8px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .btn-choose {
+      font-size: 8px;
+      padding: 3px 6px;
+    }
+    .btn-clear {
+      margin: 0 5px;
+      padding: 3px 6px;
+      font-size: 8px;
+    }
+  }
+  
+  .btn-send {
+    max-height: 47px;
+    padding: 10px 20px;
+    border:1px solid var(--color-dark);
+    border-radius: 20px;
+    color: var(--color-dark);
+    font-weight: 600;
+    font-size: 20px;
+    background-color: var(--color-dark-alt);
+    cursor: not-allowed; 
+  }
+  .btn-send:active {
+    transform: scale(0.95);
+    box-shadow: 0 5px #805AF5;
+    transform: translateY(4px);
+}
+  
+  .btn-send.enabled {
+    background-color: var(--color-success);
+    color: white;
+    border-color: var(--color-success);
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 960px) {
+    .btn-send {
+      font-size: 12px;
+      padding: 5px 15px;
+    }
+  }
+
+  /* scroll bar */
+  .scroll-custom{
+    scrollbar-width: 10px;
+    scrollbar-color:  #805AF5 var(--color-dark);
+    resize: none;
+  }
+  .character-counter {
+    margin-top: 5px;
+    color: #666;
+    font-size: 12px;
+  }
+  .character-counter.exceed {
+    color: red;
+  }
+
+  /* detatil slider */
+  .detail-level{
+    margin:5px;
+  }
+
+  .detail-labels{
+    display:flex;
+    justify-content: space-between;
+  }
+  .detail-labels{
+    font-size: 12px;
+    color: var(--color-light);
+  }
+  @media only screen and (max-width: 600px) {
+    .detail-labels{
+      font-size: 5px;
+      color: var(--color-light);
+    }
+  }
+
+
+  /* Slider styling */
+.slider {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 100%;  /* Full-width */
+  height: 10px;  /* Specified height */
+  background: var(--color-dark);  
+  border-radius: 20px;
+  outline: none;  
+  opacity: 0.7;  
+  transition: opacity .2s;  
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1;  /* Fully shown on hover */
+}
+
+/* The slider handle (thumb) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 20%;  /* Set a specific slider handle width */
+  height: 10px;  /* Slider handle height */
+  background: linear-gradient(90deg, #805AF5 0%, #CE99FF 100%);  
+  cursor: pointer;  
+  border-radius: 25px; /* Optional: Makes the thumb circular */
+}
+
+/* The slider track */
+.slider::-webkit-slider-runnable-track {
+  height: 10px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+/* For Firefox */
+.slider::-moz-range-thumb {
+  width: 30px;
+  height: 10px;
+  background: #805AF5;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.slider::-moz-range-track {
+  width: 0%;
+  height: 10px;
+  cursor: pointer;
+  background: #805AF5;
+  border-radius: 25px;
+}

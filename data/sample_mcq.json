@@ -1,0 +1,58 @@
+{
+    "user_id": 0,
+    "response": {
+        "questions": [
+            {
+                "question": "What is the most common mental health disorder?",
+                "options": [
+                    "Depression",
+                    "Anxiety",
+                    "Bipolar Disorder",
+                    "Schizophrenia"
+                ],
+                "correct": "Depression"
+            },
+            {
+                "question": "What is the main goal of cognitive-behavioral therapy (CBT)?",
+                "options": [
+                    "Exploring past trauma",
+                    "Changing negative thought patterns",
+                    "Prescribing medication",
+                    "Providing emotional support"
+                ],
+                "correct": "Changing negative thought patterns"
+            },
+            {
+                "question": "Which neurotransmitter is often associated with feelings of pleasure and reward?",
+                "options": [
+                    "Dopamine",
+                    "Serotonin",
+                    "GABA",
+                    "Glutamate"
+                ],
+                "correct": "Dopamine"
+            },
+            {
+                "question": "What is a common symptom of generalized anxiety disorder?",
+                "options": [
+                    "Hallucinations",
+                    "Panic attacks",
+                    "Memory loss",
+                    "Obsessive-compulsive behaviors"
+                ],
+                "correct": "Panic attacks"
+            },
+            {
+                "question": "Which term refers to a persistent feeling of sadness and loss of interest in activities?",
+                "options": [
+                    "Mania",
+                    "Apathy",
+                    "Anhedonia",
+                    "Major Depressive Disorder"
+                ],
+                "correct": "Major Depressive Disorder"
+            }
+       
+        ]
+    }
+}

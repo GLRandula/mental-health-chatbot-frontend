@@ -1,0 +1,92 @@
+{
+  "TabStyleOne": [
+    {
+      "title": "Chat with your Document",
+      "img": "/images/generator-img/chat-export-chatbot.png",
+      "menuId": "video-generator",
+      "text": "Mental Health Chatbot",
+      "target": "video-generate",
+      "link": "/chatbot",
+      "iconImg": "/images/icons/text-g.png",
+      "isSelect": true,
+      "btn": "Start Exploring Now",
+      "subItem": [
+        {
+          "text": "Natural Language Processing (NLP) Models"
+        },
+        {
+          "text": "User session management"
+        },
+        {
+          "text": "Using most capable gpt 4.0 model"
+        },
+        {
+          "text": "Vector database, Fast Responsing"
+        }
+      ]
+    },
+    {
+      "title": "Research Assistant for Enhanced Knowledge Discovery",
+      "img": "/images/generator-img/chat-export-research.png",
+      "menuId": "photo-generator",
+      "text": "AI Questionnaire",
+      "target": "photo-generate",
+      "link": "/researchpal",
+      "iconImg": "/images/icons/text-g.png",
+      "isSelect": false,
+      "btn": "Start Exploring Now",
+      "subItem": [
+        {
+          "text": "Natural Language Processing (NLP) Models"
+        },
+        {
+          "text": "Rag implementation & Web Scraping"
+        },
+        {
+          "text": "Intelligent Data Analysis Tools"
+        },
+        {
+          "text": "Access to defferent research platforms"
+        }
+      ]
+    },
+    {
+      "title": "AI Powered ",
+      "img": "/images/generator-img/mcq-generator.png",
+      "menuId": "photo-generator",
+      "text": "Doctor Sugession",
+      "target": "text-generate",
+      "link": "/researchpal",
+      "iconImg": "/images/icons/text-g.png",
+      "isSelect": false,
+      "btn": "Start Exploring Now",
+      "subItem": [
+        {
+          "text": "Using most capable gpt 4.0 model"
+        },
+        {
+          "text": "Generate Multiple Choices"
+        },
+        {
+          "text": "User Experience"
+        },
+        {
+          "text": "Answers validating system"
+        }
+      ]
+    }
+    
+  ],
+  "advanceTab": [
+    {
+      "tabId": "home",
+      "target": "home-tab",
+      "isSelect": true,
+      
+      "img": "/images/split/split-001.png",
+      "subTitle": "How it work",
+      "title": "Connect with Al Assistant",
+      "desc": "Dentify the platform or interface through which you can access the chatbot. This could be a consulting, a advising app, or a dedicated application."
+    }
+  ]
+}

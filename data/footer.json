@@ -1,0 +1,64 @@
+{
+  "footer": [
+    {
+      "links": [
+        {
+          "title": "Qucik Links",
+          "innerItem": [
+            {
+              "link": "/home",
+              "text": "Home"
+            },
+            {
+              "link": "/aboutus",
+              "text": "About Us"
+            },
+            {
+              "link": "/roadmap",
+              "text": "Roadmap"
+            },
+            {
+              "link": "/utilize",
+              "text": "How to use"
+            },
+            {
+              "link": "/contactus",
+              "text": "Contact Us"
+            }
+          ]
+        }
+      ],
+      "services": [
+        {
+          "title": "Services",
+          "innerItem": [
+            
+            {
+              "link": "/text-generator",
+              "text": "AI Visualizer"
+            },
+            {
+              "link": "/chatbot",
+              "text": "Chat with the Document"
+            },
+            {
+              "link": "/researchpal",
+              "text": "Research Pal"
+            },
+            {
+              "link": "/mcqbot",
+              "text": "MCQ Generator"
+            }
+          ]
+        }
+      ],
+      "contact": [
+        {
+          "location": "Team Vertex, Faculty of Computing and Technology, University of Kelaniya.",
+          "mail": "viewmoteam@gmail.com",
+          "number": "94 XX XXX XXXX"
+        }
+      ]
+    }
+  ]
+}

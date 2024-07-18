@@ -1,0 +1,65 @@
+// popup 
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    padding: 1em;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup-green {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .popup-red {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .popup-small {
+    width: 200px;
+  }
+  
+  .popup-medium {
+    width: 300px;
+  }
+  
+  .popup-large {
+    width: 400px;
+  }
+  
+  .popup-closeButton {
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  /* Positioning styles */
+  .popup-topLeft {
+    top: 20px;
+    left: 20px;
+  }
+  
+  .popup-topRight {
+    top: 20px;
+    right: 20px;
+  }
+  
+  .popup-bottomLeft {
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .popup-bottomRight {
+    bottom: 20px;
+    right: 20px;
+  }
+  

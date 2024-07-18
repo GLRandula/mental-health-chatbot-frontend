@@ -1,0 +1,72 @@
+{
+  "sidebar": [
+    {
+      "id": "getstarted_one",
+      "title": "Getting started",
+      "isShow": true,
+      "list": [
+        {
+          "id": "Started-sec",
+          "text": "Getting Started with Our Services"
+        },
+        {
+          "id": "Tools-sec",
+          "text": "Utilizing AI Visualizer and Summarizer"
+        },
+        {
+          "id": "document-chat-sec",
+          "text": "Engaging with Document Chat"
+        },
+        {
+          "id": "mcq-bot",
+          "text": "MCQ Bot"
+        },
+        {
+          "id": "research-pal",
+          "text": "Research Agent"
+        }
+      ]
+    },
+    {
+      "id": "getstarted_two",
+      "title": "Additional Features",
+      "isShow": true,
+      "list": [
+        {
+          "id": "extension-sec",
+          "text": "Chrome Extension"
+        },
+        {
+          "id": "developer-kernel",
+          "text": "Developer Kernel"
+        },
+        {
+          "id": "ui-component",
+          "text": "A Chatbot UI for React and Next.js"
+        }
+      ]
+    },
+    {
+      "id": "pricing_one",
+      "title": "Pricing Plan Overview",
+      "isShow": true,
+      "list": [
+        {
+          "id": "example1",
+          "text": "Choose the best Pricing Plan"
+        }
+      ]
+    },
+    {
+      "id": "support_two",
+      "title": "If you face any issue",
+      "isShow": true,
+      "list": [
+        {
+          "id": "example2",
+          "text": "Getting Help and Support"
+        }
+      ]
+    }
+  ]
+}

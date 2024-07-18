@@ -1,0 +1,130 @@
+{
+  "roadmap": [
+    {
+      "heading": "Define Problem and Goals",
+      "date": "17 June, 2024",
+      "isCheck": true,
+      "isLoading": false,
+      "isBorader": true,
+      "list": [
+        {
+          "desc": "Identify key features: AI visualizer, document chat, and research assistant."
+        },
+        {
+          "desc": "Establish clear objectives for each feature."
+        }
+      ]
+    },
+    {
+      "heading": "Frontend Development",
+      "date": "18 June, 2024",
+      "isCheck": true,
+      "isLoading": false,
+      "isBorader": true,
+      "list": [
+        {
+          "desc": "Develop and implement UI components for document upload, text highlighting, and AI interactions."
+        },
+        {
+          "desc": "Integrate AI visualizer and summarizer within the app interface."
+        },
+        {
+          "desc": "Test and optimize backend performance for real-time AI interactions."
+        }
+      ]
+    },
+    {
+      "heading": "Develop AI Models",
+      "date": "20 June, 2024",
+      "isCheck": true,
+      "isLoading": false,
+      "isBorader": true,
+      "list": [
+        {
+          "desc": "Using gpt 4.0 api for generating responses."
+        },
+        {
+          "desc": "Fine-tune chat functionalities with document-specific data."
+        }
+      ]
+    },
+    {
+      "heading": "Backend Development",
+      "date": "22 June, 2024",
+      "isCheck": true,
+      "isLoading": false,
+      "isBorader": true,
+      "list": [
+        {
+          "desc": "Set up server infrastructure and databases."
+        },
+        {
+          "desc": "Implement backend logic for handling document uploads and AI processing requests."
+        },
+        {
+          "desc": "Test and optimize backend performance for real-time AI interactions."
+        }
+      ]
+    },
+    {
+      "heading": "Debug and Validation",
+      "date": "27 June, 2024",
+      "isCheck": true,
+      "isLoading": false,
+      "isBorader": true,
+      "list": [
+        {
+          "desc": "Release the app to a select group of beta testers."
+        },
+        {
+          "desc": "Collect user feedback on functionality and usability."
+        }
+      ]
+    },
+    {
+      "heading": "Create an Extention",
+      "date": "24 June, 2024",
+      "isCheck": false,
+      "isLoading": true,
+      "isBorader": true,
+      "list": [
+        {
+          "desc": "Release the app to a select group of beta testers."
+        },
+        {
+          "desc": "Collect user feedback on functionality and usability."
+        }
+      ]
+    },
+    {
+      "heading": "Initial App Launch",
+      "date": "28 June, 2024",
+      "isCheck": false,
+      "isLoading": true,
+      "isBorader": true,
+      "list": [
+        {
+          "desc": "Release the app to a select group of beta testers."
+        },
+        {
+          "desc": "Collect user feedback on functionality and usability."
+        }
+      ]
+    },
+    {
+      "heading": "New Features Integration",
+      "date": "29 June, 2024",
+      "isCheck": false,
+      "isLoading": true,
+      "isBorader": true,
+      "list": [
+        {
+          "desc": "Release the app to a select group of beta testers."
+        },
+        {
+          "desc": "Collect user feedback on functionality and usability."
+        }
+      ]
+    }
+  ]
+}

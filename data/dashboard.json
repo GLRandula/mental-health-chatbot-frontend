@@ -1,0 +1,766 @@
+{
+  "mcq": [
+    {
+      "user_id": 1,
+      "response": {
+          "questions": [
+              {
+                  "question": "What is the most common mental health disorder?",
+                  "options": [
+                      "Depression",
+                      "Anxiety",
+                      "Bipolar Disorder",
+                      "Schizophrenia"
+                  ],
+                  "correct": "Depression"
+              },
+              {
+                  "question": "What is the main goal of cognitive-behavioral therapy (CBT)?",
+                  "options": [
+                      "Exploring past trauma",
+                      "Changing negative thought patterns",
+                      "Prescribing medication",
+                      "Providing emotional support"
+                  ],
+                  "correct": "Changing negative thought patterns"
+              },
+              {
+                  "question": "Which neurotransmitter is often associated with feelings of pleasure and reward?",
+                  "options": [
+                      "Dopamine",
+                      "Serotonin",
+                      "GABA",
+                      "Glutamate"
+                  ],
+                  "correct": "Dopamine"
+              },
+              {
+                  "question": "What is a common symptom of generalized anxiety disorder?",
+                  "options": [
+                      "Hallucinations",
+                      "Panic attacks",
+                      "Memory loss",
+                      "Obsessive-compulsive behaviors"
+                  ],
+                  "correct": "Panic attacks"
+              },
+              {
+                  "question": "Which term refers to a persistent feeling of sadness and loss of interest in activities?",
+                  "options": [
+                      "Mania",
+                      "Apathy",
+                      "Anhedonia",
+                      "Major Depressive Disorder"
+                  ],
+                  "correct": "Major Depressive Disorder"
+              },
+              {
+                  "question": "What is the role of a psychiatrist in mental health treatment?",
+                  "options": [
+                      "Prescribing medication",
+                      "Providing talk therapy",
+                      "Performing brain surgery",
+                      "Administering cognitive tests"
+                  ],
+                  "correct": "Prescribing medication"
+              },
+              {
+                  "question": "What is a common symptom of post-traumatic stress disorder (PTSD)?",
+                  "options": [
+                      "Euphoria",
+                      "Flashbacks",
+                      "Insomnia",
+                      "Hypertension"
+                  ],
+                  "correct": "Flashbacks"
+              },
+              {
+                  "question": "Which disorder is characterized by extreme mood swings between mania and depression?",
+                  "options": [
+                      "Generalized Anxiety Disorder",
+                      "Seasonal Affective Disorder",
+                      "Bipolar Disorder",
+                      "Social Anxiety Disorder"
+                  ],
+                  "correct": "Bipolar Disorder"
+              },
+              {
+                  "question": "What is a common treatment approach for phobias?",
+                  "options": [
+                      "Exposure therapy",
+                      "Prescription medication",
+                      "Physical exercise",
+                      "Hypnosis"
+                  ],
+                  "correct": "Exposure therapy"
+              },
+              {
+                  "question": "Which brain region is often associated with regulating emotions and stress responses?",
+                  "options": [
+                      "Hippocampus",
+                      "Occipital Lobe",
+                      "Amygdala",
+                      "Cerebellum"
+                  ],
+                  "correct": "Amygdala"
+              }
+          ]
+      },
+      "date_created": "2024-06-30T03:43:53.455982"
+  }
+
+  ],
+
+
+"chatExport": [
+  {
+    "img": "/images/generator-icon/photo.png",
+    "title": "Image Generator",
+    "badge": 25,
+    "isChecked": false
+  },
+  {
+    "img": "/images/generator-icon/video-camera.png",
+    "title": "Vedio Generator",
+    "badge": 56,
+    "isChecked": true
+  },
+  {
+    "img": "/images/generator-icon/photo.png",
+    "title": "Photo Editor",
+    "badge": 48,
+    "isChecked": false
+  },
+  {
+    "img": "/images/generator-icon/text-voice.png",
+    "title": "Text to voice",
+    "badge": 125,
+    "isChecked": true
+  },
+  {
+    "img": "/images/generator-icon/code-editor.png",
+    "title": "Code Generator",
+    "badge": 167,
+    "isChecked": false
+  },
+  {
+    "img": "/images/generator-icon/voice.png",
+    "title": "Speech to text",
+    "badge": 79,
+    "isChecked": false
+  }
+],
+"sessions": [
+  {
+    "img": "/images/sign-up/firefox.png",
+    "title": "Firefox on Macbook Pro",
+    "desc": "222.225.225.222",
+    "date": "Signed in JAN 05, 2024"
+  },
+  {
+    "img": "/images/sign-up/firefox.png",
+    "title": "Firefox on IPhone 15",
+    "desc": "222.225.225.222",
+    "date": "Signed in JAN 05, 2024"
+  },
+  {
+    "img": "/images/sign-up/chrome.png",
+    "title": "Chorome on Macbook Pro",
+    "desc": "222.225.225.222",
+    "date": "Signed in JAN 05, 2024"
+  },
+  {
+    "img": "/images/sign-up/chrome.png",
+    "title": "Chorome on IPhone X Pro",
+    "desc": "222.225.225.222",
+    "date": "Signed in JAN 05, 2024"
+  }
+],
+"applications": [
+  {
+    "img": "/images/icons/letter-m.png",
+    "title": "Midjourney",
+    "version": "version 3.3"
+  },
+  {
+    "img": "/images/icons/vk.png",
+    "title": "Vikings",
+    "version": "version 3.3"
+  },
+  {
+    "img": "/images/icons/chat-gpt.png",
+    "title": "ChatGPT",
+    "version": "version 3.3"
+  },
+  {
+    "img": "/images/icons/figma.png",
+    "title": "Figma",
+    "version": "version 4.3"
+  },
+  {
+    "img": "/images/icons/photoshop.png",
+    "title": "Photoshop",
+    "version": "version 2.3"
+  },
+  {
+    "img": "/images/icons/letter-m.png",
+    "title": "Midjourney",
+    "version": "version 3.3"
+  },
+  {
+    "img": "/images/icons/vk.png",
+    "title": "Vikings",
+    "version": "version 3.3"
+  }
+],
+"textGenerator": [
+  {
+    "author": "/images/team/team-01sm.jpg",
+    "title": "Adam Milner",
+    "desc": "Website Roadmap title write me",
+    "isBorder": true,
+    "content": [
+      {
+        "img": "/images/icons/loader-one.gif",
+        "text": "Generating answers for you…",
+        "aiImg": "/images/team/avater.png",
+        "title": "nextjs-app",
+        "badge": "Bot",
+        "desc2": "Website Roadmap title write me:",
+        "desc": "Here's a fun fact about the Roman Empire: Ancient Romans used a condiment called garum in many of their dishes. Garum was a fermented fish sauce that served as a popular seasoning in Roman cuisine. It was made by fermenting fish, typically mackerel, with salt for several ermenting fish, typically mackerel, with salt for several weeks or months. The resulting liquid was then strainedweeks or months. The resulting liquid was then strained and used as a flavorful and salty condiment in various recipes."
+      }
+    ]
+  },
+  {
+    "author": "/images/team/team-01sm.jpg",
+    "title": "Adam Milner",
+    "desc": "How do nextjs-app work?",
+    "isBorder": true,
+    "content": [
+      {
+        "img": "/images/icons/loader-one.gif",
+        "text": "Generating answers for you…",
+        "aiImg": "/images/team/avater.png",
+        "title": "nextjs-app",
+        "badge": "Bot",
+        "desc2": "nextjs-app companies to easily resolve many types of customer queries:",
+        "desc": "nextjs-app boost operational efficiency and bring cost savings to businesses while offering convenience and added services to internal employees and external customers. They allow companies to easily resolve many types of customer queries and issues while reducing the need for human interaction."
+      }
+    ]
+  },
+  {
+    "author": "/images/team/team-01sm.jpg",
+    "title": "Adam Milner",
+    "desc": "How can i talk with nextjs-app?",
+    "isBorder": true,
+    "content": [
+      {
+        "img": "/images/icons/loader-one.gif",
+        "text": "Generating answers for you…",
+        "aiImg": "/images/team/avater.png",
+        "title": "nextjs-app",
+        "badge": "Bot",
+        "desc": "Adam Milner're already talking to a nextjs-app right now! Adam Milner can ask me anything or discuss various topics. Just type your questions or statements, and I'll do my best to provide helpful and informative responses.",
+        "desc2": "Certainly! Here's the result of your question:"
+      }
+    ]
+  },
+  {
+    "author": "/images/team/team-01sm.jpg",
+    "title": "Adam Milner",
+    "desc": "Could I know Everything from nextjs-app?",
+    "isBorder": false,
+    "content": [
+      {
+        "img": "/images/icons/loader-one.gif",
+        "text": "Generating answers for you…",
+        "aiImg": "/images/team/avater.png",
+        "title": "nextjs-app",
+        "badge": "Bot",
+        "desc2": "Certainly! Here's the result of your question:",
+        "desc": "While nextjs-appis a powerful language model that has been trained on a diverse range of internet text, it doesn't know everything. It has limitations"
+      }
+    ]
+  }
+],
+"imageGenerator": [
+  {
+    "isHead": true,
+    "author": "/images/team/team-01sm.jpg",
+    "title": "Adam Milner",
+    "desc": "Please, Make 4 variant of this image Quickly As Soon As possible",
+    "img": "/images/generator-img/photo-15.png",
+    "isBorder": true,
+    "content": [
+      {
+        "btn": false,
+        "img": "/images/icons/loader-one.gif",
+        "aiImg": "/images/team/avater.png",
+        "text": "Generating answers for you…",
+        "scan": "Scanning the data...",
+        "title": "Certainly! Your visual representation has been created using the provided prompt:",
+        "checkBox": [
+          {
+            "isCheck": true,
+            "generateImg": "/images/generator-img/photo-15.png"
+          },
+          {
+            "isCheck": false,
+            "generateImg": "/images/generator-img/photo-16.png"
+          },
+          {
+            "isCheck": false,
+            "generateImg": "/images/generator-img/photo-17.png"
+          },
+          {
+            "isCheck": false,
+            "generateImg": "/images/generator-img/photo-18.png"
+          }
+        ],
+        "tag": [
+          { "isActive": false, "text": "🔍 Custom Zoom" },
+          { "isActive": false, "text": "🖌️ Vary (Subtle)" },
+          { "isActive": true, "text": "🚀 Upscale (2x)" },
+          { "isActive": false, "text": "🎲 Make Square" },
+          { "isActive": false, "text": "⭐ Zoom Out 2x" },
+          { "isActive": false, "text": "🎉️ Upscale (4x)" },
+          { "isActive": false, "text": "🎁 Upscale (6x)" }
+        ]
+      }
+    ]
+  },
+  {
+    "isHead": false,
+    "author": "/images/team/team-01sm.jpg",
+    "title": "Adam Milner",
+    "desc": "Crafting Culinary Magic Enchanting Female Chef in Action",
+    "content": [
+      {
+        "btn": true,
+        "img": "/images/icons/loader-one.gif",
+        "aiImg": "/images/team/avater.png",
+        "text": "Generating answers for you…",
+        "scan": "Scanning the data...",
+        "title": "Sure! Certainly! Your visual representation has been created using the provided promptAfter Upscale (2x) Result:",
+        "generateImg": "/images/generator-img/photo-19.png"
+      }
+    ]
+  }
+],
+"imageEditor": [
+  {
+    "author": "/images/team/team-01sm.jpg",
+    "title": "Adam Milner",
+    "desc": "Enhance this photograph and must have eye Glass.",
+    "img": "/images/generator-img/photo-1.png",
+    "isBorder": true,
+    "mb": true
+  },
+  {
+    "isBorder": true,
+    "content": [
+      {
+        "img": "/images/icons/loader-one.gif",
+        "aiImg": "/images/team/avater.png",
+        "text": "Generating answers for you…",
+        "scan": "Scanning the data...",
+        "title": "Sure, I autonomously fine-tune colors, eliminate imperfections, and amplify details also have Glass. Witness the outcome.:",
+        "generateImg": "/images/generator-img/photo-2.png",
+        "isBorder": true
+      }
+    ]
+  },
+  {
+    "author": "/images/team/team-01sm.jpg",
+    "title": "Adam Milner",
+    "desc": "Please Remove the background and Adjust Blue Color for A Blue Colored Frame Image",
+    "isBorder": true,
+    "content": [
+      {
+        "img": "/images/icons/loader-one.gif",
+        "aiImg": "/images/team/avater.png",
+        "text": "Generating answers for you…",
+        "scan": "Scanning the data...",
+        "title": "Sure, Here the result:",
+        "generateImg": "/images/generator-img/photo-4.png",
+        "isBorder": true
+      }
+    ]
+  },
+  {
+    "author": "/images/team/team-01sm.jpg",
+    "title": "Adam Milner",
+    "desc": "Oh! That's Awesome..",
+    "desc2": "Please make a Facebook Cover Frame with this Image For Poster Edit",
+    "isBorder": true,
+    "content": [
+      {
+        "img": "/images/icons/loader-one.gif",
+        "aiImg": "/images/team/avater.png",
+        "text": "Generating answers for you…",
+        "scan": "Scanning the data...",
+        "title": "Sure, Here the result:",
+        "generateImg": "/images/generator-img/photo-5.png",
+        "isBorder": true
+      }
+    ]
+  },
+  {
+    "author": "/images/team/team-01sm.jpg",
+    "title": "Adam Milner",
+    "desc": "Please Retouch the Image and write this title on the Left NEVER GIVE UP",
+    "isBorder": false,
+    "content": [
+      {
+        "img": "/images/icons/loader-one.gif",
+        "aiImg": "/images/team/avater.png",
+        "text": "Generating answers for you…",
+        "scan": "Scanning the data...",
+        "title": "Sure, Here the result:",
+        "generateImg": "/images/generator-img/photo-6.png",
+        "isBorder": false
+      }
+    ]
+  }
+],
+"videoGenerator": [
+  {
+    "author": "/images/team/team-01sm.jpg",
+    "img": "/images/generator-img/photo-11.png",
+    "title": "Adam Milner",
+    "desc": "Create a talking avatar for this script",
+    "desc2": "Create a talking avatar for this script: Welcome to our new product, the Talking Avatar Video Creator. With this powerful tool, you can easily create engaging videos featuring a virtual spokesperson that delivers your message in a personalized and natural way.",
+    "mb": true,
+    "isBorder": true
+  },
+  {
+    "content": [
+      {
+        "img": "/images/icons/loader-one.gif",
+        "aiImg": "/images/team/avater.png",
+        "text": "Generating answers for you…",
+        "scan": "Scanning the data...",
+        "desc": "In alignment with the gender identified in the uploaded image, the video has been automatically generated with a male voice. Nevertheless, you retain the flexibility to tailor your video by choosing from the provided customization options below:",
+        "caption": "Unleash The Power Of Persuasion! 3:1 --Q 4 --S 580",
+        "generateImg": "",
+        "generateImg2": "",
+        "videoImg": "/images/generator-img/photo-11.png"
+      }
+    ]
+  }
+],
+"emailGenerator": [
+  {
+    "author": "/images/team/team-01sm.jpg",
+    "title": "Adam Milner",
+    "desc": "Write an email to your Office boss for 2 days off",
+    "isBorder": true,
+    "content": [
+      {
+        "aiImg": "/images/team/avater.png",
+        "subject": "Subject: Request for Two-Day Leave",
+        "dear": "Dear [Boss's Name],",
+        "desc": "I hope this email finds you well. I am writing to formally request a two-day leave from work on [start date] to [end date]. The reason for my request is [mention the reason briefly, such as personal commitments, family matters, or any other relevant reason].",
+        "desc2": "I have ensured that all my current tasks and responsibilities are up to date, and I have briefed [colleague's name or team] about the status of my ongoing projects. I am committed to ensuring a smooth transition during my absence and will make myself available for any necessary handovers or additional information as needed.",
+        "desc3": "I understand the importance of my role in the team and will do my best to minimize any disruption caused by my temporary absence. I am confident that my colleagues will be able to handle any urgent matters in my absence, and I will ensure that I am reachable in case of any critical issues that may arise.",
+        "desc4": "Thank you for considering my request. I look forward to your approval and will be available to discuss any further details if necessary.",
+        "wish": "Best regards,",
+        "name": "[Your Full Name]",
+        "generateImg": "/images/generator-img/photo-7.png",
+        "generateImg2": "/images/generator-img/photo-13.png"
+      }
+    ]
+  },
+  {
+    "author": "/images/team/team-01sm.jpg",
+    "title": "Adam Milner",
+    "desc": "Write an email to your Teacher for Study Tour",
+    "isBorder": false,
+    "content": [
+      {
+        "aiImg": "/images/team/avater.png",
+        "subject": "Subject: Request for Participation in Study Tour",
+        "dear": "Dear [Teacher's Name],",
+        "desc": "I trust this email finds you in good health. My name is [Your Name], and I am a student in your [Class/Subject] class. I am writing to express my interest in and request permission to participate in the upcoming study tour that you mentioned during our recent class.",
+        "desc2": "I believe that the study tour would be a valuable opportunity for practical learning and exposure to real-world applications of the concepts we have been studying in class. The prospect of gaining firsthand experience in [mention specific areas or topics of the tour] is particularly exciting, and I am eager to enhance my understanding through this practical experience.",
+        "desc3": "If there are specific forms or procedures I need to follow to formally apply for participation, please guide me accordingly. Additionally, I am willing to provide any necessary information or documentation to support my request.",
+        "desc4": "Thank you for considering my request. I look forward to your guidance on the next steps and appreciate the opportunity to be part of this enriching educational experience.",
+        "wish": "Best regards,",
+        "name": "[Your Full Name]",
+        "generateImg": "/images/generator-img/photo-7.png",
+        "generateImg2": "/images/generator-img/photo-13.png"
+      }
+    ]
+  }
+],
+"releaseNote": [
+  {
+    "date": "22 October 2024",
+    "text": "",
+    "issue": "Issues Fixing",
+    "version": "1.5.0",
+    "content": [
+      {
+        "status": "fixed",
+        "text": "Portfolio Single Page translate the date"
+      },
+      {
+        "status": "update",
+        "text": "Advanced Custom Fields PRO Plugin"
+      },
+      {
+        "status": "fixed",
+        "text": "nextjs-app Core"
+      },
+      {
+        "status": "improve",
+        "text": "Added Visit Site Button Target Options"
+      }
+    ]
+  },
+  {
+    "date": "24 March 2024",
+    "text": "",
+    "issue": "Issues Fixing",
+    "version": "1.2.0",
+    "content": [
+      {
+        "status": "fixed",
+        "text": "Deprecations Issues"
+      },
+      {
+        "status": "fixed",
+        "text": "Team Addons Issues"
+      },
+      {
+        "status": "fixed",
+        "text": "Agency Banner Issues"
+      },
+      {
+        "status": "fixed",
+        "text": "Typography Issues"
+      },
+      {
+        "status": "fixed",
+        "text": "Color Issues"
+      },
+      {
+        "status": "update",
+        "text": "Advanced Custom Fields PRO Plugin"
+      },
+      {
+        "status": "update",
+        "text": "nextjs-app Core"
+      },
+      {
+        "status": "improve",
+        "text": "Page Speed"
+      }
+    ]
+  },
+  {
+    "date": "12 January 2024",
+    "text": "",
+    "issue": "Issues Fixing",
+    "version": "1.1.2",
+    "content": [
+      {
+        "status": "fixed",
+        "text": "Team email issues"
+      },
+      {
+        "status": "update",
+        "text": "ACF Pro Plugin"
+      }
+    ]
+  },
+  {
+    "date": "19 june 2024",
+    "text": "",
+    "issue": "Issues Fixing",
+    "version": "1.1.1",
+    "content": [
+      {
+        "status": "fixed",
+        "text": "Lightbox popup style issues fixing"
+      },
+      {
+        "status": "fixed",
+        "text": "Portfolio clickable issues fixing"
+      }
+    ]
+  },
+  {
+    "date": "16 February 2024",
+    "text": "Added",
+    "issue": "Issues Fixing",
+    "version": "1.1.0",
+    "content": [
+      {
+        "status": "new",
+        "text": "WooCommerce"
+      },
+      {
+        "status": "new",
+        "text": "Light/Dark Mode Switcher for All Demos"
+      },
+      {
+        "status": "fixed",
+        "text": "Demo Import Issues"
+      },
+      {
+        "status": "fixed",
+        "text": "Pricing Table Color Issues"
+      },
+      {
+        "status": "fixed",
+        "text": "Infobox Color Issues"
+      },
+      {
+        "status": "fixed",
+        "text": "Footer Menu Spacing Issus"
+      },
+      {
+        "status": "fixed",
+        "text": "Header Social Network and Button Color Issues"
+      },
+      {
+        "status": "fixed",
+        "text": "Theme Gradient Issue On Safari"
+      },
+      {
+        "status": "fixed",
+        "text": "Theme Options Layout Broken Issues"
+      }
+    ]
+  },
+  {
+    "date": "04 January 2024",
+    "text": "",
+    "issue": "Issues Fixing",
+    "version": "1.0.5",
+    "content": [
+      {
+        "status": "fixed",
+        "text": "Portfolio single page issues"
+      }
+    ]
+  },
+  {
+    "date": "10 November 2024",
+    "text": "",
+    "issue": "Issues Fixing",
+    "version": "1.0.4",
+    "content": [
+      {
+        "status": "fixed",
+        "text": "Portfolio single page issues"
+      },
+      {
+        "status": "fixed",
+        "text": "Contact form checkbox issues"
+      },
+      {
+        "status": "fixed",
+        "text": "Contact form radio button issues"
+      },
+      {
+        "status": "fixed",
+        "text": "Contact form acceptance issues"
+      },
+      {
+        "status": "fixed",
+        "text": "Contact form dropdown issues"
+      }
+    ]
+  },
+  {
+    "date": "02 November 2024",
+    "text": "",
+    "issue": "Issues Fixing",
+    "version": "1.0.3",
+    "content": [
+      {
+        "status": "fixed",
+        "text": "Page title issues with SEO plugins"
+      }
+    ]
+  },
+  {
+    "date": "17 October 2024",
+    "text": "",
+    "issue": "Issues Fixing",
+    "version": "1.0.2",
+    "content": [
+      {
+        "status": "fixed",
+        "text": "Global Typography Issues"
+      }
+    ]
+  },
+  {
+    "date": "10 October 2024",
+    "text": "",
+    "issue": "Issues Fixing",
+    "version": "1.0.1",
+    "content": [
+      {
+        "status": "fixed",
+        "text": "One page scroling issues"
+      },
+      {
+        "status": "fixed",
+        "text": "Portfolio date format changing issues"
+      },
+      {
+        "status": "fixed",
+        "text": "Some responsive css issues"
+      }
+    ]
+  },
+  {
+    "date": "3 October 2024",
+    "text": "",
+    "issue": "Issues Fixing",
+    "version": "1.0.0",
+    "content": [
+      {
+        "status": "new",
+        "text": "Theme release"
+      }
+    ]
+  }
+],
+"accordion": [
+  {
+    "title": "What is nextjs-app ? How does it work?",
+    "desc": "nextjs-app is an AI-powered messaging platform that understands and responds to your natural language queries. Ask anything you'd typically ask a human assistant—get weather updates, news, restaurant recommendations, and more!",
+    "isExpand": true
+  },
+  {
+    "title": "What kind of questions can I ask nextjs-app?",
+    "desc": "nextjs-app, an AI-driven messaging platform, adeptly communicates with users using natural language understanding. It delivers helpful responses to your inquiries and requests.",
+    "isExpand": false
+  },
+  {
+    "title": "Can I get update regularly and For how long do I get updates?",
+    "desc": "Yes, We will get update the nextjs-app. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times. Our dedicated team works for update.",
+    "isExpand": false
+  },
+  {
+    "title": "How can I get the customer support?",
+    "desc": "After purchasing the product need you any support you can be share with us with sending mail to rainbowit10@gmail.com.",
+    "isExpand": false
+  },
+  {
+    "title": "HIs my data safe with nextjs-app?",
+    "desc": "Feel free to toss any questions at nextjs-app, just like you would with a human helper—whether it's about the weather, the latest news, restaurant suggestions, or anything else you fancy!",
+    "isExpand": false
+  },
+  {
+    "title": "Is nextjs-app available in multiple languages?",
+    "desc": "Yes, nextjs-app is designed to support multiple languages, offering a versatile and inclusive communication experience for users worldwide.",
+    "isExpand": false
+  }
+]
+}
