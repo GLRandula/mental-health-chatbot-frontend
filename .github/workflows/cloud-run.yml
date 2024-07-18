@@ -1,0 +1,66 @@
+name: intellihack-web-cloud-run
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  NEXT_PUBLIC_BASE_API_URL: ${{ secrets.NEXT_PUBLIC_BASE_API_URL }}
+  NEXT_BUCKET_NAME: ${{ secrets.NEXT_BUCKET_NAME }}
+  PROJECT_ID: ${{ secrets.PROJECT_ID }}
+  REGION:  ${{ secrets.REGION }}
+  REPO_NAME: intellihack-web-cloud-run
+
+jobs:
+  build-and-deploy:
+    name: Setup, Build, and Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Authenticate with Google Cloud
+      - name: Authenticate to Google Cloud
+        id: auth
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.CLOUD_RUN_SERVICE_ACCOUNT }}
+
+      # Setup gcloud CLI/SDK
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v1
+        with:
+          version: "latest"
+
+      - name: Authorize Docker to push to Google Container Registry
+        run: gcloud auth configure-docker
+
+      # Create .env file with environment variables
+      - name: Create .env file
+        run: |
+          echo NEXT_PUBLIC_BASE_API_URL=${{ secrets.NEXT_PUBLIC_BASE_API_URL }} >> .env
+          echo NEXT_BUCKET_NAME=${{ secrets.NEXT_BUCKET_NAME }} >> .env
+
+      # Build and tag the docker image
+      - name: Build Docker image
+        run: |
+          docker build . --tag gcr.io/${{ env.PROJECT_ID }}/${{ env.REPO_NAME }}:${{ github.sha }}
+
+      # Push the image to the Google Container Registry (GCR)
+      - name: Push Docker image to GCR
+        run: |
+          docker push gcr.io/${{ env.PROJECT_ID }}/${{ env.REPO_NAME }}:${{ github.sha }}
+
+      # Deploy to Cloud Run
+      - name: Deploy to Cloud Run
+        run: |
+          gcloud run deploy ${{ env.REPO_NAME }} \
+            --region ${{ env.REGION }} \
+            --image gcr.io/${{ env.PROJECT_ID }}/${{ env.REPO_NAME }}:${{ github.sha }} \
+            --platform "managed" \
+            --allow-unauthenticated \
+            --set-env-vars NEXT_PUBLIC_BASE_API_URL=${{ secrets.NEXT_PUBLIC_BASE_API_URL }},NEXT_BUCKET_NAME=${{ secrets.NEXT_BUCKET_NAME }} \
+            --port 80 \
+            --quiet
