@@ -14,6 +14,12 @@
       "text": "Home"
     },
     {
+      "link": "/mcqbot",
+      "isIcon": false,
+      "isMenu": false,
+      "text": "Chat Bot"
+    },
+    {
       "link": "/aboutus",
       "text": "About Us",
       "isIcon": false,
@@ -78,33 +84,11 @@
       "isIcon": false,
       "isMenu": false,
       "text": "Home"
-    },
-    {
+    },{
       "link": "/mcqbot",
-      "text": "Chat Bot",
       "isIcon": false,
       "isMenu": false,
-      "dropdown": false,
-      "subItem": [
-        {
-          "link": "/chatbot",
-          "isDisable": false,
-          "title": "Chat Bot",
-          "badge": ""
-        },
-        {
-          "link": "/mcqbot",
-          "isDisable": false,
-          "title": "MCQ Generator",
-          "badge": ""
-        },
-        {
-          "link": "/researchpal",
-          "isDisable": false,
-          "title": "Research Pal",
-          "badge": ""
-        }
-      ]
+      "text": "Chat Bot"
     },
     {
       "link": "/aboutus",

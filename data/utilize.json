@@ -10,80 +10,16 @@
           "img": "/images/utilize-img/ut-image-01.png",
           "list": [
             {
-              "text": "Sign Up and Log In: Create an account using your email or social media profiles. Log in to access your dashboard."
+              "text": "Sign up with your email or social media accounts."
             },
             {
-              "text": "Upload Your Documents: Easily upload PDF documents by dragging and dropping them into the designated area or using the upload button."
+              "text": "Complete the registration by providing basic information."
             },
             {
-              "text": "Highlight Text: Select text within your document to highlight it for visualizations and summaries."
-            }
-          ]
-        },
-        {
-          "id": "Tools-sec",
-          "title": "Utilizing AI Visualizer and Summarizer",
-          "img": "/images/utilize-img/ut-image-02.png",
-          "list": [
-            {
-              "text": "Visualize Text: Highlight text in your document and click the 'Visualize' button to generate graphical representations."
+              "text": "Click on the 'Chat Bot' button to start a session."
             },
             {
-              "text": "Summarize Content: Use the 'Summarize' option to get concise summaries of the highlighted text for quick insights."
-            },
-            {
-              "text": "Text with Visual Summarizer: Combine text and visuals by selecting the 'Text with Visual Summarizer' option for a comprehensive overview."
-            },
-            {
-              "text": "Interact with Visuals: Click on visual elements to explore more detailed information and related insights."
-            }
-          ]
-        },
-        {
-          "id": "document-chat-sec",
-          "title": "Engaging with Document Chat",
-          "img": "/images/utilize-img/ut-image-03.png",
-          "list": [
-            {
-              "text": "Start a Chat: Open your document and click the 'Chat' button to initiate a conversation with our AI assistant."
-            },
-            {
-              "text": "Ask Questions: Type your questions about the document's content, and receive instant, relevant answers."
-            },
-            {
-              "text": "Explore Answers: Use the chat to navigate through the document and uncover detailed explanations and insights."
-            }
-          ]
-        },
-        {
-          "id": "mcq-bot",
-          "title": "MCQ Bot",
-          "img": "/images/utilize-img/ut-image-10.png",
-          "list": [
-            {
-              "text": "Generates multiple-choice questions directly from uploaded documents, providing content comprehension."
-            },
-            {
-              "text": "Checks user answers and provides instant feedback with correct answers."
-            },
-            {
-              "text": "Tailors quizzes to specific document content, aiding targeted learning and review."
-            }
-          ]
-        },
-        {
-          "id": "research-pal",
-          "title": "Research Agent",
-          "img": "/images/utilize-img/ut-image-09.png",
-          "list": [
-            {
-              "text": "Offers resources for a wide range of research areas, supporting diverse academic and professional needs."
-            },
-            {
-              "text": "Guides users to relevant research papers, streamlining the literature review process."
-            },
-            {
-              "text": "Support research efficiency with curated and relevant information sources."
+              "text": "Navigate to the 'Doctor Suggestions' section for getting the consulting services."
             }
           ]
         }
@@ -91,68 +27,40 @@
     },
     {
       "id": "getstarted_two",
-      "title": "Additional Features",
+      "title": "Our Services",
       "body": [
         {
           "id": "extension-sec",
-          "title": "Chrome Extension",
-          "img": "/images/utilize-img/ut-image-07.png",
+          "title": "AI ChatBot",
+          "img": "/images/utilize-img/ut-image-02.png",
           "list": [
             {
-              "text": "The ViewMO Chrome extension integrates AI-powered tools into your browser."
+              "text": "Answer the chatbot’s questions honestly to receive personalized advice and resources."
             },
             {
-              "text": "Highlight text on any web page or document."
+              "text": "The chatbot will respond with tailored questions and supportive messages."
             },
             {
-              "text": "Instantly generate summaries and interactive visualizations."
+              "text": "Use the chatbot’s guided exercises, mindfulness activities, and coping strategies."
             },
             {
-              "text": "Enhance productivity and gain instant insights."
+              "text": "Save your conversation history for future reference."
             }
           ]
         },
         {
           "id": "developer-kernel",
-          "title": "Intellibot - Developer Agent",
-          "img": "/images/utilize-img/ut-image-06.png",
+          "title": "Doctor Suggestion",
+          "img": "/images/utilize-img/ut-image-07.png",
           "list": [
             {
-              "text": "Intellibot"
-            }
-          ]
-        },
-        {
-          "id": "ui-component",
-          "title": "A Chatbot UI for React and Next.js",
-          "img": "/images/utilize-img/ut-image-08.png",
-          "list": [
-            {
-              "text": "'ViewMo' is a comprehensive npm module designed to simplify the integration of chatbot functionality within your React and Next.js applications. It provides a robust and customizable <Chat> component that streamlines the creation of user-friendly chat interfaces."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "pricing_one",
-      "title": "Pricing Plan Overview",
-      "body": [
-        {
-          "id": "example1",
-          "title": "Choose the best Pricing Plan",
-          "subTitle": "Pricing Plans",
-          "img": "/images/utilize-img/ut-image-05.png",
-          "desc": "Follow through our pricing plans and understand to choose the best option for your needs.",
-          "list": [
-            {
-              "text": "Basic Plan: Ideal for individuals or small teams with limited needs."
+              "text": "View a curated list of licensed mental health professionals that match your needs."
             },
             {
-              "text": "Premium Plan: Designed for professionals requiring advanced features and higher usage limits."
+              "text": "Specify any preferences for gender, location, or specialization of the doctor."
             },
             {
-              "text": "Enterprise Plan: Customized solutions for large organizations with extensive requirements."
+              "text": "Check the doctors' profiles, ratings, and availability."
             }
           ]
         }
@@ -170,13 +78,16 @@
           "desc": "Access our Help Center for tutorials, FAQs, and user guides on using our services effectively. For further details, contact our support team via email or live chat for assistance with any issues or inquiries.",
           "list": [
             {
-              "text": "Provide Feedback: Share your experiences and suggestions to help us improve our services."
+              "text": "Provide Feedback: Suggest new features or improvements to enhance our services."
             },
             {
-              "text": "Data Security: Ensure the confidentiality of your documents and personal information by following our security guidelines."
+              "text": "Learn how to navigate the platform and use all features effectively."
             },
             {
-              "text": "Active Participation: Engage with the app features regularly to maximize the benefits of our AI-powered tools."
+              "text": "Join our online community on platforms like Facebook, Twitter, and Instagram."
+            },
+            {
+              "text": "Receive assistance with app or website problems from our technical team."
             }
           ]
         }

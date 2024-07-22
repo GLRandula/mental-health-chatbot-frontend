@@ -37,7 +37,7 @@ const UtilizeBody = ({ utilize }) => {
                     </ul>
                   </div>
                 </div>
-                {inner.id === "developer-kernel" ? (
+                {/* {inner.id === "developer-kernel" ? (
                   <div className="readme-content">
                     <p>
                       Intellibot is a terminal-based client for interacting with
@@ -174,16 +174,10 @@ const UtilizeBody = ({ utilize }) => {
                   </div>
                 ) : (
                   <>
-                    {/* <h6>{inner.subTitle}</h6>
-                        <p className="b1">{inner.desc}</p>
-                        <ul className="content-list">
-                          {inner.list.map((item, itemIndex) => (
-                            <li key={itemIndex}>{item.text}</li>
-                          ))}
-                        </ul> */}
+                  
                   </>
-                )}
-                {inner.id === "ui-component" ? (
+                )} */}
+                {/* {inner.id === "ui-component" ? (
                   <div className="readme-content">
                     <h4>Installation</h4>
                     <p>
@@ -306,15 +300,9 @@ export default App;`}</code>
                   </div>
                 ) : (
                   <>
-                    {/* <h6>{inner.subTitle}</h6>
-                        <p className="b1">{inner.desc}</p>
-                        <ul className="content-list">
-                          {inner.list.map((item, itemIndex) => (
-                            <li key={itemIndex}>{item.text}</li>
-                          ))}
-                        </ul> */}
+                   
                   </>
-                )}
+                )} */}
               </div>
             ))}
           </div>

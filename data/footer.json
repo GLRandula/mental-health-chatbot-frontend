@@ -34,27 +34,20 @@
           "innerItem": [
             
             {
-              "link": "/text-generator",
-              "text": "AI Visualizer"
+              "link": "#",
+              "text": "AI ChatBot"
             },
+            
             {
-              "link": "/chatbot",
-              "text": "Chat with the Document"
-            },
-            {
-              "link": "/researchpal",
-              "text": "Research Pal"
-            },
-            {
-              "link": "/mcqbot",
-              "text": "MCQ Generator"
+              "link": "#",
+              "text": "Doctor Suggestions"
             }
           ]
         }
       ],
       "contact": [
         {
-          "location": "Team Vertex, Faculty of Computing and Technology, University of Kelaniya.",
+          "location": "Group 11 - 2nd Year Group Project, Faculty of Computing & Technology, University of Kelaniya.",
           "mail": "viewmoteam@gmail.com",
           "number": "94 XX XXX XXXX"
         }
