@@ -10,8 +10,6 @@ import ResearchpalHeaderDashboard from "@/components/Header/ResearchpalHeaderDas
 import RightDashboardSidebar from "@/components/Header/RightDashboardSidebar";
 import Modal from "@/components/Common/Modal";
 import Chat from "@/components/ResearchBot/Chat";
-import TypingBox from "@/components/Common/TypingBox";
-import Auth from "@/components/Auth/Auth";
 
 const ResearchPage = () => {
   return (
@@ -45,4 +43,4 @@ const ResearchPage = () => {
   );
 };
 
-export default Auth(ResearchPage);
+export default ResearchPage;
