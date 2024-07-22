@@ -64,4 +64,4 @@ const McqbotPage = () => {
   );
 };
 
-export default Auth(McqbotPage);
+export default McqbotPage;

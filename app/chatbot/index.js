@@ -10,8 +10,6 @@ import ChatBotHeaderDashboard from "@/components/Header/ChatBotHeaderDashboard";
 import Modal from "@/components/Common/Modal";
 import Chat from "@/components/ChatWithBot/Chat";
 import RightFilePannel from "@/components/Header/RightFilePannel";
-import Auth from "@/components/Auth/Auth";
-
 const ChatbotPage = () => {
   return (
     <>
@@ -42,4 +40,4 @@ const ChatbotPage = () => {
   );
 };
 
-export default Auth(ChatbotPage);
+export default ChatbotPage;
