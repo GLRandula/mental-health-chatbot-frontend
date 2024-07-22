@@ -310,7 +310,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="aiwave-pricing-area wrapper rainbow-section-gap-big">
+      {/* <div className="aiwave-pricing-area wrapper rainbow-section-gap-big">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -370,7 +370,7 @@ const Home = () => {
             gap="mt_dec--40"
           />
         </div>
-      </div>
+      </div> */}
 
       <div className="aiwave-service-area rainbow-section-gap">
         <div className="container">

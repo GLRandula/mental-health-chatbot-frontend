@@ -25,31 +25,7 @@
         }
       ]
     },
-    {
-      "title": "Research Assistant for Enhanced Knowledge Discovery",
-      "img": "/images/generator-img/chat-export-research.png",
-      "menuId": "photo-generator",
-      "text": "AI Questionnaire",
-      "target": "photo-generate",
-      "link": "/researchpal",
-      "iconImg": "/images/icons/text-g.png",
-      "isSelect": false,
-      "btn": "Start Exploring Now",
-      "subItem": [
-        {
-          "text": "Natural Language Processing (NLP) Models"
-        },
-        {
-          "text": "Rag implementation & Web Scraping"
-        },
-        {
-          "text": "Intelligent Data Analysis Tools"
-        },
-        {
-          "text": "Access to defferent research platforms"
-        }
-      ]
-    },
+
     {
       "title": "AI Powered ",
       "img": "/images/generator-img/mcq-generator.png",
