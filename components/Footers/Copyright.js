@@ -9,7 +9,7 @@ const Copyright = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-8 col-sm-12 col-12">
               <div className="copyright-left">
-                <p>Intellihack - Team Vertex</p>
+                <p>Group 11 - 2nd Year Group Project</p>
               </div>
             </div>
             <div className="col-lg-6 col-md-4 col-sm-12 col-12">

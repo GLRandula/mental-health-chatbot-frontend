@@ -15,7 +15,7 @@ const Contact = () => {
                   <h3 className="title">Get Started with a free quotation</h3>
 
                   <div className="profile-details-tab">
-                    <div className="advance-tab-button">
+                    {/* <div className="advance-tab-button">
                       <ul
                         className="nav nav-tabs tab-button-style-2 justify-content-start"
                         id="settinsTab-4"
@@ -32,7 +32,7 @@ const Contact = () => {
                             aria-controls="image-genarator"
                             aria-selected="true"
                           >
-                            <span className="title">AI Visualizer</span>
+                            <span className="title">AI ChatBot</span>
                             <span className="title"></span>
                           </a>
                         </li>
@@ -47,7 +47,7 @@ const Contact = () => {
                             aria-controls="photo-editor"
                             aria-selected="true"
                           >
-                            <span className="title">Chat with Document</span>
+                            <span className="title">Doctor Suggestion</span>
                             <span className="title"></span>
                           </a>
                         </li>
@@ -67,7 +67,7 @@ const Contact = () => {
                           </a>
                         </li>
                       </ul>
-                    </div>
+                    </div> */}
 
                     <div className="tab-content">
                       <div
@@ -114,7 +114,7 @@ const Contact = () => {
                   <div className="inner">
                     <h4 className="title">Location</h4>
                     <p className="b2">
-                    Team Vertex, <br />Faculty of Computing and Technology, <br />University of Kelaniya.
+                    Group 11, <br />2nd Tear Group Project, <br />Bachelor of Computer Science, <br />Faculty of Computing and Technology, <br />University of Kelaniya.
                     </p>
                   </div>
                 </div>
