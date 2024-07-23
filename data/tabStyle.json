@@ -1,53 +1,53 @@
 {
   "TabStyleOne": [
     {
-      "title": "Chat with your Document",
+      "title": "Chat with your AI Assistant",
       "img": "/images/generator-img/chat-export-chatbot.png",
       "menuId": "video-generator",
       "text": "Mental Health Chatbot",
       "target": "video-generate",
-      "link": "/chatbot",
+      "link": "/mcqbot",
       "iconImg": "/images/icons/text-g.png",
       "isSelect": true,
       "btn": "Start Exploring Now",
       "subItem": [
         {
-          "text": "Natural Language Processing (NLP) Models"
+          "text": "Questions and supportive dialogue."
         },
         {
-          "text": "User session management"
+          "text": "Accurate message responses."
         },
         {
-          "text": "Using most capable gpt 4.0 model"
+          "text": "Context-based advice."
         },
         {
-          "text": "Vector database, Fast Responsing"
+          "text": "Learns from interactions."
         }
       ]
     },
 
     {
-      "title": "AI Powered ",
-      "img": "/images/generator-img/mcq-generator.png",
+      "title": "Doctor Mapping System",
+      "img": "/images/generator-img/doctor-mapping.png",
       "menuId": "photo-generator",
       "text": "Doctor Sugession",
       "target": "text-generate",
-      "link": "/researchpal",
+      "link": "/mcqbot",
       "iconImg": "/images/icons/text-g.png",
       "isSelect": false,
       "btn": "Start Exploring Now",
       "subItem": [
         {
-          "text": "Using most capable gpt 4.0 model"
+          "text": "Matches suitable professionals."
         },
         {
-          "text": "Generate Multiple Choices"
+          "text": "Psychotherapist mapping."
         },
         {
-          "text": "User Experience"
-        },
+          "text": "Ratings and specializations."
+        },       
         {
-          "text": "Answers validating system"
+          "text": "Redirects to relevant websites."
         }
       ]
     }

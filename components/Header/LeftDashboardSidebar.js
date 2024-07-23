@@ -166,7 +166,7 @@ const LeftSidebar = () => {
             </div>
           </div>
           <p className="text-center subscription-copyright copyright-text b3 small-text">
-            Intellihack - Team Vertex
+          Group 11 - 2nd Year Group Project
           </p>
         </div>
       </div>

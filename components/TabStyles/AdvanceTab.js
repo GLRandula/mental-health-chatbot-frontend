@@ -70,13 +70,13 @@ const AdvanceTab = () => {
                               data-sal-duration="400"
                               data-sal-delay="400"
                             >
-                              <Link
+                              {/* <Link
                                 className="btn-default color-blacked"
                                 href="/chatbot"
                               >
                                 Try It Now{" "}
                                 <i className="fa-sharp fa-light fa-arrow-right ml--5"></i>
-                              </Link>
+                              </Link> */}
                             </div>
                           </div>
                         </div>

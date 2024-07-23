@@ -28,8 +28,7 @@ const Footer = () => {
                     </Link>
                   </div>
                   <p className="b1 desc-text">
-                    It has long been known that a reader's <br /> attention will
-                    be diverted from{" "}
+                    Transforming mental health with AI and <br /> personalized doctor connections.{" "}
                   </p>
                   <h6 className="subtitle">Join a Newsletter</h6>
                   <form className="newsletter-form" action="#">
