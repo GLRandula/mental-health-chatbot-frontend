@@ -5,8 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Sal from "sal.js";
 
-import PricingData from "../../data/pricing.json";
-
 import SplitImg from "../../public/images/split/split-2.png";
 import SplitLogo from "../../public/images/split/split-2-logo.png";
 import bannerImg from "../../public/images/bg/slider-main-image.png";
@@ -23,7 +21,6 @@ import TabStyleOne from "../TabStyles/TabStyle-One";
 import ServiceStyleOne from "../Services/ServiceStyle-One";
 import AdvanceTab from "../TabStyles/AdvanceTab";
 import CtaOne from "../CallToActions/Cta-One";
-import Pricing from "../Pricing/Pricing";
 import ServiceTwo from "../Services/Service-Two";
 import CtaTwo from "../CallToActions/Cta-Two";
 
