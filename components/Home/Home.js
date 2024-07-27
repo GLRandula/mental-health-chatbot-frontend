@@ -53,7 +53,7 @@ const Home = () => {
             <div className="col-lg-12">
               <div className="inner text-center mt--140">
                 <h1 className="title display-one">
-                Mental Health Support with
+                  Mental Health Support with
                   <br />{" "}
                   <span className="header-caption">
                     <span className="cd-headline rotate-1">
@@ -245,6 +245,10 @@ const Home = () => {
         <div className="container">
           <div className="html-tabs" data-tabs="true">
             <AdvanceTab />
+            <Link className="btn-default color-blacked" href="/mcqbot">
+              Try It Now{" "}
+              <i className="fa-sharp fa-light fa-arrow-right ml--5"></i>
+            </Link>
           </div>
         </div>
         <div className="bg-shape">
