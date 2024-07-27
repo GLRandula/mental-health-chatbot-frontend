@@ -6,21 +6,23 @@ import Context from "@/context/Context";
 import PopupMobileMenu from "@/components/Header/PopUpMobileMenu";
 import BackToTop from "../backToTop";
 import LeftDashboardSidebar from "@/components/Header/LeftDashboardSidebar";
-import ChatBotHeaderDashboard from "@/components/Header/ChatBotHeaderDashboard";
+import ResearchpalHeaderDashboard from "@/components/Header/ResearchpalHeaderDashboard";
+import RightDashboardSidebar from "@/components/Header/RightDashboardSidebar";
 import Modal from "@/components/Common/Modal";
-import Chat from "@/components/ChatWithBot/Chat";
-import RightFilePannel from "@/components/Header/RightFilePannel";
-const ChatbotPage = () => {
+import Chat from "@/components/ResearchBot/Chat";
+
+const ResearchPage = () => {
   return (
     <>
       <main className="page-wrapper rbt-dashboard-page">
         <div className="rbt-panel-wrapper">
           <Context>
             <LeftDashboardSidebar />
-            <ChatBotHeaderDashboard display="" />
+            <ResearchpalHeaderDashboard display="" />
+            {/* <RightDashboardSidebar /> */}
             <Modal />
             <PopupMobileMenu />
-            <RightFilePannel/>
+
             <div className="rbt-main-content">
               <div className="rbt-daynamic-page-content">
                 <div className="rbt-dashboard-content">
@@ -32,6 +34,7 @@ const ChatbotPage = () => {
                 </div>
               </div>
             </div>
+
             <BackToTop />
           </Context>
         </div>
@@ -40,4 +43,5 @@ const ChatbotPage = () => {
   );
 };
 
-export default ChatbotPage;
+export default ResearchPage;
+
