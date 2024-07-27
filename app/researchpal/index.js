@@ -44,4 +44,3 @@ const ResearchPage = () => {
 };
 
 export default ResearchPage;
-
