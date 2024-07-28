@@ -33,19 +33,19 @@
   ],
   "serviceTwo": [
     {
+      "img": "/images/service/service-icon-03.png",
+      "title": "Guaranteed Privacy and Security",
+      "desc": "Your data is encrypted and remains confidential, ensuring complete privacy."
+    },
+    {
       "img": "/images/service/service-icon-01.png",
-      "title": "100% No-Risk, Money Back Guarantee!",
-      "desc": "Refunds will be issued within period of 14 days from the purchase date"
+      "title": "24/7 Accessibility Support",
+      "desc": "Available support, without the limitations of traditional office hours."
     },
     {
       "img": "/images/service/service-icon-02.png",
-      "title": "Upgrade or Cancel Anytime",
-      "desc": "Passages there are many variations variations of of Lorem Ipsum available"
-    },
-    {
-      "img": "/images/service/service-icon-03.png",
-      "title": "Not sure yet, try the free version",
-      "desc": "Try the free version with no commitment, and decide when you're ready!"
+      "title": "Personalized and Tailored Resources",
+      "desc": "Receive customized guidance and resources based on your unique needs."
     }
   ]
 }
