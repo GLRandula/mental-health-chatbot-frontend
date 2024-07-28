@@ -57,7 +57,7 @@ const About = () => {
             </div>
             <div className="row text-center">
               {teamMembers.map((member, i) => (
-                <div className="col-12 col-md-6 col-lg-3 mb-4" key={i}>
+                <div className="col-12 col-md-6 col-lg-2 mb-4" key={i}>
                   <TeamMemberItem member={member} />
                 </div>
               ))}
@@ -75,7 +75,7 @@ const teamMembers = [
 	{
 		picture: "https://avatars.githubusercontent.com/u/113744956?v=4",
 		fullName: "Tharindu Damruwan",
-		designation: "Computer Science Undergraduate",
+		designation: "CS/2020/033",
 		bio: "Subscribe Easy Tutorials Youtube Channel watch more videos",
 		socialLinks: [
 			{ icon: faFacebookF, href: "#" },
@@ -87,19 +87,7 @@ const teamMembers = [
 	{
 		picture: "https://avatars.githubusercontent.com/u/113119539?v=4",
 		fullName: "Pawan Pinsara",
-		designation: "Computer Science Undergraduate",
-		bio: "Subscribe Easy Tutorials Youtube Channel watch more videos",
-		socialLinks: [
-			{ icon: faFacebookF, href: "#" },
-			{ icon: faLinkedinIn, href: "#" },
-			{ icon: faTwitter, href: "#" },
-			{ icon: faBehance, href: "#" },
-		],
-	},
-	{
-		picture: "https://avatars.githubusercontent.com/u/113684070?v=4",
-		fullName: "Sahan Heshan",
-		designation: "Computer Science Undergraduate",
+		designation: "CS/2020/005",
 		bio: "Subscribe Easy Tutorials Youtube Channel watch more videos",
 		socialLinks: [
 			{ icon: faFacebookF, href: "#" },
@@ -111,7 +99,44 @@ const teamMembers = [
 	{
 		picture: "https://avatars.githubusercontent.com/u/110283259?v=4",
 		fullName: "Lakith Randula",
-		designation: "Computer Science Undergraduate",
+		designation: "CS/2020/017",
+		bio: "Subscribe Easy Tutorials Youtube Channel watch more videos",
+		socialLinks: [
+			{ icon: faFacebookF, href: "#" },
+			{ icon: faLinkedinIn, href: "#" },
+			{ icon: faTwitter, href: "#" },
+			{ icon: faBehance, href: "#" },
+		],
+	},
+	{
+		picture: "https://avatars.githubusercontent.com/u/121743174?v=4",
+		fullName: "Amindu Bhashana",
+		designation: "CS/2020/007",
+		bio: "Subscribe Easy Tutorials Youtube Channel watch more videos",
+		socialLinks: [
+			{ icon: faFacebookF, href: "#" },
+			{ icon: faLinkedinIn, href: "#" },
+			{ icon: faTwitter, href: "#" },
+			{ icon: faBehance, href: "#" },
+		],
+	},
+	
+	{
+		picture: "https://avatars.githubusercontent.com/u/117531838?v=4",
+		fullName: "Yasisuru Pathum",
+		designation: "CS/2020/006",
+		bio: "Subscribe Easy Tutorials Youtube Channel watch more videos",
+		socialLinks: [
+			{ icon: faFacebookF, href: "#" },
+			{ icon: faLinkedinIn, href: "#" },
+			{ icon: faTwitter, href: "#" },
+			{ icon: faBehance, href: "#" },
+		],
+	},
+	{
+		picture: "https://avatars.githubusercontent.com/u/83197935?v=4",
+		fullName: "Pethum Jeewantha",
+		designation: "CS/2020/027",
 		bio: "Subscribe Easy Tutorials Youtube Channel watch more videos",
 		socialLinks: [
 			{ icon: faFacebookF, href: "#" },
