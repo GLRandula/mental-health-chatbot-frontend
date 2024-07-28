@@ -2,7 +2,7 @@ import BackToTop from "../backToTop";
 import McqbotPage from "./index";
 
 export const metadata = {
-  title: "MCQ Bot - ViewMo",
+  title: "Chat Bot - ViewMo",
   description: "",
 };
 

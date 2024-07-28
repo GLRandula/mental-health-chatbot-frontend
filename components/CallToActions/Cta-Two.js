@@ -37,8 +37,8 @@ const CtaTwo = () => {
                     Experience Products in AI
                   </h2>
                   <p className="description b1">
-                    Based on your interactions with our comprehensive AI solutions, designed to <br />
-                    enhance your understanding and productivity.
+                    Based on your interactions with our advanced AI assistant, designed to enhance <br />
+                    your well-being and support your mental health journey.
                   </p>
                 </div>
                 <div className="app-store-btn">
