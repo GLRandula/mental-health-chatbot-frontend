@@ -218,11 +218,6 @@ const Mcq = ({setLoadingState, setLoadingMessage}) => {
       {/* commented. remove it in production */}
       {!isLoading ?
       <button
-        onClick={() => {
-          generateMcq(2);
-          handleButtonClick("generate");
-          setShowResult(false);
-        }}
         className={`m-4 react-btn btn-default btn-small btn-border ${
           clickedButton === "generate" ? "filled-button" : ""
         }`}
