@@ -18,6 +18,17 @@ import bgShape from "../../public/images/bg/split-bg-shape.png";
 import SplitImg from "../../public/images/split/split-1.png";
 import SplitLogo from "../../public/images/split/split-2-logo.png";
 
+const AGE = {
+  question: "Could you please share your age range?",
+  options: [
+    "17-20",
+    "21-25",
+    "26-35",
+    "36-49",
+    "50+"
+  ]
+}
+
 const Mcq = ({setLoadingState, setLoadingMessage}) => {
   const [userAnswers, setUserAnswers] = useState({});
   const [isLoading, setIsLoading] = useState(false);
@@ -26,6 +37,7 @@ const Mcq = ({setLoadingState, setLoadingMessage}) => {
   const [startTime, setStartTime] = useState(null);
   const [endTime, setEndTime] = useState(null);
   const [questionsToShow, setQuestionsToShow] = useState([]);
+  const [ageQuestionsToShow, setAgeQuestionsToShow] = useState([]);
   const [clickedButton, setClickedButton] = useState(null);
   const [showResult, setShowResult] = useState(false);
 
@@ -56,6 +68,10 @@ const Mcq = ({setLoadingState, setLoadingMessage}) => {
     }));
   };
 
+  const handleAgeInput = (option) => {
+    setAgeQuestionsToShow(sampleMcq.response.find((item) => item.age_range === option));
+  };
+
   const showGeneratedMcq = () => {
     setShowResult(false);
     setUserAnswers({});
@@ -63,6 +79,7 @@ const Mcq = ({setLoadingState, setLoadingMessage}) => {
     if (qList.length > 0){
       setQuestionsToShow([qList[qList.length - 1]]);  // display generated mcq test
     }else{
+      console.log(sampleMcq)
       setQuestionsToShow([sampleMcq]); // display dummy if user didn't generate any mcqs
     }
     
@@ -231,113 +248,142 @@ const Mcq = ({setLoadingState, setLoadingMessage}) => {
         {/* MCQ area */}
         {questionsToShow.length > 0 &&
           questionsToShow.map((item, userIndex) => (
-            <div
-              key={userIndex}
-              className="pb-10 chat-box-list"
-              id="chatContainer"
-            >
-              {isLoading && <WaitingForResponse />}
-              {item?.response?.questions.map((question, qIndex) => (
-                <div key={qIndex} className="question-container">
-                  <hr />
+              <div
+                  key={userIndex}
+                  className="pb-10 chat-box-list"
+                  id="chatContainer"
+              >
+                {isLoading && <WaitingForResponse/>}
+                <div className="question-container">
+                  <hr/>
                   <h6 className="question-text">
-                    {qIndex + 1}. {question.question}
+                    {AGE.question}
                   </h6>
                   <ul className="options-list">
-                    {question.options.map((option, optIndex) => (
-                      <div key={optIndex} className="option-container">
+                    {AGE.options?.map((option, optIndex) => (
+                        <div key={optIndex} className="option-container">
                         <span className="option-span">
                           <div className="option-content">
                             <input
-                              style={{
-                                opacity: "1",
-                                maxWidth: "fit-content",
-                                position: "initial",
-                              }} // move to css sheet
-                              className="option-input"
-                              type="radio"
-                              name={`question-${qIndex}`}
-                              value={option}
-                              onChange={() => handleAnswerInput(qIndex, option)}
-                              checked={userAnswers[qIndex] === option}
+                                style={{
+                                  opacity: "1",
+                                  maxWidth: "fit-content",
+                                  position: "initial",
+                                }}
+                                className="option-input"
+                                type="radio"
+                                name={`question-1`}
+                                value={option}
+                                onChange={() => handleAgeInput(option)}
+                                // checked={userAnswers[qIndex] === option}
                             />
                             {option}
                           </div>
                         </span>
-                      </div>
+                        </div>
                     ))}
                   </ul>
+                  {ageQuestionsToShow?.questions?.map((question, qIndex) => (
+                      <div key={qIndex} className="question-container">
+                        <hr />
+                        <h6 className="question-text">
+                          {qIndex + 1}. {question.question}
+                        </h6>
+                        <ul className="options-list">
+                          {question.options.map((option, optIndex) => (
+                              <div key={optIndex} className="option-container">
+                        <span className="option-span">
+                          <div className="option-content">
+                            <input
+                                style={{
+                                  opacity: "1",
+                                  maxWidth: "fit-content",
+                                  position: "initial",
+                                }} // move to css sheet
+                                className="option-input"
+                                type="radio"
+                                name={`question-${qIndex}`}
+                                value={option}
+                                onChange={() => handleAnswerInput(qIndex, option)}
+                                checked={userAnswers[qIndex] === option}
+                            />
+                            {option}
+                          </div>
+                        </span>
+                              </div>
+                          ))}
+                        </ul>
+                      </div>
+                  ))}
                 </div>
-              ))}
-              <hr />
-              <div className="submit-cus">
-                <button
-                  onClick={() => {
-                    showGeneratedMcq();
-                  }}
-                  className="react-btn btn-default btn-small btn-border"
-                >
-                  Clear
-                </button>
-                <button
-                  onClick={() => {
-                    handleAnswerSubmit();
-                    setShowResult(true);
-                  }}
-                  className="react-btn btn-default btn-small btn-border"
-                >
-                  Doctor Suggestions
-                </button>
+                <hr/>
+                <div className="submit-cus">
+                  <button
+                      onClick={() => {
+                        showGeneratedMcq();
+                      }}
+                      className="react-btn btn-default btn-small btn-border"
+                  >
+                    Clear
+                  </button>
+                  <button
+                      onClick={() => {
+                        handleAnswerSubmit();
+                        setShowResult(true);
+                      }}
+                      className="react-btn btn-default btn-small btn-border"
+                  >
+                    Doctor Suggestions
+                  </button>
+                </div>
               </div>
-            </div>
           ))}
       </div>
 
-      {/* Results */}
-      {questionsToShow.length > 0 && showResult && (
-        <div className="chat-box-section-cus1" style={{ marginTop: "50px" }}>
-          {results.length > 0 && (
-            <div className="final-score">
-              <p>
-                <strong>Score:</strong> {calculateScore()}/
-                {questionsToShow[0]?.response?.questions.length}
-              </p>
-              <p>
-                <strong>Time Taken:</strong> {calculateTimeTaken()}
-              </p>
+        {/* Results */}
+        {questionsToShow.length > 0 && showResult && (
+            <div className="chat-box-section-cus1" style={{marginTop: "50px"}}>
+              {results.length > 0 && (
+                  <div className="final-score">
+                    <p>
+                      <strong>Score:</strong> {calculateScore()}/
+                      {questionsToShow[0]?.response?.questions.length}
+                    </p>
+                    <p>
+                      <strong>Time Taken:</strong> {calculateTimeTaken()}
+                    </p>
+                  </div>
+              )}
+              {results.map((result, index) => (
+                  <div key={index} className="result-container">
+                    <hr/>
+                    <p className="question-text">
+                      <strong>Q {index + 1}:</strong> {result?.question}
+                    </p>
+                    <p
+                        className={`result-status ${
+                            result?.correct ? "correct" : "incorrect"
+                        }`}
+                    >
+                      {" "}
+                      {/* move to css sheet */}
+                      {result?.correct ? "Correct" : "Incorrect"}
+                    </p>
+                    <p className="correct-answer">
+                      Correct answer : {result?.answer}
+                    </p>
+                  </div>
+              ))}
             </div>
-          )}
-          {results.map((result, index) => (
-            <div key={index} className="result-container">
-              <hr />
-              <p className="question-text">
-                <strong>Q {index + 1}:</strong> {result?.question}
-              </p>
-              <p
-                className={`result-status ${
-                  result?.correct ? "correct" : "incorrect"
-                }`}
-              >
-                {" "}
-                {/* move to css sheet */}
-                {result?.correct ? "Correct" : "Incorrect"}
-              </p>
-              <p className="correct-answer">
-                Correct answer : {result?.answer}
-              </p>
-            </div>
-          ))}
-        </div>
-      )}
+        )}
       </div>
       </div>
 
-      
 
       {/* Other */}
       {popup && (
-        <Popup
-          message={popup.message}
+          <Popup
+              message={popup.message}
           type={popup.type}
           size={popup.size}
           position={popup.position}

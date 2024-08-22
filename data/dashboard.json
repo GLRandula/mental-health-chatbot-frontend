@@ -1,766 +1,491 @@
 {
-  "mcq": [
+  "msq": [
     {
       "user_id": 1,
       "response": {
-          "questions": [
+        "questions": [
+          {
+            "question": "Could you please share your age range?",
+            "options": [
+              "17-20",
+              "21-25",
+              "26-35",
+              "36-49",
+              "50+"
+            ]
+          },
+          {
+            "age_groups": [
               {
-                  "question": "What is the most common mental health disorder?",
-                  "options": [
-                      "Depression",
-                      "Anxiety",
-                      "Bipolar Disorder",
-                      "Schizophrenia"
-                  ],
-                  "correct": "Depression"
+                "age_range": "17-20",
+                "questions": [
+                  {
+                    "question": "How do you feel about your career or educational path?",
+                    "options": [
+                      "Confident: I have a clear plan and feel optimistic.",
+                      "Somewhat Optimistic: I have an idea but sometimes doubt my choices.",
+                      "Uncertain: I often feel lost and unsure.",
+                      "Overwhelmed: I'm stressed and can't see a clear path."
+                    ]
+                  },
+                  {
+                    "question": "Describe your feelings after spending time with friends or in social settings.",
+                    "options": [
+                      "Energized: I usually feel better and more connected.",
+                      "Mixed: Sometimes enjoyable, but it can drain me.",
+                      "Anxious: I often feel like I don't fit in or worry about what others think.",
+                      "Isolated: I feel alone, like no one understands me."
+                    ]
+                  },
+                  {
+                    "question": "How do relationship changes, like breakups, affect you?",
+                    "options": [
+                      "Resilient: Tough, but I recover with time.",
+                      "Sad but Coping: I feel sad but try to move on.",
+                      "Deeply Affected: I struggle and feel down for a long time.",
+                      "Devastated: I can't move on and feel stuck in sadness."
+                    ]
+                  },
+                  {
+                    "question": "What are your thoughts on your academic performance?",
+                    "options": [
+                      "Proud: Generally happy and accomplished.",
+                      "Mixed Emotions: Satisfied but worry I could do better.",
+                      "Frequent Worry: I doubt my abilities and feel inadequate.",
+                      "Constant Fear: I'm overwhelmed by the fear of failure."
+                    ]
+                  },
+                  {
+                    "question": "How do you react to unexpected challenges or setbacks?",
+                    "options": [
+                      "Adaptively: I find ways to overcome them.",
+                      "Anxiously: They stress me out, but I work through them.",
+                      "Difficulty Coping: I struggle and feel anxious.",
+                      "Despair: I feel hopeless and often give up."
+                    ]
+                  },
+                  {
+                    "question": "Describe your feelings about independence and adult responsibilities.",
+                    "options": [
+                      "Excited: I look forward to becoming independent.",
+                      "Cautiously Optimistic: A bit nervous but prepared.",
+                      "Uncertain: It makes me anxious; I don't feel ready.",
+                      "Overwhelmed: I'm scared and try to avoid thinking about it."
+                    ]
+                  },
+                  {
+                    "question": "How do you view your personal growth over the past year?",
+                    "options": [
+                      "Positive: I've grown a lot and am proud.",
+                      "Some Growth: I've seen changes but not as much as hoped.",
+                      "Minimal Growth: I worry I haven't grown much.",
+                      "Stagnant: I feel stuck or regressed, which worries me."
+                    ]
+                  },
+                  {
+                    "question": "How does societal or parental pressure affect you?",
+                    "options": [
+                      "Motivated: It pushes me to achieve more.",
+                      "Mixed Pressure: Stressful, but I balance with my goals.",
+                      "Highly Stressed: Crushed under expectations.",
+                      "Rebellious: I reject or feel indifferent, causing conflict."
+                    ]
+                  },
+                  {
+                    "question": "How confident are you in managing stress and emotional challenges?",
+                    "options": [
+                      "Very Confident: I have effective strategies.",
+                      "Somewhat Confident: I manage but could improve.",
+                      "Not Very Confident: I often feel overwhelmed.",
+                      "Lacking Confidence: I feel helpless against stress."
+                    ]
+                  },
+                  {
+                    "question": "What are your thoughts on forming and maintaining romantic relationships?",
+                    "options": [
+                      "Positive: Open to relationships and excited about connecting.",
+                      "Cautious: Interested but wary of potential challenges.",
+                      "Uncertain: Unsure if I'm ready or what I want.",
+                      "Negative: Feel overwhelmed or uninterested in relationships."
+                    ]
+                  }
+                ]
               },
               {
-                  "question": "What is the main goal of cognitive-behavioral therapy (CBT)?",
-                  "options": [
-                      "Exploring past trauma",
-                      "Changing negative thought patterns",
-                      "Prescribing medication",
-                      "Providing emotional support"
-                  ],
-                  "correct": "Changing negative thought patterns"
+                "age_range": "21-25",
+                "questions": [
+                  {
+                    "question": "How do you feel about your current career or educational pursuits?",
+                    "options": [
+                      "Confident and Focused: I have a clear direction and feel motivated to pursue my goals.",
+                      "Ambitious but Unsure: I have big dreams but feel uncertain about the steps to achieve them.",
+                      "Stuck and Frustrated: I feel trapped in my current situation and unsure how to progress.",
+                      "Lost and Aimless: I lack direction and struggle to find meaning in my pursuits."
+                    ]
+                  },
+                  {
+                    "question": "How does your use of social media impact your self-esteem and perception of others?",
+                    "options": [
+                      "Positive Influence: I use it to connect with others and feel inspired by their achievements.",
+                      "Mixed Feelings: Sometimes it boosts my confidence, but other times it makes me feel inadequate.",
+                      "Negative Influence: I often compare myself to others and feel inferior or unhappy with my life.",
+                      "Detrimental Impact: It significantly affects my self-esteem and mental well-being in a negative way."
+                    ]
+                  },
+                  {
+                    "question": "Describe your experience with romantic relationships in recent years.",
+                    "options": [
+                      "Fulfilling and Stable: I've had positive experiences and feel satisfied in my current relationship.",
+                      "Challenging but Rewarding: Relationships have their ups and downs, but overall, they contribute to my growth.",
+                      "Heartbreak and Disappointment: I've faced difficulties and experienced painful breakups that have impacted me deeply.",
+                      "Avoidant or Disinterested: I prefer to focus on myself and my goals rather than pursuing romantic relationships."
+                    ]
+                  },
+                  {
+                    "question": "How do you handle setbacks or failures in your personal or professional life?",
+                    "options": [
+                      "Resilient and Adaptive: I view them as opportunities for growth and learn from them to improve.",
+                      "Optimistic but Struggling: I try to stay positive, but setbacks often affect my confidence and motivation.",
+                      "Overwhelmed and Defeated: I find it difficult to cope with failure and often feel discouraged or hopeless.",
+                      "Avoidant and Denial: I tend to avoid confronting failures and may suppress my emotions about them."
+                    ]
+                  },
+                  {
+                    "question": "How satisfied are you with your current social circle and support network?",
+                    "options": [
+                      "Fulfilled and Supported: I have strong relationships and feel supported by friends and family.",
+                      "Content but Seeking More: I have some supportive connections, but I'm open to expanding my social circle.",
+                      "Lonely and Isolated: I feel disconnected from others and lack meaningful relationships.",
+                      "Toxic or Unsatisfying: My social circle is negative or unsupportive, which affects my well-being."
+                    ]
+                  },
+                  {
+                    "question": "What are your thoughts on your financial stability and future prospects?",
+                    "options": [
+                      "Secure and Optimistic: I feel confident in my financial situation and have plans for future success.",
+                      "Managing but Concerned: I'm able to meet my basic needs but worry about my long-term financial security.",
+                      "Struggling and Worried: I have financial challenges that cause stress and uncertainty about the future.",
+                      "Dependent or Indifferent: I don't prioritize financial stability and rely on others for support."
+                    ]
+                  },
+                  {
+                    "question": "How do you prioritize self-care and mental well-being in your daily life?",
+                    "options": [
+                      "Proactive and Dedicated: I prioritize self-care practices and actively seek ways to maintain my mental health.",
+                      "Balancing but Struggling: I try to make time for self-care, but it's challenging amidst other responsibilities.",
+                      "Neglecting and Overwhelmed: I often neglect my well-being due to various demands and feel overwhelmed.",
+                      "Unaware or Dismissive: I don't prioritize self-care and may not recognize its importance in maintaining mental health."
+                    ]
+                  },
+                  {
+                    "question": "How do you envision your personal growth and development in the next few years?",
+                    "options": [
+                      "Optimistic and Goal-oriented: I have clear goals and am motivated to achieve personal growth and success.",
+                      "Hopeful but Uncertain: I'm open to growth but unsure about the specific direction my life will take.",
+                      "Doubtful or Pessimistic: I lack confidence in my ability to grow and improve, feeling stuck in my current circumstances.",
+                      "Resistant to Change: I'm comfortable with who I am and don't feel the need for significant personal growth or development."
+                    ]
+                  },
+                  {
+                    "question": "How do you navigate the pressures and expectations placed on you by society or family?",
+                    "options": [
+                      "Resilient and Assertive: I set my own expectations and boundaries, confidently navigating societal and familial pressures.",
+                      "Balancing and Negotiating: I strive to meet external expectations while staying true to myself, though it can be challenging.",
+                      "Overwhelmed and Conflicted: I feel overwhelmed by societal and familial expectations, struggling to meet them while maintaining my own identity.",
+                      "Rebellious or Resentful: I reject external pressures and may feel resentful or rebellious towards societal or familial expectations."
+                    ]
+                  },
+                  {
+                    "question": "How do you manage uncertainty and changes in your life, such as transitioning into adulthood?",
+                    "options": [
+                      "Adaptive and Resilient: I embrace change as an opportunity for growth and adaptability.",
+                      "Anxious but Coping: I feel anxious about the uncertainties of adulthood but find ways to cope and navigate them.",
+                      "Overwhelmed and Lost: I struggle to cope with uncertainty and change, feeling overwhelmed and lost in the transition to adulthood.",
+                      "Avoidant or Denial: I tend to avoid confronting uncertainties and changes, preferring to ignore or deny them."
+                    ]
+                  }
+                ]
               },
               {
-                  "question": "Which neurotransmitter is often associated with feelings of pleasure and reward?",
-                  "options": [
-                      "Dopamine",
-                      "Serotonin",
-                      "GABA",
-                      "Glutamate"
-                  ],
-                  "correct": "Dopamine"
+                "age_range": "26-35",
+                "questions": [
+                  {
+                    "question": "How do you feel about your current career or professional trajectory?",
+                    "options": [
+                      "Satisfied and Fulfilled: I feel content with my career path and find it fulfilling.",
+                      "Ambitious but Anxious: I'm driven to succeed but often worry about my career progress.",
+                      "Stagnant and Dissatisfied: I feel stuck in my career and lack motivation to progress.",
+                      "Overwhelmed and Burned Out: I'm constantly stressed and feel burnt out from work demands."
+                    ]
+                  },
+                  {
+                    "question": "How do you manage stress and maintain work-life balance in your daily life?",
+                    "options": [
+                      "Effective Coping Strategies: I have healthy ways to manage stress and prioritize self-care.",
+                      "Struggling to Balance: I find it challenging to juggle work and personal life responsibilities.",
+                      "Constantly Stressed: I feel overwhelmed by stress and struggle to find time for myself.",
+                      "Neglecting Self-Care: I often put work first and neglect my own well-being."
+                    ]
+                  },
+                  {
+                    "question": "How do you feel about your financial stability and long-term financial goals?",
+                    "options": [
+                      "Financially Secure: I feel confident in my financial situation and have clear long-term goals.",
+                      "Managing but Concerned: I'm able to meet my financial needs but worry about the future.",
+                      "Struggling to Stay Afloat: I face financial challenges and feel uncertain about the future.",
+                      "Burdened by Debt: I'm overwhelmed by debt and financial obligations, causing stress."
+                    ]
+                  },
+                  {
+                    "question": "How do you navigate challenges and conflicts in your personal relationships?",
+                    "options": [
+                      "Healthy Communication: I communicate openly and effectively to resolve conflicts.",
+                      "Struggling with Relationships: I find it difficult to maintain healthy relationships and often experience conflicts.",
+                      "Isolated or Alone: I feel lonely and lack meaningful connections with others.",
+                      "Toxic Relationships: I'm in relationships that are emotionally draining or unhealthy."
+                    ]
+                  },
+                  {
+                    "question": "How do you cope with feelings of loneliness or social isolation?",
+                    "options": [
+                      "Active Social Life: I have a strong support network and actively engage in social activities.",
+                      "Seeking Connection: I'm open to forming new connections but struggle to find meaningful relationships.",
+                      "Lonely and Isolated: I feel disconnected from others and often struggle with feelings of loneliness.",
+                      "Avoidant of Social Interactions: I tend to avoid social situations and isolate myself from others."
+                    ]
+                  },
+                  {
+                    "question": "How do you maintain a sense of purpose and fulfillment in your life?",
+                    "options": [
+                      "Purpose-Driven: I feel fulfilled by my work, relationships, and personal pursuits.",
+                      "Searching for Meaning: I'm still exploring my passions and seeking a sense of purpose.",
+                      "Lacking Direction: I feel lost and uncertain about my life's purpose and meaning.",
+                      "Dependent on External Validation: I rely on others' approval or achievements for a sense of fulfillment."
+                    ]
+                  },
+                  {
+                    "question": "How do you cope with feelings of anxiety or uncertainty about the future?",
+                    "options": [
+                      "Resilient and Optimistic: I'm able to stay positive and adapt to changes and uncertainties.",
+                      "Anxious but Coping: I struggle with anxiety about the future but find ways to manage it.",
+                      "Overwhelmed by Uncertainty: I feel paralyzed by fear and uncertainty about what lies ahead.",
+                      "Avoidant of Future Planning: I avoid thinking about the future because it causes too much anxiety."
+                    ]
+                  },
+                  {
+                    "question": "How do you prioritize self-care and mental well-being in your daily life?",
+                    "options": [
+                      "Self-Care Advocate: I prioritize self-care activities and make time for my mental health.",
+                      "Struggling to Prioritize: I know the importance of self-care but struggle to prioritize it in my busy life.",
+                      "Neglecting Self-Care: I often neglect my mental well-being and focus on other responsibilities.",
+                      "Unaware of Self-Care Needs: I'm not aware of self-care practices or their importance for mental health."
+                    ]
+                  },
+                  {
+                    "question": "How do you feel about your personal growth and development in recent years?",
+                    "options": [
+                      "Growth-Oriented: I've experienced significant personal growth and development.",
+                      "Stagnant or Regressing: I feel stuck or have regressed in terms of personal development.",
+                      "Seeking Growth Opportunities: I'm actively seeking ways to grow and improve personally and professionally.",
+                      "Uncertain about Growth: I'm unsure if I've grown or developed in recent years."
+                    ]
+                  },
+                  {
+                    "question": "How do you cope with feelings of dissatisfaction or disappointment in life?",
+                    "options": [
+                      "Resilient and Adaptive: I bounce back from disappointments and find new opportunities for growth.",
+                      "Struggling to Cope: I find it difficult to cope with feelings of dissatisfaction or disappointment.",
+                      "Seeking Fulfillment: I'm actively seeking ways to find fulfillment and satisfaction in life.",
+                      "Feeling Resigned or Defeated: I've given up hope of finding happiness or fulfillment."
+                    ]
+                  }
+                ]
               },
               {
-                  "question": "What is a common symptom of generalized anxiety disorder?",
-                  "options": [
-                      "Hallucinations",
-                      "Panic attacks",
-                      "Memory loss",
-                      "Obsessive-compulsive behaviors"
-                  ],
-                  "correct": "Panic attacks"
+                "age_range": "36-49",
+                "questions": [
+                  {
+                    "question": "How do you feel about your current career trajectory and professional accomplishments?",
+                    "options": [
+                      "Satisfied and Accomplished: I feel proud of my career achievements and where I am professionally.",
+                      "Content but Ambitious: I'm happy with my career, but I still have goals I want to achieve.",
+                      "Stagnant and Dissatisfied: I feel stuck in my career and lack fulfillment or progression.",
+                      "Overwhelmed and Burned Out: I'm exhausted from work and feel trapped in a cycle of stress and exhaustion."
+                    ]
+                  },
+                  {
+                    "question": "How do you manage the balance between work responsibilities and personal life commitments?",
+                    "options": [
+                      "Successfully Juggling Both: I've found a good balance and make time for both work and personal life.",
+                      "Struggling but Coping: It's challenging, but I try to manage the best I can.",
+                      "Constantly Overwhelmed: I feel like I'm always behind and can't keep up with everything.",
+                      "Neglecting Personal Life: Work consumes most of my time, and I struggle to find time for myself or loved ones."
+                    ]
+                  },
+                  {
+                    "question": "How do you approach financial planning and long-term security for yourself and your family?",
+                    "options": [
+                      "Financially Secure and Prepared: I have a solid financial plan and feel confident about the future.",
+                      "Concerned but Planning: I worry about finances but actively work towards securing my financial future.",
+                      "Stressed about Money: Financial worries keep me up at night, and I struggle to make ends meet.",
+                      "Overwhelmed by Debt: I feel suffocated by debt and financial obligations, causing constant stress."
+                    ]
+                  },
+                  {
+                    "question": "How do you nurture your personal relationships and maintain connections with loved ones?",
+                    "options": [
+                      "Strong and Supportive Relationships: I prioritize quality time with family and friends and maintain healthy connections.",
+                      "Struggling with Relationships: I find it challenging to maintain relationships amidst my busy life.",
+                      "Feeling Disconnected: I feel lonely or isolated and struggle to connect with others.",
+                      "Conflict and Tension: My relationships are strained, and conflicts often arise, causing stress."
+                    ]
+                  },
+                  {
+                    "question": "How do you prioritize self-care and maintain your physical and mental well-being?",
+                    "options": [
+                      "Commitment to Self-Care: I make time for exercise, relaxation, and activities that promote my well-being.",
+                      "Struggling to Prioritize: Self-care often takes a backseat to other priorities, but I try to fit it in when I can.",
+                      "Neglecting Self-Care: I rarely prioritize my well-being and feel the effects of neglecting self-care.",
+                      "Feeling Burned Out: I'm so overwhelmed that self-care feels like a luxury I can't afford."
+                    ]
+                  },
+                  {
+                    "question": "How do you cope with stress and unexpected challenges in your life?",
+                    "options": [
+                      "Resilient and Adaptive: I'm able to bounce back from setbacks and find solutions to challenges.",
+                      "Struggling to Cope: Stress often feels overwhelming, and I struggle to manage it effectively.",
+                      "Avoiding Stressors: I try to avoid stressful situations altogether, but it's not always possible.",
+                      "Feeling Helpless: I feel paralyzed by stress and don't know how to cope with it."
+                    ]
+                  },
+                  {
+                    "question": "How do you navigate feelings of dissatisfaction or a sense of unfulfillment in your life?",
+                    "options": [
+                      "Seeking Fulfillment: I actively seek out opportunities for growth and fulfillment in various aspects of my life.",
+                      "Accepting and Adapting: I've come to terms with areas of my life that may not meet my expectations and focus on what I can control.",
+                      "Struggling to Find Purpose: I feel lost or directionless and struggle to find meaning or purpose in my life.",
+                      "Feeling Stuck: I'm trapped in a cycle of dissatisfaction and don't know how to break free."
+                    ]
+                  },
+                  {
+                    "question": "How do you maintain a sense of identity and purpose amidst life's changes and transitions?",
+                    "options": [
+                      "Clear Sense of Identity: I have a strong sense of who I am and what I value, which guides my decisions and actions.",
+                      "Navigating Identity Shifts: I'm adjusting to changes in my life and identity and exploring new paths forward.",
+                      "Identity Crisis: I feel uncertain or confused about who I am and where I'm headed, leading to existential angst.",
+                      "Searching for Meaning: I'm on a journey to find greater purpose and meaning in my life, but it's challenging."
+                    ]
+                  },
+                  {
+                    "question": "How do you cope with the pressures of societal expectations and norms?",
+                    "options": [
+                      "Resilient to Pressure: I'm confident in my choices and don't feel pressured by societal expectations.",
+                      "Struggling with Expectations: I feel overwhelmed by societal norms and expectations, which can be difficult to meet.",
+                      "Rebelling Against Norms: I reject societal expectations and choose to live life on my own terms, despite criticism.",
+                      "Feeling Constrained: I feel constrained by societal norms and struggle to break free from their influence."
+                    ]
+                  },
+                  {
+                    "question": "How do you navigate midlife transitions and challenges, such as changes in career, family dynamics, or personal goals?",
+                    "options": [
+                      "Adapting to Change: I embrace life's transitions as opportunities for growth and transformation.",
+                      "Resisting Change: I struggle to adjust to life's changes and may resist them out of fear or uncertainty.",
+                      "Feeling Lost: I feel adrift in the midst of life changes and don't know how to find my footing.",
+                      "Seeking Stability: I crave stability and predictability amidst life's changes, which can be elusive."
+                    ]
+                  }
+                ]
               },
               {
-                  "question": "Which term refers to a persistent feeling of sadness and loss of interest in activities?",
-                  "options": [
-                      "Mania",
-                      "Apathy",
-                      "Anhedonia",
-                      "Major Depressive Disorder"
-                  ],
-                  "correct": "Major Depressive Disorder"
-              },
-              {
-                  "question": "What is the role of a psychiatrist in mental health treatment?",
-                  "options": [
-                      "Prescribing medication",
-                      "Providing talk therapy",
-                      "Performing brain surgery",
-                      "Administering cognitive tests"
-                  ],
-                  "correct": "Prescribing medication"
-              },
-              {
-                  "question": "What is a common symptom of post-traumatic stress disorder (PTSD)?",
-                  "options": [
-                      "Euphoria",
-                      "Flashbacks",
-                      "Insomnia",
-                      "Hypertension"
-                  ],
-                  "correct": "Flashbacks"
-              },
-              {
-                  "question": "Which disorder is characterized by extreme mood swings between mania and depression?",
-                  "options": [
-                      "Generalized Anxiety Disorder",
-                      "Seasonal Affective Disorder",
-                      "Bipolar Disorder",
-                      "Social Anxiety Disorder"
-                  ],
-                  "correct": "Bipolar Disorder"
-              },
-              {
-                  "question": "What is a common treatment approach for phobias?",
-                  "options": [
-                      "Exposure therapy",
-                      "Prescription medication",
-                      "Physical exercise",
-                      "Hypnosis"
-                  ],
-                  "correct": "Exposure therapy"
-              },
-              {
-                  "question": "Which brain region is often associated with regulating emotions and stress responses?",
-                  "options": [
-                      "Hippocampus",
-                      "Occipital Lobe",
-                      "Amygdala",
-                      "Cerebellum"
-                  ],
-                  "correct": "Amygdala"
+                "age_range": "50+",
+                "questions": [
+                  {
+                    "question": "How do you feel about your current career or professional status?",
+                    "options": [
+                      "Satisfied and Accomplished: I feel fulfilled with my career achievements and contributions.",
+                      "Considering Retirement: I'm contemplating retirement or transitioning into a new phase of work.",
+                      "Unfulfilled or Stagnant: I feel stuck in my career and lack motivation or purpose.",
+                      "Overwhelmed by Change: I'm uncertain about my next steps and feel anxious about the future."
+                    ]
+                  },
+                  {
+                    "question": "How do you prioritize your mental well-being and self-care as you age?",
+                    "options": [
+                      "Proactively Caring for Myself: I prioritize self-care activities and seek support for my mental health.",
+                      "Striving to Prioritize: I recognize the importance of self-care but struggle to make it a priority.",
+                      "Neglecting My Needs: I often neglect my mental well-being in favor of other responsibilities.",
+                      "Unaware of Self-Care Needs: I'm not sure how to prioritize self-care or where to start."
+                    ]
+                  },
+                  {
+                    "question": "How do you cope with the changes and challenges associated with aging?",
+                    "options": [
+                      "Adapting and Embracing Change: I accept and adapt to the changes that come with aging.",
+                      "Struggling but Resilient: I face challenges but find ways to cope and remain resilient.",
+                      "Feeling Overwhelmed: I feel overwhelmed by the physical and emotional changes of aging.",
+                      "Avoiding or Denying Aging: I avoid thinking about aging or deny its impact on my life."
+                    ]
+                  },
+                  {
+                    "question": "How do you maintain meaningful relationships and social connections as you get older?",
+                    "options": [
+                      "Nurturing Relationships: I actively maintain relationships with family and friends and seek out new social connections.",
+                      "Isolated but Content: I have a small circle of close relationships and feel content with my social life.",
+                      "Lonely and Disconnected: I feel lonely and lack meaningful connections with others.",
+                      "Avoiding Social Interactions: I tend to avoid social situations and isolate myself from others."
+                    ]
+                  },
+                  {
+                    "question": "How do you navigate the transition into retirement or changing roles in your later years?",
+                    "options": [
+                      "Embracing Retirement: I see retirement as an opportunity for new adventures and experiences.",
+                      "Adjusting to Change: I'm adapting to retirement or changing roles but still adjusting to the transition.",
+                      "Uncertain about Retirement: I feel unsure about retirement and what it means for my identity and purpose.",
+                      "Resisting Retirement: I'm reluctant to retire or change roles and fear losing my sense of purpose."
+                    ]
+                  },
+                  {
+                    "question": "How do you cope with feelings of loss, whether it's the loss of loved ones, roles, or abilities?",
+                    "options": [
+                      "Grieving and Healing: I allow myself to grieve and find ways to honor the memories of those I've lost.",
+                      "Seeking Support: I lean on my support network and seek professional help to cope with loss.",
+                      "Struggling with Loss: I find it difficult to cope with loss and may avoid dealing with my feelings.",
+                      "Feeling Overwhelmed by Loss: I feel overwhelmed by grief and struggle to find ways to cope."
+                    ]
+                  },
+                  {
+                    "question": "How do you find purpose and meaning in life as you age?",
+                    "options": [
+                      "Living with Purpose: I feel fulfilled and purposeful in my life, pursuing activities that bring me joy and fulfillment.",
+                      "Exploring New Passions: I'm exploring new interests and hobbies to find meaning and purpose in my later years.",
+                      "Searching for Purpose: I'm still searching for meaning and purpose and may feel lost or uncertain about my direction.",
+                      "Feeling Purposeless: I struggle to find meaning in life and may feel hopeless about the future."
+                    ]
+                  },
+                  {
+                    "question": "How do you manage feelings of anxiety or uncertainty about the future as you age?",
+                    "options": [
+                      "Embracing Uncertainty: I accept that the future is uncertain and focus on living in the present moment.",
+                      "Managing Anxiety: I have strategies for managing anxiety and uncertainty about the future.",
+                      "Feeling Anxious about Aging: I worry about what the future holds and how aging will impact my life.",
+                      "Overwhelmed by Future Uncertainty: I feel overwhelmed by anxiety about the future and struggle to cope."
+                    ]
+                  },
+                  {
+                    "question": "How do you maintain a sense of identity and self-worth as you age?",
+                    "options": [
+                      "Confident in My Identity: I have a strong sense of self and feel confident in who I am as I age.",
+                      "Navigating Identity Changes: I'm navigating changes in my identity and self-worth as I age.",
+                      "Struggling with Identity: I feel uncertain about my identity and struggle with feelings of self-worth.",
+                      "Feeling Worthless or Insignificant: I struggle with feelings of worthlessness or insignificance as I age."
+                    ]
+                  }
+                ]
               }
-          ]
-      },
-      "date_created": "2024-06-30T03:43:53.455982"
-  }
-
-  ],
-
-
-"chatExport": [
-  {
-    "img": "/images/generator-icon/photo.png",
-    "title": "Image Generator",
-    "badge": 25,
-    "isChecked": false
-  },
-  {
-    "img": "/images/generator-icon/video-camera.png",
-    "title": "Vedio Generator",
-    "badge": 56,
-    "isChecked": true
-  },
-  {
-    "img": "/images/generator-icon/photo.png",
-    "title": "Photo Editor",
-    "badge": 48,
-    "isChecked": false
-  },
-  {
-    "img": "/images/generator-icon/text-voice.png",
-    "title": "Text to voice",
-    "badge": 125,
-    "isChecked": true
-  },
-  {
-    "img": "/images/generator-icon/code-editor.png",
-    "title": "Code Generator",
-    "badge": 167,
-    "isChecked": false
-  },
-  {
-    "img": "/images/generator-icon/voice.png",
-    "title": "Speech to text",
-    "badge": 79,
-    "isChecked": false
-  }
-],
-"sessions": [
-  {
-    "img": "/images/sign-up/firefox.png",
-    "title": "Firefox on Macbook Pro",
-    "desc": "222.225.225.222",
-    "date": "Signed in JAN 05, 2024"
-  },
-  {
-    "img": "/images/sign-up/firefox.png",
-    "title": "Firefox on IPhone 15",
-    "desc": "222.225.225.222",
-    "date": "Signed in JAN 05, 2024"
-  },
-  {
-    "img": "/images/sign-up/chrome.png",
-    "title": "Chorome on Macbook Pro",
-    "desc": "222.225.225.222",
-    "date": "Signed in JAN 05, 2024"
-  },
-  {
-    "img": "/images/sign-up/chrome.png",
-    "title": "Chorome on IPhone X Pro",
-    "desc": "222.225.225.222",
-    "date": "Signed in JAN 05, 2024"
-  }
-],
-"applications": [
-  {
-    "img": "/images/icons/letter-m.png",
-    "title": "Midjourney",
-    "version": "version 3.3"
-  },
-  {
-    "img": "/images/icons/vk.png",
-    "title": "Vikings",
-    "version": "version 3.3"
-  },
-  {
-    "img": "/images/icons/chat-gpt.png",
-    "title": "ChatGPT",
-    "version": "version 3.3"
-  },
-  {
-    "img": "/images/icons/figma.png",
-    "title": "Figma",
-    "version": "version 4.3"
-  },
-  {
-    "img": "/images/icons/photoshop.png",
-    "title": "Photoshop",
-    "version": "version 2.3"
-  },
-  {
-    "img": "/images/icons/letter-m.png",
-    "title": "Midjourney",
-    "version": "version 3.3"
-  },
-  {
-    "img": "/images/icons/vk.png",
-    "title": "Vikings",
-    "version": "version 3.3"
-  }
-],
-"textGenerator": [
-  {
-    "author": "/images/team/team-01sm.jpg",
-    "title": "Adam Milner",
-    "desc": "Website Roadmap title write me",
-    "isBorder": true,
-    "content": [
-      {
-        "img": "/images/icons/loader-one.gif",
-        "text": "Generating answers for you…",
-        "aiImg": "/images/team/avater.png",
-        "title": "nextjs-app",
-        "badge": "Bot",
-        "desc2": "Website Roadmap title write me:",
-        "desc": "Here's a fun fact about the Roman Empire: Ancient Romans used a condiment called garum in many of their dishes. Garum was a fermented fish sauce that served as a popular seasoning in Roman cuisine. It was made by fermenting fish, typically mackerel, with salt for several ermenting fish, typically mackerel, with salt for several weeks or months. The resulting liquid was then strainedweeks or months. The resulting liquid was then strained and used as a flavorful and salty condiment in various recipes."
-      }
-    ]
-  },
-  {
-    "author": "/images/team/team-01sm.jpg",
-    "title": "Adam Milner",
-    "desc": "How do nextjs-app work?",
-    "isBorder": true,
-    "content": [
-      {
-        "img": "/images/icons/loader-one.gif",
-        "text": "Generating answers for you…",
-        "aiImg": "/images/team/avater.png",
-        "title": "nextjs-app",
-        "badge": "Bot",
-        "desc2": "nextjs-app companies to easily resolve many types of customer queries:",
-        "desc": "nextjs-app boost operational efficiency and bring cost savings to businesses while offering convenience and added services to internal employees and external customers. They allow companies to easily resolve many types of customer queries and issues while reducing the need for human interaction."
-      }
-    ]
-  },
-  {
-    "author": "/images/team/team-01sm.jpg",
-    "title": "Adam Milner",
-    "desc": "How can i talk with nextjs-app?",
-    "isBorder": true,
-    "content": [
-      {
-        "img": "/images/icons/loader-one.gif",
-        "text": "Generating answers for you…",
-        "aiImg": "/images/team/avater.png",
-        "title": "nextjs-app",
-        "badge": "Bot",
-        "desc": "Adam Milner're already talking to a nextjs-app right now! Adam Milner can ask me anything or discuss various topics. Just type your questions or statements, and I'll do my best to provide helpful and informative responses.",
-        "desc2": "Certainly! Here's the result of your question:"
-      }
-    ]
-  },
-  {
-    "author": "/images/team/team-01sm.jpg",
-    "title": "Adam Milner",
-    "desc": "Could I know Everything from nextjs-app?",
-    "isBorder": false,
-    "content": [
-      {
-        "img": "/images/icons/loader-one.gif",
-        "text": "Generating answers for you…",
-        "aiImg": "/images/team/avater.png",
-        "title": "nextjs-app",
-        "badge": "Bot",
-        "desc2": "Certainly! Here's the result of your question:",
-        "desc": "While nextjs-appis a powerful language model that has been trained on a diverse range of internet text, it doesn't know everything. It has limitations"
-      }
-    ]
-  }
-],
-"imageGenerator": [
-  {
-    "isHead": true,
-    "author": "/images/team/team-01sm.jpg",
-    "title": "Adam Milner",
-    "desc": "Please, Make 4 variant of this image Quickly As Soon As possible",
-    "img": "/images/generator-img/photo-15.png",
-    "isBorder": true,
-    "content": [
-      {
-        "btn": false,
-        "img": "/images/icons/loader-one.gif",
-        "aiImg": "/images/team/avater.png",
-        "text": "Generating answers for you…",
-        "scan": "Scanning the data...",
-        "title": "Certainly! Your visual representation has been created using the provided prompt:",
-        "checkBox": [
-          {
-            "isCheck": true,
-            "generateImg": "/images/generator-img/photo-15.png"
-          },
-          {
-            "isCheck": false,
-            "generateImg": "/images/generator-img/photo-16.png"
-          },
-          {
-            "isCheck": false,
-            "generateImg": "/images/generator-img/photo-17.png"
-          },
-          {
-            "isCheck": false,
-            "generateImg": "/images/generator-img/photo-18.png"
+            ]
           }
-        ],
-        "tag": [
-          { "isActive": false, "text": "🔍 Custom Zoom" },
-          { "isActive": false, "text": "🖌️ Vary (Subtle)" },
-          { "isActive": true, "text": "🚀 Upscale (2x)" },
-          { "isActive": false, "text": "🎲 Make Square" },
-          { "isActive": false, "text": "⭐ Zoom Out 2x" },
-          { "isActive": false, "text": "🎉️ Upscale (4x)" },
-          { "isActive": false, "text": "🎁 Upscale (6x)" }
         ]
       }
-    ]
-  },
-  {
-    "isHead": false,
-    "author": "/images/team/team-01sm.jpg",
-    "title": "Adam Milner",
-    "desc": "Crafting Culinary Magic Enchanting Female Chef in Action",
-    "content": [
-      {
-        "btn": true,
-        "img": "/images/icons/loader-one.gif",
-        "aiImg": "/images/team/avater.png",
-        "text": "Generating answers for you…",
-        "scan": "Scanning the data...",
-        "title": "Sure! Certainly! Your visual representation has been created using the provided promptAfter Upscale (2x) Result:",
-        "generateImg": "/images/generator-img/photo-19.png"
-      }
-    ]
-  }
-],
-"imageEditor": [
-  {
-    "author": "/images/team/team-01sm.jpg",
-    "title": "Adam Milner",
-    "desc": "Enhance this photograph and must have eye Glass.",
-    "img": "/images/generator-img/photo-1.png",
-    "isBorder": true,
-    "mb": true
-  },
-  {
-    "isBorder": true,
-    "content": [
-      {
-        "img": "/images/icons/loader-one.gif",
-        "aiImg": "/images/team/avater.png",
-        "text": "Generating answers for you…",
-        "scan": "Scanning the data...",
-        "title": "Sure, I autonomously fine-tune colors, eliminate imperfections, and amplify details also have Glass. Witness the outcome.:",
-        "generateImg": "/images/generator-img/photo-2.png",
-        "isBorder": true
-      }
-    ]
-  },
-  {
-    "author": "/images/team/team-01sm.jpg",
-    "title": "Adam Milner",
-    "desc": "Please Remove the background and Adjust Blue Color for A Blue Colored Frame Image",
-    "isBorder": true,
-    "content": [
-      {
-        "img": "/images/icons/loader-one.gif",
-        "aiImg": "/images/team/avater.png",
-        "text": "Generating answers for you…",
-        "scan": "Scanning the data...",
-        "title": "Sure, Here the result:",
-        "generateImg": "/images/generator-img/photo-4.png",
-        "isBorder": true
-      }
-    ]
-  },
-  {
-    "author": "/images/team/team-01sm.jpg",
-    "title": "Adam Milner",
-    "desc": "Oh! That's Awesome..",
-    "desc2": "Please make a Facebook Cover Frame with this Image For Poster Edit",
-    "isBorder": true,
-    "content": [
-      {
-        "img": "/images/icons/loader-one.gif",
-        "aiImg": "/images/team/avater.png",
-        "text": "Generating answers for you…",
-        "scan": "Scanning the data...",
-        "title": "Sure, Here the result:",
-        "generateImg": "/images/generator-img/photo-5.png",
-        "isBorder": true
-      }
-    ]
-  },
-  {
-    "author": "/images/team/team-01sm.jpg",
-    "title": "Adam Milner",
-    "desc": "Please Retouch the Image and write this title on the Left NEVER GIVE UP",
-    "isBorder": false,
-    "content": [
-      {
-        "img": "/images/icons/loader-one.gif",
-        "aiImg": "/images/team/avater.png",
-        "text": "Generating answers for you…",
-        "scan": "Scanning the data...",
-        "title": "Sure, Here the result:",
-        "generateImg": "/images/generator-img/photo-6.png",
-        "isBorder": false
-      }
-    ]
-  }
-],
-"videoGenerator": [
-  {
-    "author": "/images/team/team-01sm.jpg",
-    "img": "/images/generator-img/photo-11.png",
-    "title": "Adam Milner",
-    "desc": "Create a talking avatar for this script",
-    "desc2": "Create a talking avatar for this script: Welcome to our new product, the Talking Avatar Video Creator. With this powerful tool, you can easily create engaging videos featuring a virtual spokesperson that delivers your message in a personalized and natural way.",
-    "mb": true,
-    "isBorder": true
-  },
-  {
-    "content": [
-      {
-        "img": "/images/icons/loader-one.gif",
-        "aiImg": "/images/team/avater.png",
-        "text": "Generating answers for you…",
-        "scan": "Scanning the data...",
-        "desc": "In alignment with the gender identified in the uploaded image, the video has been automatically generated with a male voice. Nevertheless, you retain the flexibility to tailor your video by choosing from the provided customization options below:",
-        "caption": "Unleash The Power Of Persuasion! 3:1 --Q 4 --S 580",
-        "generateImg": "",
-        "generateImg2": "",
-        "videoImg": "/images/generator-img/photo-11.png"
-      }
-    ]
-  }
-],
-"emailGenerator": [
-  {
-    "author": "/images/team/team-01sm.jpg",
-    "title": "Adam Milner",
-    "desc": "Write an email to your Office boss for 2 days off",
-    "isBorder": true,
-    "content": [
-      {
-        "aiImg": "/images/team/avater.png",
-        "subject": "Subject: Request for Two-Day Leave",
-        "dear": "Dear [Boss's Name],",
-        "desc": "I hope this email finds you well. I am writing to formally request a two-day leave from work on [start date] to [end date]. The reason for my request is [mention the reason briefly, such as personal commitments, family matters, or any other relevant reason].",
-        "desc2": "I have ensured that all my current tasks and responsibilities are up to date, and I have briefed [colleague's name or team] about the status of my ongoing projects. I am committed to ensuring a smooth transition during my absence and will make myself available for any necessary handovers or additional information as needed.",
-        "desc3": "I understand the importance of my role in the team and will do my best to minimize any disruption caused by my temporary absence. I am confident that my colleagues will be able to handle any urgent matters in my absence, and I will ensure that I am reachable in case of any critical issues that may arise.",
-        "desc4": "Thank you for considering my request. I look forward to your approval and will be available to discuss any further details if necessary.",
-        "wish": "Best regards,",
-        "name": "[Your Full Name]",
-        "generateImg": "/images/generator-img/photo-7.png",
-        "generateImg2": "/images/generator-img/photo-13.png"
-      }
-    ]
-  },
-  {
-    "author": "/images/team/team-01sm.jpg",
-    "title": "Adam Milner",
-    "desc": "Write an email to your Teacher for Study Tour",
-    "isBorder": false,
-    "content": [
-      {
-        "aiImg": "/images/team/avater.png",
-        "subject": "Subject: Request for Participation in Study Tour",
-        "dear": "Dear [Teacher's Name],",
-        "desc": "I trust this email finds you in good health. My name is [Your Name], and I am a student in your [Class/Subject] class. I am writing to express my interest in and request permission to participate in the upcoming study tour that you mentioned during our recent class.",
-        "desc2": "I believe that the study tour would be a valuable opportunity for practical learning and exposure to real-world applications of the concepts we have been studying in class. The prospect of gaining firsthand experience in [mention specific areas or topics of the tour] is particularly exciting, and I am eager to enhance my understanding through this practical experience.",
-        "desc3": "If there are specific forms or procedures I need to follow to formally apply for participation, please guide me accordingly. Additionally, I am willing to provide any necessary information or documentation to support my request.",
-        "desc4": "Thank you for considering my request. I look forward to your guidance on the next steps and appreciate the opportunity to be part of this enriching educational experience.",
-        "wish": "Best regards,",
-        "name": "[Your Full Name]",
-        "generateImg": "/images/generator-img/photo-7.png",
-        "generateImg2": "/images/generator-img/photo-13.png"
-      }
-    ]
-  }
-],
-"releaseNote": [
-  {
-    "date": "22 October 2024",
-    "text": "",
-    "issue": "Issues Fixing",
-    "version": "1.5.0",
-    "content": [
-      {
-        "status": "fixed",
-        "text": "Portfolio Single Page translate the date"
-      },
-      {
-        "status": "update",
-        "text": "Advanced Custom Fields PRO Plugin"
-      },
-      {
-        "status": "fixed",
-        "text": "nextjs-app Core"
-      },
-      {
-        "status": "improve",
-        "text": "Added Visit Site Button Target Options"
-      }
-    ]
-  },
-  {
-    "date": "24 March 2024",
-    "text": "",
-    "issue": "Issues Fixing",
-    "version": "1.2.0",
-    "content": [
-      {
-        "status": "fixed",
-        "text": "Deprecations Issues"
-      },
-      {
-        "status": "fixed",
-        "text": "Team Addons Issues"
-      },
-      {
-        "status": "fixed",
-        "text": "Agency Banner Issues"
-      },
-      {
-        "status": "fixed",
-        "text": "Typography Issues"
-      },
-      {
-        "status": "fixed",
-        "text": "Color Issues"
-      },
-      {
-        "status": "update",
-        "text": "Advanced Custom Fields PRO Plugin"
-      },
-      {
-        "status": "update",
-        "text": "nextjs-app Core"
-      },
-      {
-        "status": "improve",
-        "text": "Page Speed"
-      }
-    ]
-  },
-  {
-    "date": "12 January 2024",
-    "text": "",
-    "issue": "Issues Fixing",
-    "version": "1.1.2",
-    "content": [
-      {
-        "status": "fixed",
-        "text": "Team email issues"
-      },
-      {
-        "status": "update",
-        "text": "ACF Pro Plugin"
-      }
-    ]
-  },
-  {
-    "date": "19 june 2024",
-    "text": "",
-    "issue": "Issues Fixing",
-    "version": "1.1.1",
-    "content": [
-      {
-        "status": "fixed",
-        "text": "Lightbox popup style issues fixing"
-      },
-      {
-        "status": "fixed",
-        "text": "Portfolio clickable issues fixing"
-      }
-    ]
-  },
-  {
-    "date": "16 February 2024",
-    "text": "Added",
-    "issue": "Issues Fixing",
-    "version": "1.1.0",
-    "content": [
-      {
-        "status": "new",
-        "text": "WooCommerce"
-      },
-      {
-        "status": "new",
-        "text": "Light/Dark Mode Switcher for All Demos"
-      },
-      {
-        "status": "fixed",
-        "text": "Demo Import Issues"
-      },
-      {
-        "status": "fixed",
-        "text": "Pricing Table Color Issues"
-      },
-      {
-        "status": "fixed",
-        "text": "Infobox Color Issues"
-      },
-      {
-        "status": "fixed",
-        "text": "Footer Menu Spacing Issus"
-      },
-      {
-        "status": "fixed",
-        "text": "Header Social Network and Button Color Issues"
-      },
-      {
-        "status": "fixed",
-        "text": "Theme Gradient Issue On Safari"
-      },
-      {
-        "status": "fixed",
-        "text": "Theme Options Layout Broken Issues"
-      }
-    ]
-  },
-  {
-    "date": "04 January 2024",
-    "text": "",
-    "issue": "Issues Fixing",
-    "version": "1.0.5",
-    "content": [
-      {
-        "status": "fixed",
-        "text": "Portfolio single page issues"
-      }
-    ]
-  },
-  {
-    "date": "10 November 2024",
-    "text": "",
-    "issue": "Issues Fixing",
-    "version": "1.0.4",
-    "content": [
-      {
-        "status": "fixed",
-        "text": "Portfolio single page issues"
-      },
-      {
-        "status": "fixed",
-        "text": "Contact form checkbox issues"
-      },
-      {
-        "status": "fixed",
-        "text": "Contact form radio button issues"
-      },
-      {
-        "status": "fixed",
-        "text": "Contact form acceptance issues"
-      },
-      {
-        "status": "fixed",
-        "text": "Contact form dropdown issues"
-      }
-    ]
-  },
-  {
-    "date": "02 November 2024",
-    "text": "",
-    "issue": "Issues Fixing",
-    "version": "1.0.3",
-    "content": [
-      {
-        "status": "fixed",
-        "text": "Page title issues with SEO plugins"
-      }
-    ]
-  },
-  {
-    "date": "17 October 2024",
-    "text": "",
-    "issue": "Issues Fixing",
-    "version": "1.0.2",
-    "content": [
-      {
-        "status": "fixed",
-        "text": "Global Typography Issues"
-      }
-    ]
-  },
-  {
-    "date": "10 October 2024",
-    "text": "",
-    "issue": "Issues Fixing",
-    "version": "1.0.1",
-    "content": [
-      {
-        "status": "fixed",
-        "text": "One page scroling issues"
-      },
-      {
-        "status": "fixed",
-        "text": "Portfolio date format changing issues"
-      },
-      {
-        "status": "fixed",
-        "text": "Some responsive css issues"
-      }
-    ]
-  },
-  {
-    "date": "3 October 2024",
-    "text": "",
-    "issue": "Issues Fixing",
-    "version": "1.0.0",
-    "content": [
-      {
-        "status": "new",
-        "text": "Theme release"
-      }
-    ]
-  }
-],
-"accordion": [
-  {
-    "title": "What is nextjs-app ? How does it work?",
-    "desc": "nextjs-app is an AI-powered messaging platform that understands and responds to your natural language queries. Ask anything you'd typically ask a human assistant—get weather updates, news, restaurant recommendations, and more!",
-    "isExpand": true
-  },
-  {
-    "title": "What kind of questions can I ask nextjs-app?",
-    "desc": "nextjs-app, an AI-driven messaging platform, adeptly communicates with users using natural language understanding. It delivers helpful responses to your inquiries and requests.",
-    "isExpand": false
-  },
-  {
-    "title": "Can I get update regularly and For how long do I get updates?",
-    "desc": "Yes, We will get update the nextjs-app. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times. Our dedicated team works for update.",
-    "isExpand": false
-  },
-  {
-    "title": "How can I get the customer support?",
-    "desc": "After purchasing the product need you any support you can be share with us with sending mail to rainbowit10@gmail.com.",
-    "isExpand": false
-  },
-  {
-    "title": "HIs my data safe with nextjs-app?",
-    "desc": "Feel free to toss any questions at nextjs-app, just like you would with a human helper—whether it's about the weather, the latest news, restaurant suggestions, or anything else you fancy!",
-    "isExpand": false
-  },
-  {
-    "title": "Is nextjs-app available in multiple languages?",
-    "desc": "Yes, nextjs-app is designed to support multiple languages, offering a versatile and inclusive communication experience for users worldwide.",
-    "isExpand": false
-  }
-]
+    }
+  ]
 }
