@@ -1,8 +1,8 @@
 {
   "roadmap": [
     {
-      "heading": "Define Problem and Goals",
-      "date": "17 June, 2024",
+      "heading": "Requirements Gathering",
+      "date": "March, 2024",
       "isCheck": true,
       "isLoading": false,
       "isBorader": true,
@@ -17,7 +17,7 @@
     },
     {
       "heading": "Frontend Development",
-      "date": "18 June, 2024",
+      "date": "April, 2024",
       "isCheck": true,
       "isLoading": false,
       "isBorader": true,
@@ -34,8 +34,8 @@
       ]
     },
     {
-      "heading": "Develop AI Models",
-      "date": "20 June, 2024",
+      "heading": "Develop NLP Models",
+      "date": "April, 2024",
       "isCheck": true,
       "isLoading": false,
       "isBorader": true,
@@ -50,7 +50,7 @@
     },
     {
       "heading": "Backend Development",
-      "date": "22 June, 2024",
+      "date": "May, 2024",
       "isCheck": true,
       "isLoading": false,
       "isBorader": true,
@@ -67,8 +67,8 @@
       ]
     },
     {
-      "heading": "Debug and Validation",
-      "date": "27 June, 2024",
+      "heading": "Validation",
+      "date": "June, 2024",
       "isCheck": true,
       "isLoading": false,
       "isBorader": true,
@@ -82,10 +82,10 @@
       ]
     },
     {
-      "heading": "Create an Extention",
-      "date": "24 June, 2024",
-      "isCheck": false,
-      "isLoading": true,
+      "heading": "Testing & Debuging",
+      "date": "July, 2024",
+      "isCheck": true,
+      "isLoading": false,
       "isBorader": true,
       "list": [
         {
@@ -97,10 +97,10 @@
       ]
     },
     {
-      "heading": "Initial App Launch",
-      "date": "28 June, 2024",
-      "isCheck": false,
-      "isLoading": true,
+      "heading": "Develop Mobile App",
+      "date": "July, 2024",
+      "isCheck": true,
+      "isLoading": false,
       "isBorader": true,
       "list": [
         {
@@ -112,8 +112,23 @@
       ]
     },
     {
-      "heading": "New Features Integration",
-      "date": "29 June, 2024",
+      "heading": "Release the Web App",
+      "date": "August, 2024",
+      "isCheck": true,
+      "isLoading": false,
+      "isBorader": true,
+      "list": [
+        {
+          "desc": "Release the app to a select group of beta testers."
+        },
+        {
+          "desc": "Collect user feedback on functionality and usability."
+        }
+      ]
+    },
+    {
+      "heading": "New Feature Integration",
+      "date": "September, 2024",
       "isCheck": false,
       "isLoading": true,
       "isBorader": true,

@@ -229,11 +229,11 @@ const Mcq = ({setLoadingState, setLoadingMessage}) => {
         cl
         className="m-4 react-btn btn-default btn-small btn-border"
       >
-        Restart Chat
+        Clear Chat
       </button>
       
       {/* commented. remove it in production */}
-      {!isLoading ?
+      {/* {!isLoading ?
       <button
         className={`m-4 react-btn btn-default btn-small btn-border ${
           clickedButton === "generate" ? "filled-button" : ""
@@ -241,7 +241,7 @@ const Mcq = ({setLoadingState, setLoadingMessage}) => {
       >
         Generate MCQ Test
       </button>
-      :<div/>}
+      :<div/>} */}
       
 
       <div className="chat-box-section-cus1">
@@ -331,9 +331,9 @@ const Mcq = ({setLoadingState, setLoadingMessage}) => {
                         handleAnswerSubmit();
                         setShowResult(true);
                       }}
-                      className="react-btn btn-default btn-small btn-border"
+                      className="react-btn btn-default btn-small btn-border" href="/chatbot"
                   >
-                    Doctor Suggestions
+                    Continue Chat
                   </button>
                 </div>
               </div>
