@@ -118,7 +118,7 @@ const RightFilePannel = () => {
           <div className="chat-history-section">
             <h6 className="title"></h6>
             <ul className="chat-history-list">
-              {fileList.length > 0 ? (
+              {fileList?.length > 0 ? (
                 fileList.map((fileName, subIndex) => (
                   <li
                     className={`history-box ${

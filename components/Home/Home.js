@@ -99,7 +99,7 @@ const Home = () => {
                     rows="2"
                     placeholder="Enter a prompt"
                   ></textarea>
-                  <Link className="btn-default " href="/chatbot">
+                  <Link className="btn-default " href="/mcqbot">
                     Start with AI
                   </Link>
                 </div>

@@ -5,11 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import Sal from "sal.js";
 
-import intellibot from "../../public/images/cta-img/intellibot01.png";
-import npm from "../../public/images/cta-img/npm.png";
 import viewImg from "../../public/images/cta-img/view-img.png";
 import bgShape from "../../public/images/cta-img/bg-shape.png";
 import bgLight from "../../public/images/bg/bg-shape-tree.png";
+import apple from "../../public/images/cta-img/apple-app.png";
+import google from "../../public/images/cta-img/google.png";
 
 const CtaTwo = () => {
   useEffect(() => {
@@ -42,17 +42,17 @@ const CtaTwo = () => {
                   </p>
                 </div>
                 <div className="app-store-btn">
-                  <Link className="store-btn" href="https://pypi.org/project/intellibot/">
+                  <Link className="store-btn" href="#">
                     <Image
-                      src={intellibot}
+                      src={google}
                       width={157}
                       height={55}
                       alt="Play Store Button"
                     />
                   </Link>
-                  <Link className="store-btn" href="https://www.npmjs.com/package/viewmo?activeTab=readme">
+                  <Link className="store-btn" href="#">
                     <Image
-                      src={npm}
+                      src={apple}
                       width={157}
                       height={55}
                       alt="Apple Store Button"
@@ -85,3 +85,5 @@ const CtaTwo = () => {
 };
 
 export default CtaTwo;
+
+// Lanchan, agents, vector store, cloud thama
