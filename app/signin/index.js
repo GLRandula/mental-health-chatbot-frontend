@@ -11,7 +11,7 @@ import google from "../../public/images/sign-up/google.png";
 import facebook from "../../public/images/sign-up/facebook.png";
 import Loading from "../loading";
 import LoadingAnimation from "../loadingAnimation";
-import { useState } from "react";
+import {useState} from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { addUser, addFileHistory } from "../store/Slices/userSlice";
 import API_CONFIG from "@/components/API";
@@ -67,7 +67,7 @@ const SigninPage = () => {
 
       const END_POINT = process.env.NEXT_PUBLIC_BASE_API_URL + API_CONFIG.login;
 
-      const response = await fetch( END_POINT,        
+      const response = await fetch(END_POINT,
         {
           method: "POST",
           credentials: 'include',
@@ -83,12 +83,11 @@ const SigninPage = () => {
         const new_user = {
           access_token: data.access_token,
           token_type: data.token_type,
+          charts: data.chats,
           id: data.id,
           name: data.name,
           email: data.email,
-          vectorstore: data.vectorstore,
         };
-      
         dispatch(addUser(new_user));
 
         // load user file list

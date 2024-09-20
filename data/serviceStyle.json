@@ -2,50 +2,50 @@
   "serviceOne": [
     {
       "img": "/images/icons/service-icon-01.svg",
-      "title": "Interactive Chat",
-      "desc": "Engage in real-time conversations with your document, asking questions and receiving instant, relevant answers."
+      "title": "Lightning-Fast Responses",
+      "desc": "Our AI assistant provides instant feedback and support, ensuring you get the help you need without delay."
     },
     {
       "img": "/images/icons/service-icon-02.svg",
-      "title": "Data Insights",
-      "desc": "Analyzes document data to provide meaningful insights and trends, aiding in better decision-making."
+      "title": "Intelligent Context Awareness",
+      "desc": "Our AI understands the context of your conversations for more relevant and meaningful interactions."
     },
     {
       "img": "/images/icons/service-icon-03.svg",
-      "title": "Fast responding",
-      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+      "title": "Robust Data Security",
+      "desc": "Benefit from top-tier encryption and privacy protocols, ensuring your personal data remains confidential."
     },
     {
       "img": "/images/icons/service-icon-01.svg",
-      "title": "AI Visualizer",
-      "desc": "Transforms text into stunning visual representations, making complex information easy to understand at a glance."
+      "title": "Seamless Multi-Platform Access",
+      "desc": "Access our AI assistant across various devices and platforms with a consistent experience."
     },
     {
       "img": "/images/icons/service-icon-02.svg",
-      "title": "Document Summarizer",
-      "desc": "Extracts key points and provides concise summaries of highlighted text in your documents for quick insights."
+      "title": "Adaptive Personalization",
+      "desc": "Experience tailored support that evolves with your unique mental health journey, offering increasingly relevant advice."
     },
     {
       "img": "/images/icons/service-icon-03.svg",
-      "title": "Smart Search",
-      "desc": "Utilizes advanced AI to quickly find specific information within your documents, saving you time and effort."
+      "title": "Customizable User Experience",
+      "desc": "Tailors interactions to your preferences, providing a unique and personal experience for each user."
     }
   ],
   "serviceTwo": [
     {
+      "img": "/images/service/service-icon-03.png",
+      "title": "Guaranteed Privacy and Security",
+      "desc": "Your data is encrypted and remains confidential, ensuring complete privacy."
+    },
+    {
       "img": "/images/service/service-icon-01.png",
-      "title": "100% No-Risk, Money Back Guarantee!",
-      "desc": "Refunds will be issued within period of 14 days from the purchase date"
+      "title": "24/7 Accessibility Support",
+      "desc": "Available support, without the limitations of traditional office hours."
     },
     {
       "img": "/images/service/service-icon-02.png",
-      "title": "Upgrade or Cancel Anytime",
-      "desc": "Passages there are many variations variations of of Lorem Ipsum available"
-    },
-    {
-      "img": "/images/service/service-icon-03.png",
-      "title": "Not sure yet, try the free version",
-      "desc": "Try the free version with no commitment, and decide when you're ready!"
+      "title": "Personalized and Tailored Resources",
+      "desc": "Receive customized guidance and resources based on your unique needs."
     }
   ]
 }

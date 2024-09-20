@@ -252,32 +252,6 @@ const TypingBox = ({ handleUserInput }) => {
             </div>
           </div>
           <div className="right-icons">
-            {file === null ? (
-              <div
-                className="form-icon icon-plus"
-                data-tooltip-id="my-tooltip"
-                data-tooltip-content="Choose File"
-              >
-                <input
-                  type="file"
-                  accept=".pdf"
-                  onChange={handleFileChange}
-                  className="input-file"
-                  name="myfile"
-                  multiple
-                />
-                <i className="fa-sharp fa-regular fa-plus"></i>
-              </div>
-            ) : (
-              <button
-                className="btn-default btn-small btn-border"
-                onClick={triggerUploadFile}
-              >
-                {" "}
-                Upload{" "}
-              </button>
-            )}
-            {user[0]?.vectorstore && (
               <>
                 <a
                   className="form-icon icon-mic"
@@ -295,7 +269,6 @@ const TypingBox = ({ handleUserInput }) => {
                   <i className="fa-sharp fa-solid fa-paper-plane-top"></i>
                 </a>
               </>
-            )}
           </div>
         </form>
 

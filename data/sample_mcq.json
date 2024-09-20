@@ -1,58 +1,471 @@
 {
-    "user_id": 0,
-    "response": {
-        "questions": [
-            {
-                "question": "What is the most common mental health disorder?",
-                "options": [
-                    "Depression",
-                    "Anxiety",
-                    "Bipolar Disorder",
-                    "Schizophrenia"
-                ],
-                "correct": "Depression"
-            },
-            {
-                "question": "What is the main goal of cognitive-behavioral therapy (CBT)?",
-                "options": [
-                    "Exploring past trauma",
-                    "Changing negative thought patterns",
-                    "Prescribing medication",
-                    "Providing emotional support"
-                ],
-                "correct": "Changing negative thought patterns"
-            },
-            {
-                "question": "Which neurotransmitter is often associated with feelings of pleasure and reward?",
-                "options": [
-                    "Dopamine",
-                    "Serotonin",
-                    "GABA",
-                    "Glutamate"
-                ],
-                "correct": "Dopamine"
-            },
-            {
-                "question": "What is a common symptom of generalized anxiety disorder?",
-                "options": [
-                    "Hallucinations",
-                    "Panic attacks",
-                    "Memory loss",
-                    "Obsessive-compulsive behaviors"
-                ],
-                "correct": "Panic attacks"
-            },
-            {
-                "question": "Which term refers to a persistent feeling of sadness and loss of interest in activities?",
-                "options": [
-                    "Mania",
-                    "Apathy",
-                    "Anhedonia",
-                    "Major Depressive Disorder"
-                ],
-                "correct": "Major Depressive Disorder"
-            }
-       
-        ]
+  "user_id": 0,
+  "response": [
+    {
+      "age_range": "17-20",
+      "questions": [
+        {
+          "question": "How do you feel about your career or educational path?",
+          "options": [
+            "Confident: I have a clear plan and feel optimistic.",
+            "Somewhat Optimistic: I have an idea but sometimes doubt my choices.",
+            "Uncertain: I often feel lost and unsure.",
+            "Overwhelmed: I'm stressed and can't see a clear path."
+          ]
+        },
+        {
+          "question": "Describe your feelings after spending time with friends or in social settings.",
+          "options": [
+            "Energized: I usually feel better and more connected.",
+            "Mixed: Sometimes enjoyable, but it can drain me.",
+            "Anxious: I often feel like I don't fit in or worry about what others think.",
+            "Isolated: I feel alone, like no one understands me."
+          ]
+        },
+        {
+          "question": "How do relationship changes, like breakups, affect you?",
+          "options": [
+            "Resilient: Tough, but I recover with time.",
+            "Sad but Coping: I feel sad but try to move on.",
+            "Deeply Affected: I struggle and feel down for a long time.",
+            "Devastated: I can't move on and feel stuck in sadness."
+          ]
+        },
+        {
+          "question": "What are your thoughts on your academic performance?",
+          "options": [
+            "Proud: Generally happy and accomplished.",
+            "Mixed Emotions: Satisfied but worry I could do better.",
+            "Frequent Worry: I doubt my abilities and feel inadequate.",
+            "Constant Fear: I'm overwhelmed by the fear of failure."
+          ]
+        },
+        {
+          "question": "How do you react to unexpected challenges or setbacks?",
+          "options": [
+            "Adaptively: I find ways to overcome them.",
+            "Anxiously: They stress me out, but I work through them.",
+            "Difficulty Coping: I struggle and feel anxious.",
+            "Despair: I feel hopeless and often give up."
+          ]
+        },
+        {
+          "question": "Describe your feelings about independence and adult responsibilities.",
+          "options": [
+            "Excited: I look forward to becoming independent.",
+            "Cautiously Optimistic: A bit nervous but prepared.",
+            "Uncertain: It makes me anxious; I don't feel ready.",
+            "Overwhelmed: I'm scared and try to avoid thinking about it."
+          ]
+        },
+        {
+          "question": "How do you view your personal growth over the past year?",
+          "options": [
+            "Positive: I've grown a lot and am proud.",
+            "Some Growth: I've seen changes but not as much as hoped.",
+            "Minimal Growth: I worry I haven't grown much.",
+            "Stagnant: I feel stuck or regressed, which worries me."
+          ]
+        },
+        {
+          "question": "How does societal or parental pressure affect you?",
+          "options": [
+            "Motivated: It pushes me to achieve more.",
+            "Mixed Pressure: Stressful, but I balance with my goals.",
+            "Highly Stressed: Crushed under expectations.",
+            "Rebellious: I reject or feel indifferent, causing conflict."
+          ]
+        },
+        {
+          "question": "How confident are you in managing stress and emotional challenges?",
+          "options": [
+            "Very Confident: I have effective strategies.",
+            "Somewhat Confident: I manage but could improve.",
+            "Not Very Confident: I often feel overwhelmed.",
+            "Lacking Confidence: I feel helpless against stress."
+          ]
+        },
+        {
+          "question": "What are your thoughts on forming and maintaining romantic relationships?",
+          "options": [
+            "Positive: Open to relationships and excited about connecting.",
+            "Cautious: Interested but wary of potential challenges.",
+            "Uncertain: Unsure if I'm ready or what I want.",
+            "Negative: Feel overwhelmed or uninterested in relationships."
+          ]
+        }
+      ]
+    },
+    {
+      "age_range": "21-25",
+      "questions": [
+        {
+          "question": "How do you feel about your current career or educational pursuits?",
+          "options": [
+            "Confident and Focused: I have a clear direction and feel motivated to pursue my goals.",
+            "Ambitious but Unsure: I have big dreams but feel uncertain about the steps to achieve them.",
+            "Stuck and Frustrated: I feel trapped in my current situation and unsure how to progress.",
+            "Lost and Aimless: I lack direction and struggle to find meaning in my pursuits."
+          ]
+        },
+        {
+          "question": "How does your use of social media impact your self-esteem and perception of others?",
+          "options": [
+            "Positive Influence: I use it to connect with others and feel inspired by their achievements.",
+            "Mixed Feelings: Sometimes it boosts my confidence, but other times it makes me feel inadequate.",
+            "Negative Influence: I often compare myself to others and feel inferior or unhappy with my life.",
+            "Detrimental Impact: It significantly affects my self-esteem and mental well-being in a negative way."
+          ]
+        },
+        {
+          "question": "Describe your experience with romantic relationships in recent years.",
+          "options": [
+            "Fulfilling and Stable: I've had positive experiences and feel satisfied in my current relationship.",
+            "Challenging but Rewarding: Relationships have their ups and downs, but overall, they contribute to my growth.",
+            "Heartbreak and Disappointment: I've faced difficulties and experienced painful breakups that have impacted me deeply.",
+            "Avoidant or Disinterested: I prefer to focus on myself and my goals rather than pursuing romantic relationships."
+          ]
+        },
+        {
+          "question": "How do you handle setbacks or failures in your personal or professional life?",
+          "options": [
+            "Resilient and Adaptive: I view them as opportunities for growth and learn from them to improve.",
+            "Optimistic but Struggling: I try to stay positive, but setbacks often affect my confidence and motivation.",
+            "Overwhelmed and Defeated: I find it difficult to cope with failure and often feel discouraged or hopeless.",
+            "Avoidant and Denial: I tend to avoid confronting failures and may suppress my emotions about them."
+          ]
+        },
+        {
+          "question": "How satisfied are you with your current social circle and support network?",
+          "options": [
+            "Fulfilled and Supported: I have strong relationships and feel supported by friends and family.",
+            "Content but Seeking More: I have some supportive connections, but I'm open to expanding my social circle.",
+            "Lonely and Isolated: I feel disconnected from others and lack meaningful relationships.",
+            "Toxic or Unsatisfying: My social circle is negative or unsupportive, which affects my well-being."
+          ]
+        },
+        {
+          "question": "What are your thoughts on your financial stability and future prospects?",
+          "options": [
+            "Secure and Optimistic: I feel confident in my financial situation and have plans for future success.",
+            "Managing but Concerned: I'm able to meet my basic needs but worry about my long-term financial security.",
+            "Struggling and Worried: I have financial challenges that cause stress and uncertainty about the future.",
+            "Dependent or Indifferent: I don't prioritize financial stability and rely on others for support."
+          ]
+        },
+        {
+          "question": "How do you prioritize self-care and mental well-being in your daily life?",
+          "options": [
+            "Proactive and Dedicated: I prioritize self-care practices and actively seek ways to maintain my mental health.",
+            "Balancing but Struggling: I try to make time for self-care, but it's challenging amidst other responsibilities.",
+            "Neglecting and Overwhelmed: I often neglect my well-being due to various demands and feel overwhelmed.",
+            "Unaware or Dismissive: I don't prioritize self-care and may not recognize its importance in maintaining mental health."
+          ]
+        },
+        {
+          "question": "How do you envision your personal growth and development in the next few years?",
+          "options": [
+            "Optimistic and Goal-oriented: I have clear goals and am motivated to achieve personal growth and success.",
+            "Hopeful but Uncertain: I'm open to growth but unsure about the specific direction my life will take.",
+            "Doubtful or Pessimistic: I lack confidence in my ability to grow and improve, feeling stuck in my current circumstances.",
+            "Resistant to Change: I'm comfortable with who I am and don't feel the need for significant personal growth or development."
+          ]
+        },
+        {
+          "question": "How do you navigate the pressures and expectations placed on you by society or family?",
+          "options": [
+            "Resilient and Assertive: I set my own expectations and boundaries, confidently navigating societal and familial pressures.",
+            "Balancing and Negotiating: I strive to meet external expectations while staying true to myself, though it can be challenging.",
+            "Overwhelmed and Conflicted: I feel overwhelmed by societal and familial expectations, struggling to meet them while maintaining my own identity.",
+            "Rebellious or Resentful: I reject external pressures and may feel resentful or rebellious towards societal or familial expectations."
+          ]
+        },
+        {
+          "question": "How do you manage uncertainty and changes in your life, such as transitioning into adulthood?",
+          "options": [
+            "Adaptive and Resilient: I embrace change as an opportunity for growth and adaptability.",
+            "Anxious but Coping: I feel anxious about the uncertainties of adulthood but find ways to cope and navigate them.",
+            "Overwhelmed and Lost: I struggle to cope with uncertainty and change, feeling overwhelmed and lost in the transition to adulthood.",
+            "Avoidant or Denial: I tend to avoid confronting uncertainties and changes, preferring to ignore or deny them."
+          ]
+        }
+      ]
+    },
+    {
+      "age_range": "26-35",
+      "questions": [
+        {
+          "question": "How do you feel about your current career or professional trajectory?",
+          "options": [
+            "Satisfied and Fulfilled: I feel content with my career path and find it fulfilling.",
+            "Ambitious but Anxious: I'm driven to succeed but often worry about my career progress.",
+            "Stagnant and Dissatisfied: I feel stuck in my career and lack motivation to progress.",
+            "Overwhelmed and Burned Out: I'm constantly stressed and feel burnt out from work demands."
+          ]
+        },
+        {
+          "question": "How do you manage stress and maintain work-life balance in your daily life?",
+          "options": [
+            "Effective Coping Strategies: I have healthy ways to manage stress and prioritize self-care.",
+            "Struggling to Balance: I find it challenging to juggle work and personal life responsibilities.",
+            "Constantly Stressed: I feel overwhelmed by stress and struggle to find time for myself.",
+            "Neglecting Self-Care: I often put work first and neglect my own well-being."
+          ]
+        },
+        {
+          "question": "How do you feel about your financial stability and long-term financial goals?",
+          "options": [
+            "Financially Secure: I feel confident in my financial situation and have clear long-term goals.",
+            "Managing but Concerned: I'm able to meet my financial needs but worry about the future.",
+            "Struggling to Stay Afloat: I face financial challenges and feel uncertain about the future.",
+            "Burdened by Debt: I'm overwhelmed by debt and financial obligations, causing stress."
+          ]
+        },
+        {
+          "question": "How do you navigate challenges and conflicts in your personal relationships?",
+          "options": [
+            "Healthy Communication: I communicate openly and effectively to resolve conflicts.",
+            "Struggling with Relationships: I find it difficult to maintain healthy relationships and often experience conflicts.",
+            "Isolated or Alone: I feel lonely and lack meaningful connections with others.",
+            "Toxic Relationships: I'm in relationships that are emotionally draining or unhealthy."
+          ]
+        },
+        {
+          "question": "How do you cope with feelings of loneliness or social isolation?",
+          "options": [
+            "Active Social Life: I have a strong support network and actively engage in social activities.",
+            "Seeking Connection: I'm open to forming new connections but struggle to find meaningful relationships.",
+            "Lonely and Isolated: I feel disconnected from others and often struggle with feelings of loneliness.",
+            "Avoidant of Social Interactions: I tend to avoid social situations and isolate myself from others."
+          ]
+        },
+        {
+          "question": "How do you maintain a sense of purpose and fulfillment in your life?",
+          "options": [
+            "Purpose-Driven: I feel fulfilled by my work, relationships, and personal pursuits.",
+            "Searching for Meaning: I'm still exploring my passions and seeking a sense of purpose.",
+            "Lacking Direction: I feel lost and uncertain about my life's purpose and meaning.",
+            "Dependent on External Validation: I rely on others' approval or achievements for a sense of fulfillment."
+          ]
+        },
+        {
+          "question": "How do you cope with feelings of anxiety or uncertainty about the future?",
+          "options": [
+            "Resilient and Optimistic: I'm able to stay positive and adapt to changes and uncertainties.",
+            "Anxious but Coping: I struggle with anxiety about the future but find ways to manage it.",
+            "Overwhelmed by Uncertainty: I feel paralyzed by fear and uncertainty about what lies ahead.",
+            "Avoidant of Future Planning: I avoid thinking about the future because it causes too much anxiety."
+          ]
+        },
+        {
+          "question": "How do you prioritize self-care and mental well-being in your daily life?",
+          "options": [
+            "Self-Care Advocate: I prioritize self-care activities and make time for my mental health.",
+            "Struggling to Prioritize: I know the importance of self-care but struggle to prioritize it in my busy life.",
+            "Neglecting Self-Care: I often neglect my mental well-being and focus on other responsibilities.",
+            "Unaware of Self-Care Needs: I'm not aware of self-care practices or their importance for mental health."
+          ]
+        },
+        {
+          "question": "How do you feel about your personal growth and development in recent years?",
+          "options": [
+            "Growth-Oriented: I've experienced significant personal growth and development.",
+            "Stagnant or Regressing: I feel stuck or have regressed in terms of personal development.",
+            "Seeking Growth Opportunities: I'm actively seeking ways to grow and improve personally and professionally.",
+            "Uncertain about Growth: I'm unsure if I've grown or developed in recent years."
+          ]
+        },
+        {
+          "question": "How do you cope with feelings of dissatisfaction or disappointment in life?",
+          "options": [
+            "Resilient and Adaptive: I bounce back from disappointments and find new opportunities for growth.",
+            "Struggling to Cope: I find it difficult to cope with feelings of dissatisfaction or disappointment.",
+            "Seeking Fulfillment: I'm actively seeking ways to find fulfillment and satisfaction in life.",
+            "Feeling Resigned or Defeated: I've given up hope of finding happiness or fulfillment."
+          ]
+        }
+      ]
+    },
+    {
+      "age_range": "36-49",
+      "questions": [
+        {
+          "question": "How do you feel about your current career trajectory and professional accomplishments?",
+          "options": [
+            "Satisfied and Accomplished: I feel proud of my career achievements and where I am professionally.",
+            "Content but Ambitious: I'm happy with my career, but I still have goals I want to achieve.",
+            "Stagnant and Dissatisfied: I feel stuck in my career and lack fulfillment or progression.",
+            "Overwhelmed and Burned Out: I'm exhausted from work and feel trapped in a cycle of stress and exhaustion."
+          ]
+        },
+        {
+          "question": "How do you manage the balance between work responsibilities and personal life commitments?",
+          "options": [
+            "Successfully Juggling Both: I've found a good balance and make time for both work and personal life.",
+            "Struggling but Coping: It's challenging, but I try to manage the best I can.",
+            "Constantly Overwhelmed: I feel like I'm always behind and can't keep up with everything.",
+            "Neglecting Personal Life: Work consumes most of my time, and I struggle to find time for myself or loved ones."
+          ]
+        },
+        {
+          "question": "How do you approach financial planning and long-term security for yourself and your family?",
+          "options": [
+            "Financially Secure and Prepared: I have a solid financial plan and feel confident about the future.",
+            "Concerned but Planning: I worry about finances but actively work towards securing my financial future.",
+            "Stressed about Money: Financial worries keep me up at night, and I struggle to make ends meet.",
+            "Overwhelmed by Debt: I feel suffocated by debt and financial obligations, causing constant stress."
+          ]
+        },
+        {
+          "question": "How do you nurture your personal relationships and maintain connections with loved ones?",
+          "options": [
+            "Strong and Supportive Relationships: I prioritize quality time with family and friends and maintain healthy connections.",
+            "Struggling with Relationships: I find it challenging to maintain relationships amidst my busy life.",
+            "Feeling Disconnected: I feel lonely or isolated and struggle to connect with others.",
+            "Conflict and Tension: My relationships are strained, and conflicts often arise, causing stress."
+          ]
+        },
+        {
+          "question": "How do you prioritize self-care and maintain your physical and mental well-being?",
+          "options": [
+            "Commitment to Self-Care: I make time for exercise, relaxation, and activities that promote my well-being.",
+            "Struggling to Prioritize: Self-care often takes a backseat to other priorities, but I try to fit it in when I can.",
+            "Neglecting Self-Care: I rarely prioritize my well-being and feel the effects of neglecting self-care.",
+            "Feeling Burned Out: I'm so overwhelmed that self-care feels like a luxury I can't afford."
+          ]
+        },
+        {
+          "question": "How do you cope with stress and unexpected challenges in your life?",
+          "options": [
+            "Resilient and Adaptive: I'm able to bounce back from setbacks and find solutions to challenges.",
+            "Struggling to Cope: Stress often feels overwhelming, and I struggle to manage it effectively.",
+            "Avoiding Stressors: I try to avoid stressful situations altogether, but it's not always possible.",
+            "Feeling Helpless: I feel paralyzed by stress and don't know how to cope with it."
+          ]
+        },
+        {
+          "question": "How do you navigate feelings of dissatisfaction or a sense of unfulfillment in your life?",
+          "options": [
+            "Seeking Fulfillment: I actively seek out opportunities for growth and fulfillment in various aspects of my life.",
+            "Accepting and Adapting: I've come to terms with areas of my life that may not meet my expectations and focus on what I can control.",
+            "Struggling to Find Purpose: I feel lost or directionless and struggle to find meaning or purpose in my life.",
+            "Feeling Stuck: I'm trapped in a cycle of dissatisfaction and don't know how to break free."
+          ]
+        },
+        {
+          "question": "How do you maintain a sense of identity and purpose amidst life's changes and transitions?",
+          "options": [
+            "Clear Sense of Identity: I have a strong sense of who I am and what I value, which guides my decisions and actions.",
+            "Navigating Identity Shifts: I'm adjusting to changes in my life and identity and exploring new paths forward.",
+            "Identity Crisis: I feel uncertain or confused about who I am and where I'm headed, leading to existential angst.",
+            "Searching for Meaning: I'm on a journey to find greater purpose and meaning in my life, but it's challenging."
+          ]
+        },
+        {
+          "question": "How do you cope with the pressures of societal expectations and norms?",
+          "options": [
+            "Resilient to Pressure: I'm confident in my choices and don't feel pressured by societal expectations.",
+            "Struggling with Expectations: I feel overwhelmed by societal norms and expectations, which can be difficult to meet.",
+            "Rebelling Against Norms: I reject societal expectations and choose to live life on my own terms, despite criticism.",
+            "Feeling Constrained: I feel constrained by societal norms and struggle to break free from their influence."
+          ]
+        },
+        {
+          "question": "How do you navigate midlife transitions and challenges, such as changes in career, family dynamics, or personal goals?",
+          "options": [
+            "Adapting to Change: I embrace life's transitions as opportunities for growth and transformation.",
+            "Resisting Change: I struggle to adjust to life's changes and may resist them out of fear or uncertainty.",
+            "Feeling Lost: I feel adrift in the midst of life changes and don't know how to find my footing.",
+            "Seeking Stability: I crave stability and predictability amidst life's changes, which can be elusive."
+          ]
+        }
+      ]
+    },
+    {
+      "age_range": "50+",
+      "questions": [
+        {
+          "question": "How do you feel about your current career or professional status?",
+          "options": [
+            "Satisfied and Accomplished: I feel fulfilled with my career achievements and contributions.",
+            "Considering Retirement: I'm contemplating retirement or transitioning into a new phase of work.",
+            "Unfulfilled or Stagnant: I feel stuck in my career and lack motivation or purpose.",
+            "Overwhelmed by Change: I'm uncertain about my next steps and feel anxious about the future."
+          ]
+        },
+        {
+          "question": "How do you prioritize your mental well-being and self-care as you age?",
+          "options": [
+            "Proactively Caring for Myself: I prioritize self-care activities and seek support for my mental health.",
+            "Striving to Prioritize: I recognize the importance of self-care but struggle to make it a priority.",
+            "Neglecting My Needs: I often neglect my mental well-being in favor of other responsibilities.",
+            "Unaware of Self-Care Needs: I'm not sure how to prioritize self-care or where to start."
+          ]
+        },
+        {
+          "question": "How do you cope with the changes and challenges associated with aging?",
+          "options": [
+            "Adapting and Embracing Change: I accept and adapt to the changes that come with aging.",
+            "Struggling but Resilient: I face challenges but find ways to cope and remain resilient.",
+            "Feeling Overwhelmed: I feel overwhelmed by the physical and emotional changes of aging.",
+            "Avoiding or Denying Aging: I avoid thinking about aging or deny its impact on my life."
+          ]
+        },
+        {
+          "question": "How do you maintain meaningful relationships and social connections as you get older?",
+          "options": [
+            "Nurturing Relationships: I actively maintain relationships with family and friends and seek out new social connections.",
+            "Isolated but Content: I have a small circle of close relationships and feel content with my social life.",
+            "Lonely and Disconnected: I feel lonely and lack meaningful connections with others.",
+            "Avoiding Social Interactions: I tend to avoid social situations and isolate myself from others."
+          ]
+        },
+        {
+          "question": "How do you navigate the transition into retirement or changing roles in your later years?",
+          "options": [
+            "Embracing Retirement: I see retirement as an opportunity for new adventures and experiences.",
+            "Adjusting to Change: I'm adapting to retirement or changing roles but still adjusting to the transition.",
+            "Uncertain about Retirement: I feel unsure about retirement and what it means for my identity and purpose.",
+            "Resisting Retirement: I'm reluctant to retire or change roles and fear losing my sense of purpose."
+          ]
+        },
+        {
+          "question": "How do you cope with feelings of loss, whether it's the loss of loved ones, roles, or abilities?",
+          "options": [
+            "Grieving and Healing: I allow myself to grieve and find ways to honor the memories of those I've lost.",
+            "Seeking Support: I lean on my support network and seek professional help to cope with loss.",
+            "Struggling with Loss: I find it difficult to cope with loss and may avoid dealing with my feelings.",
+            "Feeling Overwhelmed by Loss: I feel overwhelmed by grief and struggle to find ways to cope."
+          ]
+        },
+        {
+          "question": "How do you find purpose and meaning in life as you age?",
+          "options": [
+            "Living with Purpose: I feel fulfilled and purposeful in my life, pursuing activities that bring me joy and fulfillment.",
+            "Exploring New Passions: I'm exploring new interests and hobbies to find meaning and purpose in my later years.",
+            "Searching for Purpose: I'm still searching for meaning and purpose and may feel lost or uncertain about my direction.",
+            "Feeling Purposeless: I struggle to find meaning in life and may feel hopeless about the future."
+          ]
+        },
+        {
+          "question": "How do you manage feelings of anxiety or uncertainty about the future as you age?",
+          "options": [
+            "Embracing Uncertainty: I accept that the future is uncertain and focus on living in the present moment.",
+            "Managing Anxiety: I have strategies for managing anxiety and uncertainty about the future.",
+            "Feeling Anxious about Aging: I worry about what the future holds and how aging will impact my life.",
+            "Overwhelmed by Future Uncertainty: I feel overwhelmed by anxiety about the future and struggle to cope."
+          ]
+        },
+        {
+          "question": "How do you maintain a sense of identity and self-worth as you age?",
+          "options": [
+            "Confident in My Identity: I have a strong sense of self and feel confident in who I am as I age.",
+            "Navigating Identity Changes: I'm navigating changes in my identity and self-worth as I age.",
+            "Struggling with Identity: I feel uncertain about my identity and struggle with feelings of self-worth.",
+            "Feeling Worthless or Insignificant: I struggle with feelings of worthlessness or insignificance as I age."
+          ]
+        }
+      ]
     }
+  ]
 }

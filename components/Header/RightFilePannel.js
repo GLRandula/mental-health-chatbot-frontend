@@ -107,18 +107,18 @@ const RightFilePannel = () => {
             data-bs-toggle="modal"
             data-bs-target="#newchatModal"
           >
-            <span className="icon">
+            {/* <span className="icon">
               <i className="feather-plus-circle"></i>
-            </span>
-            <span>Your Files</span>
+            </span> */}
+            <span>Chat History</span>
           </a>
         </div>
 
         <div className="right-side-bottom">
-          <div className="chat-history-section">
+          {/* <div className="chat-history-section">
             <h6 className="title"></h6>
             <ul className="chat-history-list">
-              {fileList.length > 0 ? (
+              {fileList?.length > 0 ? (
                 fileList.map((fileName, subIndex) => (
                   <li
                     className={`history-box ${
@@ -177,12 +177,12 @@ const RightFilePannel = () => {
                 <div>No files available</div>
               )}
             </ul>
-          </div>
+          </div> */}
           <button
             className="react-btn btn-default btn-small btn-border"
             onClick={handleRefresh}
           >
-            Refresh
+            Clear
           </button>
         </div>
       </div>
