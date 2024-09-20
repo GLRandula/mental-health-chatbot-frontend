@@ -31,7 +31,7 @@ const ChatBotHeaderDashboard = ({ display }) => {
           <div className="row align-items-center justify-content-between">
             <div className="col-lg-3 col-md-6 col-6">
               <div className="header-left d-flex">
-                <div className="expand-btn-grp">
+                {/* <div className="expand-btn-grp">
                   <button
                     className={`bg-solid-primary popup-dashboardleft-btn ${
                       mobile ? "" : "collapsed"
@@ -40,7 +40,7 @@ const ChatBotHeaderDashboard = ({ display }) => {
                   >
                     <i className="fa-sharp fa-regular fa-sidebar"></i>
                   </button>
-                </div>
+                </div> */}
                 <div className="logo">
                   <Link href="/">
                     <Image
