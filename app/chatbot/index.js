@@ -16,7 +16,7 @@ const ChatbotPage = () => {
       <main className="page-wrapper rbt-dashboard-page">
         <div className="rbt-panel-wrapper">
           <Context>
-            <LeftDashboardSidebar />
+            {/* <LeftDashboardSidebar /> */}
             <ChatBotHeaderDashboard display="" />
             <Modal />
             <PopupMobileMenu />
