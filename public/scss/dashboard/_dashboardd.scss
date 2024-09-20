@@ -428,6 +428,8 @@
         .chat-section {
             display: flex;
             align-items: flex-start;
+            padding-left: 270px;
+            padding-right: 270px;
 
             .author {
                 height: 45px;
@@ -1372,11 +1374,10 @@
     position: fixed;
     bottom: 0;
     width:100%;
-    max-width: 805px;
+    // max-width: 805px;
     margin-top: auto;
     z-index: 5;
-    bottom: 0;
-    padding: 20px 15px;
+    padding: 20px 300px;
     background-color: var(--color-dark);
     box-shadow: 0px -40px 55px -20px rgba(7, 7, 16, 1);
     transition: all 0.4s ease;
