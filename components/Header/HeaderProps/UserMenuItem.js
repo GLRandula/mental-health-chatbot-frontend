@@ -10,13 +10,22 @@ const UserMenuItems = ({ parentClass }) => {
   return (
     <>
       <ul className={parentClass}>
-        <li>
+        {/* <li>
           <Link
             className={isActive("/profile-details") ? "active" : ""}
             href="/profile-details"
           >
             <i className="fa-sharp fa-regular fa-user"></i>
             <span>Profile Details</span>
+          </Link>
+        </li> */}
+        <li>
+          <Link
+            className={isActive("/doctor_details") ? "active" : ""}
+            href="/chatbot"
+          >
+            <i className="fa-sharp fa-regular fa-user"></i>
+            <span>Back</span>
           </Link>
         </li>
         <li>
