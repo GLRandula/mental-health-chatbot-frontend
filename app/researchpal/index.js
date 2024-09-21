@@ -17,8 +17,8 @@ const ResearchPage = () => {
       <main className="page-wrapper rbt-dashboard-page">
         <div className="rbt-panel-wrapper">
           <Context>
-            <LeftDashboardSidebar />
-            <ResearchpalHeaderDashboard display="" />
+            {/* <LeftDashboardSidebar /> */}
+            {/* <ResearchpalHeaderDashboard display="" /> */}
             {/* <RightDashboardSidebar /> */}
             <Modal />
             <PopupMobileMenu />
