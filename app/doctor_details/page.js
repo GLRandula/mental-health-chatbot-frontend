@@ -16,3 +16,4 @@ const DoctorDetailsLayout = () => {
 };
 
 export default DoctorDetailsLayout;
+

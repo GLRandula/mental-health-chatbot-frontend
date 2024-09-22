@@ -1,7 +1,6 @@
 "use client";
 
-// import React from 'react'
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -9,157 +8,213 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-
-// function createData(
-//   name: string,
-//   calories: number,
-//   fat: number,
-//   carbs: number,
-//   protein: number,
-// ) {
-//   return { name, calories, fat, carbs, protein };
-// }
-
-const rows = [];
+import TextField from '@mui/material/TextField'; 
+import axios from 'axios';
+import API_CONFIG from "../API"; 
 
 const DoctorBody = () => {
+  const [doctors, setDoctors] = useState([]);
+  const [loading, setLoading] = useState(true); 
+  const [error, setError] = useState(null); 
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredDoctors, setFilteredDoctors] = useState([]); 
+  const countDoctors = 100;
+  const startCount = 0;
+
+
+  useEffect(() => {
+    const fetchDoctors = async () => {
+      try {
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_BASE_API_URL}${API_CONFIG.getDoctors}/${startCount}/${countDoctors}`, {
+          headers: {
+            'Accept': 'application/json',
+          },
+        });
+        setDoctors(response.data);
+        setFilteredDoctors(response.data); 
+        setLoading(false); 
+      } catch (error) {
+        console.error('Error fetching doctor data:', error);
+        setError('Failed to load doctors. Please try again later.');
+        setLoading(false); 
+      }
+    };
+    fetchDoctors();
+  }, [startCount, countDoctors]); 
+
+  const handleSearch = (e) => {
+    const searchValue = e.target.value.toLowerCase();
+    setSearchTerm(searchValue);
+
+    const filtered = doctors.filter(doctor => 
+      doctor.name.toLowerCase().includes(searchValue) ||
+      doctor.specialty.toLowerCase().includes(searchValue) ||
+      doctor.address.toLowerCase().includes(searchValue)
+    );
+    
+    setFilteredDoctors(filtered);
+  };
+
   return (
-    <TableContainer
-      component={Paper}
-      sx={{
-        backgroundColor: "#121212", // Dark background for the table container
-        color: "#FFFFFF", // White text color for dark mode
-      }}
-    >
-      <Table
+    <>
+      {/* Search Bar */}
+      <TextField
+        label="Search Doctor"
+        variant="outlined"
+        fullWidth
+        value={searchTerm}
+        onChange={handleSearch}
         sx={{
-          minWidth: 650,
-          color: "#FFFFFF", // White text for the table content
+          marginBottom: 2, 
+          backgroundColor: "#fff", 
         }}
-        size="small"
-        aria-label="a dense table"
+      />
+
+      <TableContainer
+        component={Paper}
+        sx={{
+          backgroundColor: "#121212", 
+          color: "#FFFFFF", 
+        }}
       >
-        <TableHead>
-          <TableRow>
-            <TableCell
-              sx={{
-                color: "#FFFFFF", // White text for headers
-                fontSize: "1.2rem", // Increased font size for headers
-              }}
-            >
-              Psychotherapist Name
-            </TableCell>
-            <TableCell
-              align="right"
-              sx={{
-                color: "#FFFFFF",
-                fontSize: "1.2rem",
-              }}
-            >
-              Address
-            </TableCell>
-            <TableCell
-              align="right"
-              sx={{
-                color: "#FFFFFF",
-                fontSize: "1.2rem",
-              }}
-            >
-              Speciality
-            </TableCell>
-            <TableCell
-              align="right"
-              sx={{
-                color: "#FFFFFF",
-                fontSize: "1.2rem",
-              }}
-            >
-              Contact No.
-            </TableCell>
-            {/* <TableCell 
-              align="right" 
-              sx={{ 
-                color: '#FFFFFF',
-                fontSize: '1.2rem'
-              }}
-            >
-              Protein&nbsp;(g)
-            </TableCell> */}
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.length === 0 ? (
+        <Table
+          sx={{
+            minWidth: 650,
+            color: "#FFFFFF", 
+          }}
+          size="small"
+          aria-label="a dense table"
+        >
+          <TableHead>
             <TableRow>
               <TableCell
-                colSpan={5}
-                align="center"
                 sx={{
-                  color: "#FFFFFF", // White text for empty state message
-                  fontSize: "1.1rem", // Increased font size for the message
+                  color: "#FFFFFF", 
+                  fontSize: "1.2rem", 
                 }}
               >
-                No data available
+                Psychotherapist Name
+              </TableCell>
+              <TableCell
+                align="right"
+                sx={{
+                  color: "#FFFFFF",
+                  fontSize: "1.2rem",
+                }}
+              >
+                Address
+              </TableCell>
+              <TableCell
+                align="right"
+                sx={{
+                  color: "#FFFFFF",
+                  fontSize: "1.2rem",
+                }}
+              >
+                Speciality
+              </TableCell>
+              <TableCell
+                align="right"
+                sx={{
+                  color: "#FFFFFF",
+                  fontSize: "1.2rem",
+                }}
+              >
+                Contact No.
               </TableCell>
             </TableRow>
-          ) : (
-            rows.map((row) => (
-              <TableRow
-                key={row.name}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-              >
+          </TableHead>
+          <TableBody>
+            {loading ? (
+              <TableRow>
                 <TableCell
-                  component="th"
-                  scope="row"
+                  colSpan={4}
+                  align="center"
                   sx={{
-                    color: "#FFFFFF",
-                    fontSize: "1.1rem", // Increased font size for row data
+                    color: "#FFFFFF", 
+                    fontSize: "1.1rem", 
                   }}
                 >
-                  {row.name}
-                </TableCell>
-                <TableCell
-                  align="right"
-                  sx={{
-                    color: "#FFFFFF",
-                    fontSize: "1.1rem",
-                  }}
-                >
-                  {row.calories}
-                </TableCell>
-                <TableCell
-                  align="right"
-                  sx={{
-                    color: "#FFFFFF",
-                    fontSize: "1.1rem",
-                  }}
-                >
-                  {row.fat}
-                </TableCell>
-                <TableCell
-                  align="right"
-                  sx={{
-                    color: "#FFFFFF",
-                    fontSize: "1.1rem",
-                  }}
-                >
-                  {row.carbs}
-                </TableCell>
-                <TableCell
-                  align="right"
-                  sx={{
-                    color: "#FFFFFF",
-                    fontSize: "1.1rem",
-                  }}
-                >
-                  {row.protein}
+                  Loading...
                 </TableCell>
               </TableRow>
-            ))
-          )}
-        </TableBody>
-      </Table>
-    </TableContainer>
+            ) : error ? (
+              <TableRow>
+                <TableCell
+                  colSpan={4}
+                  align="center"
+                  sx={{
+                    color: "#FFFFFF", 
+                    fontSize: "1.1rem", 
+                  }}
+                >
+                  {error}
+                </TableCell>
+              </TableRow>
+            ) : filteredDoctors.length === 0 ? (
+              <TableRow>
+                <TableCell
+                  colSpan={4}
+                  align="center"
+                  sx={{
+                    color: "#FFFFFF", 
+                    fontSize: "1.1rem", 
+                  }}
+                >
+                  No doctors found
+                </TableCell>
+              </TableRow>
+            ) : (
+              filteredDoctors.map((doctor) => (
+                <TableRow
+                  key={doctor.doctor_id}
+                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                >
+                  <TableCell
+                    component="th"
+                    scope="row"
+                    sx={{
+                      color: "#FFFFFF",
+                      fontSize: "1.1rem", 
+                    }}
+                  >
+                    {doctor.name}
+                  </TableCell>
+                  <TableCell
+                    align="right"
+                    sx={{
+                      color: "#FFFFFF",
+                      fontSize: "1.1rem",
+                    }}
+                  >
+                    {doctor.address}
+                  </TableCell>
+                  <TableCell
+                    align="right"
+                    sx={{
+                      color: "#FFFFFF",
+                      fontSize: "1.1rem",
+                    }}
+                  >
+                    {doctor.specialty}
+                  </TableCell>
+                  <TableCell
+                    align="right"
+                    sx={{
+                      color: "#FFFFFF",
+                      fontSize: "1.1rem",
+                    }}
+                  >
+                    {doctor.contact}
+                  </TableCell>
+                </TableRow>
+              ))
+            )}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </>
   );
-}
+};
 
-export default DoctorBody
+export default DoctorBody;

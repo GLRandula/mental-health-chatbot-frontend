@@ -1,226 +1,131 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import Form from "./Form";
-import Loading from "@/app/loading";
-import LoadingAnimation from "@/app/loadingAnimation";
-import { Tooltip } from "react-tooltip";
-import { useDispatch, useSelector } from "react-redux";
-import API_CONFIG from "../API";
-import { updateUser, addFileHistory, clearUserFileList, clearTrainedFileList  } from "@/app/store/Slices/userSlice";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Popup from "../PopUp/Popup";
-import { fileFetchUtil } from "../../components/API/fileFetchUtil";
+import LoadingAnimation from "@/app/loadingAnimation";
+import RecordingPopup from "../PopUp/RecordingPopup"; // Import the Google-like recording popup
 
 const TypingBox = ({ handleUserInput }) => {
   const [input, setInput] = useState("");
-  const [file, setFile] = useState(null);
+  const [recording, setRecording] = useState(false);
+  const [mediaRecorder, setMediaRecorder] = useState(null);
+  const [audioChunks, setAudioChunks] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [loadingState, setLoadingState] = useState("");
-  const [error, setError] = useState('');
+  const [transcription, setTranscription] = useState("");
   const [popup, setPopup] = useState(null);
 
-  const dispatch = useDispatch();
-  const user = useSelector((state) => state.user.loggedUser);
+  // Function to handle recording start and stop
+  const handleRecordClick = async () => {
+    if (!recording) {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        const recorder = new MediaRecorder(stream);
+        setMediaRecorder(recorder);
+        setAudioChunks([]); // Clear any previous audio chunks
+  
+        recorder.ondataavailable = (e) => {
+          console.log("Data available:", e.data.size);
+          if (e.data.size > 0) {
+            setAudioChunks((prev) => [...prev, e.data]);
+          }
+        };
+  
+        recorder.onstop = () => {
+          const audioBlob = new Blob(audioChunks, { type: "audio/wav" });
+          console.log("Audio Blob size:", audioBlob.size); // Log blob size
+          if (audioBlob.size > 0) {
+            uploadAudio(audioBlob);
+          } else {
+            console.error("Audio blob is empty!");
+          }
+        };
+  
+        recorder.start();
+        setRecording(true);
+      } catch (err) {
+        console.error("Microphone access error:", err);
+      }
+    } else {
+      mediaRecorder.stop();
+      setRecording(false);
+    }
+  };
+  
+  
+
+  const uploadAudio = async (audioBlob) => {
+    try {
+      setIsLoading(true);
+
+      // Step 1: Upload audio to AssemblyAI
+      const formData = new FormData();
+      formData.append("file", audioBlob);
+
+      const uploadResponse = await axios.post("https://api.assemblyai.com/v2/upload", formData, {
+        headers: {
+          authorization: process.env.NEXT_PUBLIC_ASSEMBLY_AI_API_KEY,
+          "Content-Type": "multipart/form-data",
+        },
+      });
+
+      const audioUrl = uploadResponse.data.upload_url;
+
+      // Step 2: Request transcription
+      const transcriptResponse = await axios.post(
+        "https://api.assemblyai.com/v2/transcript",
+        { audio_url: audioUrl },
+        {
+          headers: {
+            authorization: process.env.NEXT_PUBLIC_ASSEMBLY_AI_API_KEY,
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      const transcriptId = transcriptResponse.data.id;
+
+      // Step 3: Poll AssemblyAI for transcription result
+      let transcriptResult;
+      while (!transcriptResult || transcriptResult.status !== "completed") {
+        const statusResponse = await axios.get(
+          `https://api.assemblyai.com/v2/transcript/${transcriptId}`,
+          {
+            headers: {
+              authorization: process.env.NEXT_PUBLIC_ASSEMBLY_AI_API_KEY,
+            },
+          }
+        );
+        transcriptResult = statusResponse.data;
+
+        if (transcriptResult.status === "failed") {
+          throw new Error("Transcription failed");
+        }
+
+        await delay(2000); // Wait for 2 seconds between status checks
+      }
+
+      // Show transcription in input field and hide popup
+      setInput(transcriptResult.text);
+      setPopup(null); // Close the popup after transcription
+      setIsLoading(false);
+    } catch (err) {
+      console.error("Error during transcription:", err);
+      setPopup({
+        message: "Error processing transcription.",
+        type: "error",
+        size: "small",
+        duration: 3000, // Close after 3 seconds
+        position: "center",
+      });
+      setIsLoading(false);
+    }
+  };
 
   function delay(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
-
-  const triggerUploadFile = () => {
-    if (user[0]) {
-      if(validateFile(file)){
-        handleUploadFile();
-      }
-  
-    } else {
-      setPopup({
-        message: "Please login to upload the file",
-        type: 3,
-        size: 'large',
-        position: 'top-center',
-        duration: 3000,
-      });
-    }
-  };
-
-  const validateFile = (file) => {
-    // Clear previous errors
-    setError('');
-
-    // Validate file type
-    if (file.type !== 'application/pdf') {
-      setError('Only PDF files are allowed.');
-      setPopup({
-        message: "Only PDF files are allowed",
-        type: 2,
-        size: 'medium',
-        position: 'top-center',
-        duration: 3000,
-      });
-      return;
-    }
-
-    // Validate file size (10MB = 10 * 1024 * 1024 bytes)
-    if (file.size > 10 * 1024 * 1024) {
-      setError('File size cannot exceed 10MB.');
-      setPopup({
-        message: "File size cannot exceed 10MB.",
-        type: 2,
-        size: 'medium',
-        position: 'top-center',
-        duration: 3000,
-      });
-      return;
-    }
-
-    // If validation passes, set the file state
-    setFile(file);
-    return true;
-  };
-
-  const handleFileChange = (e) => {
-    setFile(e.target.files[0]);
-  };
-
- 
-  const handleUploadFile = async () => {
-    try{
-      if (!file || !user[0].email) {
-        setPopup({
-          message: "You need to login to use this feature.",
-          type: 3,
-          size: 'large',
-          position: 'top-center',
-          duration: 10000,
-        });
-        return;
-      }
-
-      const END_POINT_1 =
-        process.env.NEXT_PUBLIC_BASE_API_URL + API_CONFIG.requestSignedUrl;
-
-      setLoadingState("Uploading file");
-      setIsLoading(true);
-
-      // request the signed url from the server
-      const response = await fetch(END_POINT_1, {
-        method: "POST",
-        credentials: "include",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          user_id: user[0].id,
-          username: user[0].email,
-          filename: file.name,
-        }),
-      });
-
-      const data = await response.json();
-
-      // upload the file to the cloud storage
-      const uploadResponse = await fetch(data.response, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/octet-stream",
-        },
-        body: file,
-      });
-
-      if (uploadResponse.ok) {
-        setLoadingState("Setting up vector store");
-        setPopup({
-          message: "File uploaded successfully.",
-          type: 1,
-          size: 'medium',
-          position: 'top-center',
-          duration: 2000,
-        });
-
-          //update local user file redux store
-          const fileData = await fileFetchUtil(user[0]);
-          if (fileData.success) {
-            const fileHistory = fileData.filenames;
-            dispatch(clearUserFileList());
-            fileHistory.forEach((filename) => {
-              dispatch(addFileHistory(filename));
-            }); 
-          } else {
-            setPopup({
-              message: "Error Refreshing Files List",
-              type: 1,
-              size: 'medium',
-              position: 'bottom-right',
-              duration: 2000,
-            });
-          }
-
-        const END_POINT_2 =
-          process.env.NEXT_PUBLIC_BASE_API_URL + API_CONFIG.setupVectorStore;
-
-        // setup the vector store in cloud
-        const setupVectorStore = await fetch(END_POINT_2, {
-          method: "POST",
-          credentials: "include",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            id: user[0].id,
-            name: user[0].name,
-            email: user[0].email,
-            vectorstore: user[0].vectorstore,
-          }),
-        });
-
-        const updated_user = await setupVectorStore.json();
-
-        if (setupVectorStore.ok) {
-          dispatch(clearTrainedFileList());
-          setPopup({
-            message: "Vector store setup successfully",
-            type: 1,
-            size: 'large',
-            position: 'top-center',
-            duration: 2000,
-          });
-
-          const new_user = {
-            id: updated_user.id,
-            vectorstore: updated_user.vectorstore,
-          };
-
-          dispatch(updateUser(new_user));
-        }
-
-        setLoadingState("Finishing up");
-        await delay(3000);
-        setFile(null);
-        setIsLoading(false);
-        setLoadingState("");
-      } else {
-        setFile(null);
-        setIsLoading(false);
-        setPopup({
-          message: "Failed to train the file",
-          type: 2,
-          size: 'medium',
-          position: 'top-center',
-          duration: 3000,
-        });
-      }
-    }  catch (error){
-      setIsLoading(false);
-      setPopup({
-        message: "Failed to upload the file",
-        type: 2,
-        size: 'medium',
-        position: 'top-center',
-        duration: 3000,
-      });
-    }
-  }
-
 
   const handleSendClick = (e) => {
     e.preventDefault();
@@ -234,16 +139,14 @@ const TypingBox = ({ handleUserInput }) => {
 
   return (
     <>
-      {isLoading && (
-        <LoadingAnimation text={loadingState || "Setting things up"} />
-      )}
+      {isLoading && <LoadingAnimation text={loadingState || "Setting things up"} />}
+
       <div className="rbt-static-bar">
-        <Tooltip id="my-tooltip" className="custom-tooltip tooltip-inner" />
         <form className="new-chat-form border-gradient" onSubmit={preventF}>
           <textarea
             rows="1"
             placeholder="Send a message..."
-            value={input}
+            value={input || transcription} // Optionally show transcription in the input
             onChange={(e) => setInput(e.target.value)}
           ></textarea>
           <div className="left-icons">
@@ -252,23 +155,20 @@ const TypingBox = ({ handleUserInput }) => {
             </div>
           </div>
           <div className="right-icons">
-              <>
-                <a
-                  className="form-icon icon-mic"
-                  data-tooltip-id="my-tooltip"
-                  data-tooltip-content="Voice Search"
-                >
-                  <i className="fa-regular fa-waveform-lines"></i>
-                </a>
-                <a
-                  className="form-icon icon-send"
-                  data-tooltip-id="my-tooltip"
-                  data-tooltip-content="Send message"
-                  onClick={handleSendClick}
-                >
-                  <i className="fa-sharp fa-solid fa-paper-plane-top"></i>
-                </a>
-              </>
+            <>
+              <a
+                className={`form-icon icon-mic ${recording ? "active" : ""}`}
+                onClick={handleRecordClick}
+              >
+                <i className="fa-regular fa-waveform-lines"></i>
+              </a>
+              <a
+                className="form-icon icon-send"
+                onClick={handleSendClick}
+              >
+                <i className="fa-sharp fa-solid fa-paper-plane-top"></i>
+              </a>
+            </>
           </div>
         </form>
 
@@ -276,6 +176,7 @@ const TypingBox = ({ handleUserInput }) => {
           Consider checking important information.
         </p>
       </div>
+
       {popup && (
         <Popup
           message={popup.message}
@@ -286,8 +187,19 @@ const TypingBox = ({ handleUserInput }) => {
           onClose={() => setPopup(null)}
         />
       )}
+
+      {/* Show RecordingPopup when recording is in progress */}
+      <RecordingPopup
+        isRecording={recording}
+        stopRecording={() => mediaRecorder.stop()}
+        cancelRecording={() => {
+          mediaRecorder.stop();
+          setRecording(false); // Reset recording state
+        }}
+      />
     </>
   );
 };
 
 export default TypingBox;
+
