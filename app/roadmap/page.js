@@ -2,7 +2,7 @@ import BackToTop from "../backToTop";
 import RoadmapPage from "./index";
 
 export const metadata = {
-  title: "Roadmap - ViewMo",
+  title: "Roadmap - LIORA",
   description: "",
 };
 

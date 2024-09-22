@@ -30,7 +30,7 @@ const CtaTwo = () => {
                 >
                   <h4 className="subtitle">
                     <span className="theme-gradient">
-                      Get Started with ViewMo
+                      Get Started with LIORA
                     </span>
                   </h4>
                   <h2 className="title w-600 mb--20">
