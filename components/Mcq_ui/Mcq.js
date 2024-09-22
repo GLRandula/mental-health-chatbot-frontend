@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import sal from "sal.js";
 import sampleMcq from "../../data/sample_mcq.json";
 import McqBox from "../Common/McqBox";

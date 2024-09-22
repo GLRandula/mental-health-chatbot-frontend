@@ -11,7 +11,6 @@ const RecordingPopup = ({ isRecording, stopRecording, cancelRecording }) => {
         <p>Recording in progress...</p>
         <div className="popup-buttons">
           <button onClick={stopRecording} className="stop-button">Stop</button>
-          <button onClick={cancelRecording} className="cancel-button">Cancel</button>
         </div>
       </div>
     </div>
