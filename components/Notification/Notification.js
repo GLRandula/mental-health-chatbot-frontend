@@ -17,7 +17,7 @@ const Notification = () => {
                   </div>
                   <div className="mt-0 rbt-sm-separator"></div>
                   <div className="rbt-checkbox-grp">
-                    <h5 className="title">ViewMo Platform</h5>
+                    <h5 className="title">LIORA Platform</h5>
                     <div className="rbt-checkbox-wrapper">
                       <input
                         id="rbt-checkbox-1"
