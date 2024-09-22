@@ -15,6 +15,7 @@ import userReducer from './Slices/userSlice';
 import graphReducer from './Slices/graphAndSummarySlice';
 import questionReducer from './Slices/questionSlice';
 import pdfReducer from "./Slices/pdfSlice";
+import researchReducer from './Slices/researchSlice';
 
 let devtools = x => x;
 if (
