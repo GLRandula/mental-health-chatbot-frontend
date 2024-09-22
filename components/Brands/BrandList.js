@@ -112,7 +112,7 @@ const BrandList = () => {
             />
           </Link>
         </li>
-        <li className="slide-single-layout">
+        {/* <li className="slide-single-layout">
           <Link href="#" style={{ marginLeft: '20px' }}>
             <Image
               src={brandImg5}
@@ -121,7 +121,7 @@ const BrandList = () => {
               alt="Brand Image"
             />
           </Link>
-        </li>
+        </li> */}
         <li className="slide-single-layout">
           <Link href="#" style={{ marginLeft: '20px' }}>
             <Image

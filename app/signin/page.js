@@ -2,7 +2,7 @@ import BackToTop from "../backToTop";
 import SigninPage from "./index";
 
 export const metadata = {
-  title: "Sign In - ViewMo",
+  title: "Sign In - LIORA",
   description: "Sign In Description",
 };
 

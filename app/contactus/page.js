@@ -2,7 +2,7 @@ import BackToTop from "../backToTop";
 import ContactPage from "./index.js";
 
 export const metadata = {
-  title: "Contact Us - ViewMo",
+  title: "Contact Us - LIORA",
   description: "",
 };
 

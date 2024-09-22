@@ -1,7 +1,7 @@
 import HomePage from "./index";
 
 export const metadata = {
-  title: "Home - ViewMo",
+  title: "Home - LIORA",
   description: "",
 };
 

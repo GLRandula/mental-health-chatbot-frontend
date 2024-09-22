@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Sal from "sal.js";
 
-import SplitImg from "../../public/images/split/split-2.png";
+import SplitImg from "../../public/images/split/split-3.png";
 import SplitLogo from "../../public/images/split/split-2-logo.png";
 import bannerImg from "../../public/images/bg/slider-main-image.png";
 import shapeOne from "../../public/images/bg/icon-shape/icon-shape-one.png";

@@ -2,7 +2,7 @@ import BackToTop from "../backToTop";
 import ProfileDetailsPage from "./index";
 
 export const metadata = {
-  title: "Profile Details - ViewMo",
+  title: "Profile Details - LIORA",
   description: "",
 };
 

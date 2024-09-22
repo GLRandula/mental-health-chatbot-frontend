@@ -2,7 +2,7 @@ import BackToTop from "../backToTop";
 import DoctorDetailsPage from "./index";
 
 export const metadata = {
-  title: "Doctor Details - ViewMo",
+  title: "Doctor Details - LIORA",
   description: "",
 };
 
