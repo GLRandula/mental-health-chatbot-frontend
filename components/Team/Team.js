@@ -70,7 +70,7 @@ const Team = () => {
                 data-sal-delay="150"
               >
                 <h4 className="subtitle">
-                  <span className="theme-gradient">ViewMo team mbember</span>
+                  <span className="theme-gradient">LIORA team mbember</span>
                 </h4>
                 <h2 className="title w-600 mb--20">We Are Here To Serve You</h2>
               </div>

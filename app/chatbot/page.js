@@ -2,7 +2,7 @@ import BackToTop from "../backToTop";
 import ChatbotPage from "./index";
 
 export const metadata = {
-  title: "Chat bot - ViewMo",
+  title: "Chat bot - LIORA",
   description: "",
 };
 
