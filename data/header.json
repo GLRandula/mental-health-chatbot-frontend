@@ -60,10 +60,10 @@
       
     },
     {
-      "link": "/roadmap",
+      "link": "/doctor_details",
       "isIcon": false,
       "isMenu": false,
-      "text": "Roadmap"
+      "text": "Doctor Details"
     },
     {
       "link": "/utilize",
@@ -131,10 +131,10 @@
       
     },
     {
-      "link": "/roadmap",
+      "link": "/doctor_details",
       "isIcon": false,
       "isMenu": false,
-      "text": "Roadmap"
+      "text": "Doctor Details"
     },
     {
       "link": "/utilize",

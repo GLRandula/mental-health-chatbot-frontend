@@ -67,7 +67,7 @@ const Chat = () => {
     setIsLoading(true);
   
     try {
-      const response = await fetch('https://chatbot-backend-es4ftzjzmq-uc.a.run.app/query/message', {
+      const response = await fetch(process.env.NEXT_PUBLIC_BASE_API_URL+API_CONFIG.chat, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

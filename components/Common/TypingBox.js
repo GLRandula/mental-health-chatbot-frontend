@@ -48,7 +48,6 @@ const TypingBox = ({ handleUserInput }) => {
         .map((result) => result[0])
         .map((result) => result.transcript)
         .join("");
-      console.log(transcript);
       setNote(transcript); 
       setInput(transcript); 
     };
