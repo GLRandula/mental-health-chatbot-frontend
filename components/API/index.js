@@ -4,6 +4,7 @@ const API_CONFIG = {
   signup: "/user/",
   login: "/login",
 
+  listChat: "/user/email/",
   createChat : "/chat/create",
   addDoctor: "/doctor/add",
   getDoctor: "/doctor",
