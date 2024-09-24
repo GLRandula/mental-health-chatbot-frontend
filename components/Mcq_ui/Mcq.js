@@ -1,7 +1,8 @@
 "use client";
 
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useRouter } from "next/navigation";
 import sal from "sal.js";
 import sampleMcq from "../../data/sample_mcq.json";
 import McqBox from "../Common/McqBox";
@@ -30,6 +31,7 @@ const AGE = {
 }
 
 const Mcq = ({setLoadingState, setLoadingMessage}) => {
+  const router = useRouter();
   const [userAnswers, setUserAnswers] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [results, setResults] = useState([]);
@@ -54,6 +56,10 @@ const Mcq = ({setLoadingState, setLoadingMessage}) => {
       setQuestionsToShow(qList);
     }
   }, [qList]);
+
+  const handleNavigation = () => {
+    router.push("/chatbot");
+  };
 
   const handleButtonClick = (buttonName) => {
     setClickedButton(buttonName);
@@ -149,19 +155,21 @@ const Mcq = ({setLoadingState, setLoadingMessage}) => {
     setQuestionsToShow([]); // Clear the demo data
   };
 
-  const handleAnswerSubmit = () => {
-    const results = questionsToShow
-      .map((item) =>
-        item?.response?.questions.map((question, qIndex) => ({
-          question: question.question,
-          correct: question.correct === userAnswers[qIndex],
-          answer: question.correct,
-        }))
-      )
-      .flat();
-    setResults(results);
-    setEndTime(new Date());
-  };
+const handleAnswerSubmit = () => {
+  const results = (questionsToShow || [])
+    .map((item) => 
+      item?.response?.questions?.map((question, qIndex) => ({
+        question: question.question,
+        correct: question.correct === userAnswers[qIndex],
+        answer: question.correct,
+      })) || [] // Return an empty array if item.response.questions is undefined
+    )
+    .flat();
+  
+  setResults(results);
+  setEndTime(new Date());
+};
+
 
   const calculateScore = () => {
     return results?.filter((result) => result?.correct).length;
@@ -330,8 +338,9 @@ const Mcq = ({setLoadingState, setLoadingMessage}) => {
                       onClick={() => {
                         handleAnswerSubmit();
                         setShowResult(true);
+                        handleNavigation();
                       }}
-                      className="react-btn btn-default btn-small btn-border" href="/chatbot"
+                      className="react-btn btn-default btn-small btn-border"
                   >
                     Continue Chat
                   </button>
