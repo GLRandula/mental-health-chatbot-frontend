@@ -1,19 +1,17 @@
+import { getDocument } from "pdfjs-dist";
+
 const API_CONFIG = {
-  graph: "/query/graphGenerate",
-  summary: "/query/summary",
-  graphAndSummary: "/query/getBothGraphAndSummary",
-  chat: "/query/chat",
-  upload: "/storage/upload",
-  requestSignedUrl: "/storage/generateSignedUrl",
   signup: "/user/",
   login: "/login",
-  setupVectorStore: "/storage/setupVectorStore",
-  setupVectorStoreWithPdf: "/storage/setupVectorStoreWithPdf",
-  files: "/storage/filelist",
-  fileDel: "/storage/delete",
-  fileTrain: "/storage/setupVectorStoreWithPdf",
-  quiz: "/query/quiz",
-  research: "/query/research",
+
+  listChat: "/user/email/",
+  createChat : "/chat/create",
+  addDoctor: "/doctor/add",
+  getDoctor: "/doctor",
+  getDoctors: "/doctor/get",
+  getChatHistory : "/chat/get",
+  getHistory: "/query/history",
+  chat: "/query/message"
 };
 
 export default API_CONFIG;

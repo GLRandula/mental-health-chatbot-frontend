@@ -1,97 +1,116 @@
+// RightFilePannel.js
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useAppContext } from "@/context/Context";
+import { useAppContext } from "@/context/Context"; // Ensure to import your context
+import {
+  setChatHistory,
+  selectChat,
+  setSelectedChatHistory,
+} from "../../app/store/Slices/chatSlice";
 import Popup from "../PopUp/Popup";
 
-import {
-  addFileHistory,
-  clearUserFileList,
-  updateTrained,
-} from "../../app/store/Slices/userSlice";
-import { fileDelUtil } from "../API/fileDelUtil";
-import { fileTrainUtil } from "../API/fileTrainUtil";
-import { fileFetchUtil } from "..//API/fileFetchUtil";
-import WaitingForResponse from "../WaitingForResponse/WaitingForResponse";
-
 const RightFilePannel = () => {
-  const dispatch = useDispatch();
   const user = useSelector((state) => state.user.loggedUser);
-  const fileList = useSelector((state) => state.user.fileList);
-  const trainedFile = useSelector((state) => state.user.trainedFile);
-  const { shouldCollapseRightbar } = useAppContext();
+  const dispatch = useDispatch();
+  const chatHistory = useSelector((state) => state.chat.chatHistory);
+  const selectedChat = useSelector((state) => state.chat.selectedChat);
+  const { shouldCollapseRightbar } = useAppContext(); 
   const [popup, setPopup] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
-  
-  const handleRefresh = async (e) => {
-    setIsLoading(true);
-    const fileData = await fileFetchUtil(user[0]);
-    if (fileData.success) {
-      const fileHistory = fileData.filenames;
-      dispatch(clearUserFileList());
-      fileHistory.forEach((filename) => {
-        dispatch(addFileHistory(filename));
-      });
-    } else {
-      setPopup({
-        message: "Error Refreshing Files",
-        type: 2,
-        size: "medium",
-        position: "bottom-right",
-        duration: 3000,
-      });
+
+  useEffect(() => {
+    // Fetch chat list on component mount
+    handleRefresh();
+  }, []);
+
+  // Fetch chat list by user email
+  const handleRefresh = async () => {
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_BASE_API_URL}/user/email/${encodeURIComponent(user[0].email)}`
+      );
+      const data = await response.json();
+      if (response.ok) {
+        dispatch(setChatHistory(data.chats));
+      } else {
+        setPopup({
+          message: "Error Refreshing Chat History",
+          type: 2,
+          size: "medium",
+          position: "bottom-right",
+          duration: 3000,
+        });
+      }
+    } catch (error) {
+      console.error("Error fetching chats:", error);
     }
-    setIsLoading(false);
   };
 
-  const deleteFile = async (fileName) => {
-    setIsLoading(true);
-    const fileData = await fileDelUtil(user[0], fileName);
-    if (fileData.success) {
-      handleRefresh();
-      setPopup({
-        message: fileData.message,
-        type: 1,
-        size: "medium",
-        position: "bottom-right",
-        duration: 2000,
-      });
-    } else {
-      setPopup({
-        message: fileData.message,
-        type: 2,
-        size: "medium",
-        position: "bottom-right",
-        duration: 3000,
-      });
+  // Select a chat to view its history
+  const handleChatSelect = async (chat) => {
+    dispatch(selectChat(chat)); // Set selected chat
+
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_BASE_API_URL}/query/history`,
+        {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            user_id: user[0].id,
+            chat_id: chat.chat_id,
+            limit: 100, // Adjust limit as necessary
+          })
+        }
+      );
+      const data = await response.json();
+      if (response.ok) {
+        dispatch(setSelectedChatHistory(data.history));
+      } else {
+        setPopup({
+          message: "Error Fetching Selected Chat History",
+          type: 2,
+          size: "medium",
+          position: "bottom-right",
+          duration: 3000,
+        });
+      }
+    } catch (error) {
+      console.error("Error fetching chat history:", error);
     }
-    setIsLoading(false);
   };
 
-  const trainFile = async (fileName) => {
-    setIsLoading(true);
-    const fileData = await fileTrainUtil(user[0], fileName);
+  // Create a new chat
+  const handleCreateNewChat = async () => {
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_BASE_API_URL}/chat/get/${user[0].id}`, 
+        {
+          method: 'GET',
+          headers: { 'Accept': 'application/json' },
+        }
+      );
+      const newChat = await response.json();
 
-    if (fileData.success) {
-      dispatch(updateTrained(fileData.fname));
-      setPopup({
-        message: fileData.message,
-        type: 1,
-        size: "medium",
-        position: "bottom-right",
-        duration: 2000,
-      });
-    } else {
-      setPopup({
-        message: fileData.message,
-        type: 2,
-        size: "medium",
-        position: "bottom-right",
-        duration: 3000,
-      });
+      if (response.ok) {
+        // Refresh the chat list after creating new chat
+        handleRefresh();
+      } else {
+        setPopup({
+          message: "Error Creating New Chat",
+          type: 2,
+          size: "medium",
+          position: "bottom-right",
+          duration: 3000,
+        });
+      }
+    } catch (error) {
+      console.error("Error creating new chat:", error);
     }
-    setIsLoading(false);
   };
 
   return (
@@ -101,101 +120,50 @@ const RightFilePannel = () => {
           shouldCollapseRightbar ? "collapsed" : ""
         }`}
       >
-        <div className="right-side-top">
-          <a
-            className="btn-default bg-solid-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#newchatModal"
-          >
-            {/* <span className="icon">
-              <i className="feather-plus-circle"></i>
-            </span> */}
-            <span>Chat History</span>
-          </a>
-        </div>
+        <div className="rbt-right-side-panel">
+          <div className="right-side-top">
+            <button className="btn-default" onClick={handleCreateNewChat}>
+              Create New Chat
+            </button>
+          </div>
 
-        <div className="right-side-bottom">
-          {/* <div className="chat-history-section">
-            <h6 className="title"></h6>
-            <ul className="chat-history-list">
-              {fileList?.length > 0 ? (
-                fileList.map((fileName, subIndex) => (
-                  <li
-                    className={`history-box ${
-                      fileName.isActive ||
-                      (trainedFile?.length > 0 && trainedFile[0] === fileName)
-                        ? "active"
-                        : ""
-                    }`}
-                    key={subIndex}
-                  >
-                    <div>{fileName}</div>
-                    <div className="dropdown history-box-dropdown">
-                      {isLoading ? (
-                        <WaitingForResponse showText={false} />
-                      ) : (
-                        <div>
-                          <button
-                            type="button"
-                            className="more-info-icon dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            <i className="fa-regular fa-ellipsis"></i>
-                          </button>
-                          <ul className="dropdown-menu">
-                            <li>
-                              {trainedFile?.length > 0 &&
-                              fileName === trainedFile[0] ? (
-                                <div />
-                              ) : (
-                                <a
-                                  className="dropdown-item"
-                                  href="#"
-                                  onClick={() => trainFile(fileName)}
-                                >
-                                  <i className="fa-solid fa-toolbox"></i>
-                                  Select File
-                                </a>
-                              )}
-                              <a
-                                className="dropdown-item"
-                                href="#"
-                                onClick={() => deleteFile(fileName)}
-                              >
-                                <i className="fa-solid fa-trash-can"></i>
-                                Delete File
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      )}
-                    </div>
-                  </li>
-                ))
-              ) : (
-                <div>No files available</div>
-              )}
-            </ul>
-          </div> */}
-          <button
-            className="react-btn btn-default btn-small btn-border"
-            onClick={handleRefresh}
-          >
-            Clear
-          </button>
+          <div className="right-side-bottom">
+            <div className="chat-history-section">
+              <h6>Chat Topics</h6>
+              <ul className="chat-history-list">
+                {chatHistory.length > 0 ? (
+                  chatHistory.map((chat, index) => (
+                    <li
+                      key={index}
+                      className={`history-box ${
+                        selectedChat?.chat_id === chat.chat_id ? "active" : ""
+                      }`}
+                      onClick={() => handleChatSelect(chat)}
+                    >
+                      {chat.topic}
+                    </li>
+                  ))
+                ) : (
+                  <div>No chats available</div>
+                )}
+              </ul>
+            </div>
+            <button className="btn-default" onClick={handleRefresh}>
+              Refresh Chat List
+            </button>
+          </div>
         </div>
+        {popup && (
+          <Popup
+            message={popup.message}
+            type={popup.type}
+            size={popup.size}
+            position={popup.position}
+            duration={popup.duration}
+            onClose={() => setPopup(null)}
+          />
+        )}
       </div>
-      {popup && (
-        <Popup
-          message={popup.message}
-          type={popup.type}
-          size={popup.size}
-          position={popup.position}
-          duration={popup.duration}
-          onClose={() => setPopup(null)}
-        />
-      )}
     </>
   );
 };

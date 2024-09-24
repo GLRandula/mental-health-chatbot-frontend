@@ -1,0 +1,70 @@
+.recording-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    display: none;
+  }
+  
+  .recording-popup.show {
+    display: block;
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mic-icon i {
+    font-size: 48px;
+    color: red;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .stop-button, .cancel-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .stop-button {
+    background-color: red;
+  }
+  
+  .cancel-button {
+    background-color: grey;
+  }
+  
+  .stop-button:hover, .cancel-button:hover {
+    opacity: 0.8;
+  }
+  

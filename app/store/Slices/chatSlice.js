@@ -1,29 +1,42 @@
+// chatSlice.js
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  chatHistory: [],
+  chatHistory: [],           // List of chats (e.g., { chat_id, topic })
+  selectedChat: null,        // Currently selected chat (e.g., { chat_id, topic })
+  selectedChatHistory: [],   // Messages of the selected chat
 };
 
 const chatSlice = createSlice({
   name: "chat",
   initialState,
   reducers: {
-    addMessage: (state, action) => {
-      state.chatHistory.push(action.payload);
+    // Set the entire chat history
+    setChatHistory: (state, action) => {
+      state.chatHistory = action.payload;
     },
-    updateMessage: (state, action) => {
-      const { index, newContent } = action.payload;
-      state.chatHistory[index].content[0].desc = newContent;
+    // Select a chat and reset the selected chat history
+    selectChat: (state, action) => {
+      state.selectedChat = action.payload;
+      state.selectedChatHistory = [];
     },
-    clearHistory: (state) => {
-      state.chatHistory = [];
+    // Set messages for the selected chat
+    setSelectedChatHistory: (state, action) => {
+      state.selectedChatHistory = [];
+      state.selectedChatHistory = action.payload;
     },
-    clearSingleMessage: (state, action) => {
-      state.chatHistory.splice(action.payload, 1);
+    // Add a new message to the selected chat's history
+    addMessageToSelectedChat: (state, action) => {
+      state.selectedChatHistory.push(action.payload);
     },
   },
 });
 
-export const { addMessage, updateMessage, clearHistory, clearSingleMessage } = chatSlice.actions;
+export const {
+  setChatHistory,
+  selectChat,
+  setSelectedChatHistory,
+  addMessageToSelectedChat,
+} = chatSlice.actions;
 
 export default chatSlice.reducer;
