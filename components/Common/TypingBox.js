@@ -66,12 +66,16 @@ const TypingBox = ({ handleUserInput }) => {
 
   const handleRecordClick = () => {
     setIsListening((prevState) => !prevState); 
+    setInput(""); 
   };
 
   const handleSendClick = (e) => {
     e.preventDefault();
+    setIsListening(false);  
+    mic.stop();  
     handleUserInput(input);
     setInput(""); 
+    setNote("");  
   };
 
   return (
@@ -117,8 +121,6 @@ const TypingBox = ({ handleUserInput }) => {
           onClose={() => setPopup(null)}
         />
       )}
-
-      {/* Show RecordingPopup when recording is in progress */}
       <RecordingPopup
         isRecording={isListening}
         stopRecording={() => setIsListening(false)}

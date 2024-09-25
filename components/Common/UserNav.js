@@ -19,14 +19,6 @@ const UserNav = ({ title }) => {
             {HeaderData &&
               HeaderData.navDashboardItem.slice(0, 7).map((data, index) => (
                 <li key={index}>
-                  <Link
-                    href={data.link}
-                    className={isActive(data.link) ? "active" : ""}
-                  >
-                    <span>
-                      {data.text === "Profile" ? "Profile Details" : data.text}
-                    </span>
-                  </Link>
                 </li>
               ))}
           </ul>

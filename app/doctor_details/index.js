@@ -19,10 +19,7 @@ const DoctorDetailsPage = () => {
             btnClass="rainbow-gradient-btn"
           />
           <div className="rbt-panel-wrapper">
-            {/* <HeaderDashboard display="d-none" /> */}
             <PopupMobileMenu />
-            {/* <LeftDashboardSidebar /> */}
-
             <DoctorDetails />
           </div>
         </Context>

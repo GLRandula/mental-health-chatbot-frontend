@@ -1,10 +1,7 @@
 import { useDispatch } from "react-redux";
 import { removeUser, clearUserFileList, clearTrainedFileList } from "@/app/store/Slices/userSlice";
-import { clearHistory } from "@/app/store/Slices/chatSlice";
-import { clearGraphAndSummaryHistory } from "@/app/store/Slices/graphAndSummarySlice";
-import { clearQPaper } from "@/app/store/Slices/questionSlice";
+import { cleanChatVariables } from "@/app/store/Slices/chatSlice";
 import Link from "next/link";
-import { removeResearch } from "@/app/store/Slices/researchSlice";
 
 const Logout = ({btnClass}) => {
   const dispatch = useDispatch();
@@ -26,12 +23,7 @@ const Logout = ({btnClass}) => {
     clearAllCookies();
 
     dispatch(removeUser());
-    dispatch(clearHistory());
-    dispatch(clearGraphAndSummaryHistory());
-    dispatch(clearQPaper());
-    dispatch(clearUserFileList());
-    dispatch(removeResearch());
-    dispatch(clearTrainedFileList());
+    dispatch(cleanChatVariables());
     localStorage.removeItem("user");
   };
 

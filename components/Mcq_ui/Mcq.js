@@ -8,6 +8,7 @@ import sampleMcq from "../../data/sample_mcq.json";
 import McqBox from "../Common/McqBox";
 import WaitingForResponse from "../WaitingForResponse/WaitingForResponse";
 import Popup from "../PopUp/Popup";
+import {setUserFilled, getUserFilled} from "@/app/store/Slices/userSlice";
 import { addQuestion, clearQPaper } from "@/app/store/Slices/questionSlice";
 import API_CONFIG from "../API";
 import LoadingAnimation from "@/app/loadingAnimation";
@@ -53,6 +54,7 @@ const Mcq = ({setLoadingState, setLoadingMessage}) => {
 
   useEffect(() => {
     if (qList.length > 0) {
+      dispatch(setUserFilled(true));
       setQuestionsToShow(qList);
     }
   }, [qList]);
@@ -238,6 +240,15 @@ const handleAnswerSubmit = () => {
         className="m-4 react-btn btn-default btn-small btn-border"
       >
         Clear Chat
+      </button>
+
+      <button
+        onClick={() => {
+          if (dispatch(getUserFilled())) router.push("/chatbot");
+        }}
+        className={`m-4 react-btn btn-default btn-small btn-border `}
+      >
+        ChatBot
       </button>
       
       {/* commented. remove it in production */}

@@ -14,12 +14,6 @@
       "text": "Home"
     },
     {
-      "link": "/mcqbot",
-      "isIcon": false,
-      "isMenu": false,
-      "text": "Chat Bot"
-    },
-    {
       "link": "/aboutus",
       "text": "About Us",
       "isIcon": false,

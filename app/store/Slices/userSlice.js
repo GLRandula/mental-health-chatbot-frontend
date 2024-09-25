@@ -1,9 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { get } from "react-scroll/modules/mixins/scroller";
 
 const initialState = {
   loggedUser: [],
   fileList: [],
   trainedFile: [],
+  userFilled: false,
 };
 
 const userSlice = createSlice({
@@ -40,9 +42,15 @@ const userSlice = createSlice({
       state.trainedFile = [];
       state.trainedFile.push(action.payload);
     },
+    setUserFilled: (state, action) => {
+      state.setUserFilled = action.payload;
+    },
+    getUserFilled: (state) => {
+      return state.userFilled;
+    },
   },
 });
 
-export const { addUser, removeUser, updateUser, addFileHistory, clearUserFileList, updateTrained, clearTrainedFileList } = userSlice.actions;
+export const { addUser, removeUser, updateUser, addFileHistory, clearUserFileList, updateTrained, clearTrainedFileList, setUserFilled, getUserFilled } = userSlice.actions;
 
 export default userSlice.reducer;
