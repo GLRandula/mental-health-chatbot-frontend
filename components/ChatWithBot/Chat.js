@@ -62,7 +62,6 @@ const Chat = () => {
       date_created: new Date().toISOString(),
     };
   
-    dispatch(addMessageToSelectedChat(newUserMessage));
     setUserInput("");
     setIsLoading(true);
   
@@ -81,7 +80,6 @@ const Chat = () => {
       });
   
       const data = await response.json();
-      console.log(input, data);
   
       if (response.ok) {
         const updatedEntry = {
@@ -107,9 +105,6 @@ const Chat = () => {
     }
   };
   
-  
-  
-
   const handleUserInput = (value) => {
     setUserInput(value);
     handleSend(value);
@@ -125,8 +120,17 @@ const Chat = () => {
       <div className="chat-box author-speech">
         <div className="inner">
           <div className="chat-section">
+          <div className="author">
+                    <Image
+                      className="w-100"
+                      width={40}
+                      height={40}
+                      src={authorImg}
+                      alt="Author"
+                    />
+                  </div>
             <div className="chat-content">
-              <h6 className="title">{user[0].email}</h6>
+              <h6 className="title">{"User"}</h6>
               <p>{data.message}</p>
             </div>
           </div>
@@ -136,6 +140,15 @@ const Chat = () => {
         <div className="chat-box advisor-speech">
           <div className="inner">
             <div className="chat-section">
+            <div className="author">
+                    <Image
+                      className="w-100"
+                      width={40}
+                      height={40}
+                      src={aiImg}
+                      alt="Author"
+                    />
+                  </div>
               <div className="chat-content">
                 <h6 className="title">Bot</h6>
                 <p>{data.response}</p>

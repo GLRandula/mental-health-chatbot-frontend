@@ -60,14 +60,21 @@ const DoctorBody = () => {
       {/* Search Bar */}
       <TextField
         label="Search Doctor"
-        variant="outlined"
-        fullWidth
-        value={searchTerm}
-        onChange={handleSearch}
-        sx={{
-          marginBottom: 2, 
-          backgroundColor: "#fff", 
-        }}
+          variant="standard"
+          placeholder="Name"
+          fullWidth
+          margin="dense"
+          value={searchTerm}
+          onChange={handleSearch}
+          sx={{
+            marginBottom: 8,
+            backgroundColor: "#121212",
+            color: "#FFFFFF",
+            label: {
+              color : "#FFFFFF",
+              fontSize: "1.6rem",
+            } 
+          }}
       />
 
       <TableContainer
@@ -79,7 +86,7 @@ const DoctorBody = () => {
       >
         <Table
           sx={{
-            minWidth: 650,
+            minWidth: 1400,
             color: "#FFFFFF", 
           }}
           size="small"
@@ -90,7 +97,7 @@ const DoctorBody = () => {
               <TableCell
                 sx={{
                   color: "#FFFFFF", 
-                  fontSize: "1.2rem", 
+                  fontSize: "1.9rem", 
                 }}
               >
                 Psychotherapist Name
@@ -99,7 +106,7 @@ const DoctorBody = () => {
                 align="right"
                 sx={{
                   color: "#FFFFFF",
-                  fontSize: "1.2rem",
+                  fontSize: "1.9rem",
                 }}
               >
                 Address
@@ -108,7 +115,7 @@ const DoctorBody = () => {
                 align="right"
                 sx={{
                   color: "#FFFFFF",
-                  fontSize: "1.2rem",
+                  fontSize: "1.9rem",
                 }}
               >
                 Speciality
@@ -117,7 +124,7 @@ const DoctorBody = () => {
                 align="right"
                 sx={{
                   color: "#FFFFFF",
-                  fontSize: "1.2rem",
+                  fontSize: "1.9rem",
                 }}
               >
                 Contact No.
@@ -128,11 +135,11 @@ const DoctorBody = () => {
             {loading ? (
               <TableRow>
                 <TableCell
-                  colSpan={4}
+                  colSpan={10}
                   align="center"
                   sx={{
                     color: "#FFFFFF", 
-                    fontSize: "1.1rem", 
+                    fontSize: "1.5rem", 
                   }}
                 >
                   Loading...
@@ -145,7 +152,7 @@ const DoctorBody = () => {
                   align="center"
                   sx={{
                     color: "#FFFFFF", 
-                    fontSize: "1.1rem", 
+                    fontSize: "1.5rem", 
                   }}
                 >
                   {error}
@@ -158,7 +165,7 @@ const DoctorBody = () => {
                   align="center"
                   sx={{
                     color: "#FFFFFF", 
-                    fontSize: "1.1rem", 
+                    fontSize: "1.5rem", 
                   }}
                 >
                   No doctors found
@@ -175,7 +182,7 @@ const DoctorBody = () => {
                     scope="row"
                     sx={{
                       color: "#FFFFFF",
-                      fontSize: "1.1rem", 
+                      fontSize: "1.6rem", 
                     }}
                   >
                     {doctor.name}
@@ -184,7 +191,7 @@ const DoctorBody = () => {
                     align="right"
                     sx={{
                       color: "#FFFFFF",
-                      fontSize: "1.1rem",
+                      fontSize: "1.6rem",
                     }}
                   >
                     {doctor.address}
@@ -193,7 +200,7 @@ const DoctorBody = () => {
                     align="right"
                     sx={{
                       color: "#FFFFFF",
-                      fontSize: "1.1rem",
+                      fontSize: "1.6rem",
                     }}
                   >
                     {doctor.specialty}
@@ -202,7 +209,7 @@ const DoctorBody = () => {
                     align="right"
                     sx={{
                       color: "#FFFFFF",
-                      fontSize: "1.1rem",
+                      fontSize: "1.6rem",
                     }}
                   >
                     {doctor.contact}

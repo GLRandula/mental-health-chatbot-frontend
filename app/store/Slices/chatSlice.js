@@ -4,7 +4,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   chatHistory: [],           // List of chats (e.g., { chat_id, topic })
   selectedChat: null,        // Currently selected chat (e.g., { chat_id, topic })
-  selectedChatHistory: [],   // Messages of the selected chat
+  selectedChatHistory: [],
+  doctorList: [],   // Messages of the selected chat
 };
 
 const chatSlice = createSlice({
@@ -29,6 +30,15 @@ const chatSlice = createSlice({
     addMessageToSelectedChat: (state, action) => {
       state.selectedChatHistory.push(action.payload);
     },
+    setDoctorList: (state, action) => {
+      state.doctorList = action.payload;
+    },
+    cleanChatVariables: (state) => {
+      state.chatHistory = [];
+      state.selectedChat = null;
+      state.selectedChatHistory = [];
+      state.doctorList = [];
+    },
   },
 });
 
@@ -37,6 +47,8 @@ export const {
   selectChat,
   setSelectedChatHistory,
   addMessageToSelectedChat,
+  setDoctorList,
+  cleanChatVariables
 } = chatSlice.actions;
 
 export default chatSlice.reducer;
